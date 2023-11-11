@@ -14,9 +14,9 @@ echo do_shortcode('[smartslider3 slider="2"]');
  <!-- Formulario -->
 
  <div class="container-fluid px-100">
-    <div class="row">
+    <div class="row pt-100">
         <div class="col-md-8 mx-auto">
-            <h2 class="color-azul text-center">Comunícate con nosotros, nos encantaría escucharte.</h2>
+            <h2 class="color-azul text-center font-solway">Comunícate con nosotros, nos encantaría escucharte.</h2>
             <div class="row">
                 
                     <div class="col-md-6">
