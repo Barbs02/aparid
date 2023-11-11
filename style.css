@@ -4,7 +4,6 @@
   src: url("../fonts/Solway-Bold.ttf") format("truetype"), url("../fonts/Solway-ExtraBold.ttf") format("truetype"), url("../fonts/Solway-Light.ttf") format("truetype"), url("../fonts/Solway-Medium.ttf") format("truetype"), url("../fonts/Solway-Regular.ttf") format("truetype");
 }
 h1 {
-  font-family: "Kulim Park", sans-serif;
   font-family: "Solway";
 }
 
@@ -12,7 +11,11 @@ h1 {
   font-family: "Kulim Park", sans-serif;
 }
 
-.font .py-100 {
+.font-solway {
+  font-family: "Solway";
+}
+
+.py-100 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
