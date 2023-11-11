@@ -32,6 +32,42 @@ p {
   font-family: "Solway";
 }
 
+.font-size-1 {
+  font-size: 16px;
+}
+
+.font-size-2 {
+  font-size: 20px;
+}
+
+.font-size-3 {
+  font-size: 24px;
+}
+
+.font-size-4 {
+  font-size: 28px;
+}
+
+.font-size-5 {
+  font-size: 36px;
+}
+
+.font-size-6 {
+  font-size: 40px;
+}
+
+.font-size-7 {
+  font-size: 48px;
+}
+
+.font-size-8 {
+  font-size: 52px;
+}
+
+.font-size-9 {
+  font-size: 64px;
+}
+
 .color-naranjo {
   color: #FC9256;
 }
