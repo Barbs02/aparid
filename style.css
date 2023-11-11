@@ -133,4 +133,23 @@ p {
 .navbar-nav .nav-link:hover {
   color: #FC9256;
   font-weight: bold;
+}
+
+/* ++++++++++++++++++++++++++++++ estilo del iframe ++++++++++++++++++++++++++++++++++++++++++  */
+.iframe-container {
+  width: 1050px; /* Ancho del contenedor */
+  height: 706px; /* Alto del contenedor */
+  display: flex;
+}
+
+.iframe-content {
+  width: 1050px; /* Ancho del iframe */
+  height: 706px; /* Alto del iframe */
+  border: none;
+}
+
+.contenido01 {
+  width: 50%;
+  height: 100%;
+  float: left;
 }/*# sourceMappingURL=style.css.map */
