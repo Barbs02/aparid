@@ -11,7 +11,57 @@ Template Name: Contacto
 echo do_shortcode('[smartslider3 slider="2"]');
 ?>
 </section>
+ <!-- Formulario -->
 
+ <div class="container-fluid px-100">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h2 class="color-azul text-center">Comunícate con nosotros, nos encantaría escucharte.</h2>
+            <div class="row">
+                
+                    <div class="col-md-6">
+                        <form>
+                        <br><label for="nombre"><p>Nombre:</p></label>
+                        <input  type="text" id="nombre" name="nombre" style="width: 100%;" class="border1 bg-color-beige p-3" required>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <br><label for="apellido"><p>Apellido:</p></label>
+                        <input type="text" id="apellido" name="apellido" style="width: 100%;" class="border1 bg-color-beige p-3" required>
+                    </div>
+
+                    <br>
+                    <div class="col-md-6">
+                        <br><label for="celular"><p>Celular:</p></label>
+                        <input type="tel" id="celular" name="celular" style="width: 100%;" pattern="[0-9]{10}" class="border1 bg-color-beige p-3" required>
+
+                    </div>
+                    
+                    <br>
+                    <div class="col-md-6">
+                        <br><label for="email"><p>Email:</p></label>
+                        <input type="email" id="email" name="email" style="width: 100%;" class="border1 bg-color-beige p-3" required>
+                    </div>
+                    
+
+                    <br>
+                    <div class="col-md-12">
+                        <br><label for="mensaje"><p>Mensaje:</p></label>
+                        <textarea id="mensaje" name="mensaje" rows="4" style="width: 100%;" class="border1 bg-color-beige p-3" required></textarea>
+                    </div>
+                    
+
+                    <br><br>
+
+                    <div class="col-md-4 py-5 me-5">
+                        <button type="submit" class="border1 p-2 w-100">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
     <!-- +++++++++++++++++++++++ container iframe +++++++++++++++++++++++++++++++ -->
 
 <div class="iframe-container">
