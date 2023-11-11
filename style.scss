@@ -139,3 +139,20 @@ p{
         font-weight: bold;
     }
 }
+/* ++++++++++++++++++++++++++++++ estilo del iframe ++++++++++++++++++++++++++++++++++++++++++  */
+
+.iframe-container {
+    width: 1050px; /* Ancho del contenedor */
+    height: 706px; /* Alto del contenedor */
+    display: flex;
+}
+.iframe-content {
+    width: 1050px; /* Ancho del iframe */
+    height: 706px; /* Alto del iframe */
+    border: none;
+}
+.contenido01 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
