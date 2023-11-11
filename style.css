@@ -68,6 +68,10 @@ p {
   font-size: 64px;
 }
 
+.font-size-10 {
+  font-size: 18px;
+}
+
 .color-naranjo {
   color: #FC9256;
 }
@@ -112,4 +116,21 @@ p {
 .px-100 {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.navbar {
+  border-bottom: solid #3683C3 2px;
+}
+
+.navbar-nav .nav-link {
+  color: #355C7D;
+  font-weight: bold;
+}
+.navbar-nav .nav-link.active {
+  color: #FC9256;
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: #FC9256;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

@@ -28,6 +28,7 @@ $color2: #A0EBF1;
 $color3: #FFF8EB;
 $color4: #FFED66;
 $color5: #FC9256;
+$color6 :#355C7D;
 $black : #121212;
 $white : #ffff;
 // FONTS
@@ -80,6 +81,9 @@ p{
 .font-size-9{
     font-size: 64px;
 }
+.font-size-10{
+    font-size: 18px;
+}
 //Color
 .color-naranjo{
     color: $color5;
@@ -116,4 +120,22 @@ p{
 .px-100{
     padding-left: 100px;
     padding-right: 100px;
+}
+
+
+// NAV------------------------
+.navbar{
+    border-bottom: solid $color1 2px;
+}
+.navbar-nav .nav-link{
+    color: $color6;
+    font-weight: bold;
+    &.active{
+        color: $color5;
+        font-weight: bold;
+    }
+    &:hover{
+        color: $color5;
+        font-weight: bold;
+    }
 }

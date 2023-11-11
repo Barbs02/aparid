@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mt-0">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <body>
         <!-- Barra de navegacion  -->
 <?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'thumbnail' ); ?>
-<nav class="navbar navbar-expand-md navbar-light bg-fondo p-0 ">
+<nav class="navbar navbar-expand-md navbar-light bg-color-beige p-2 ">
     <div class="container-fluid">
     <a href="<?php echo home_url(); ?>">
     <div class="logo">
@@ -29,7 +29,7 @@
                 'container' => false,
                 'menu_class' => '',
                 'fallback_cb' => '__return_false',
-                'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 font-kulimpark font-size-10 %2$s">%3$s</ul>',
                 'depth' => 2,
                 'walker' => new bootstrap_5_wp_nav_menu_walker()
             ));
