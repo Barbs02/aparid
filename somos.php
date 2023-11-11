@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Donaciones
+Template Name: Quienes somos
 */
 ?>
 
