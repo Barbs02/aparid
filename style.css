@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap");
+@font-face {
+  font-family: "Solway";
+  src: url("../fonts/Solway-Bold.ttf") format("truetype"), url("../fonts/Solway-ExtraBold.ttf") format("truetype"), url("../fonts/Solway-Light.ttf") format("truetype"), url("../fonts/Solway-Medium.ttf") format("truetype"), url("../fonts/Solway-Regular.ttf") format("truetype");
+}
+h1 {
+  font-family: "Kulim Park", sans-serif;
+  font-family: "Solway";
+}
+
+.font-kulimpark {
+  font-family: "Kulim Park", sans-serif;
+}
+
+.font .py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.px-100 {
+  padding-left: 100px;
+  padding-right: 100px;
+}/*# sourceMappingURL=style.css.map */
