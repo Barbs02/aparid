@@ -36,18 +36,73 @@ $kulim :  'Kulim Park', sans-serif;
 
 
 
-
+//Fuentes
 h1{
     font-family: $solway;
 }
-
+h1,h2,h3,h4,h5,h6{
+    color: #121212;
+}
+p{
+    font-family: $kulim;
+    color: #121212;
+}
 .font-kulimpark{
     font-family: $kulim;
 }
 .font-solway{
     font-family: $solway;
 }
-
+.font-size-1{
+    font-size: 16px;
+}
+.font-size-2{
+    font-size: 20px;
+}
+.font-size-3{
+    font-size: 24px;
+}
+.font-size-4{
+    font-size: 28px;
+}
+.font-size-5{
+    font-size: 36px;
+}
+.font-size-6{
+    font-size: 40px;
+}
+.font-size-7{
+    font-size: 48px;
+}
+.font-size-8{
+    font-size: 52px;
+}
+.font-size-9{
+    font-size: 64px;
+}
+//Color
+.color-naranjo{
+    color: $color5;
+}
+.color-azul{
+    color: $color1;
+}
+.bg-color-naranjo{
+    background-color: $color5;
+}
+.bg-color-azul{
+    background-color: $color1;
+}
+.bg-color-celeste{
+    background-color: $color2;
+}
+.bg-color-beige{
+    background-color: $color3;
+}
+.bg-color-amarillo{
+    background-color: $color4;
+}
+//Espaciado
 .py-100{
     padding-top: 100px;
     padding-bottom: 100px;

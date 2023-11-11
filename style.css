@@ -15,12 +15,85 @@ h1 {
   font-family: "Solway";
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #121212;
+}
+
+p {
+  font-family: "Kulim Park", sans-serif;
+  color: #121212;
+}
+
 .font-kulimpark {
   font-family: "Kulim Park", sans-serif;
 }
 
 .font-solway {
   font-family: "Solway";
+}
+
+.font-size-1 {
+  font-size: 16px;
+}
+
+.font-size-2 {
+  font-size: 20px;
+}
+
+.font-size-3 {
+  font-size: 24px;
+}
+
+.font-size-4 {
+  font-size: 28px;
+}
+
+.font-size-5 {
+  font-size: 36px;
+}
+
+.font-size-6 {
+  font-size: 40px;
+}
+
+.font-size-7 {
+  font-size: 48px;
+}
+
+.font-size-8 {
+  font-size: 52px;
+}
+
+.font-size-9 {
+  font-size: 64px;
+}
+
+.color-naranjo {
+  color: #FC9256;
+}
+
+.color-azul {
+  color: #3683C3;
+}
+
+.bg-color-naranjo {
+  background-color: #FC9256;
+}
+
+.bg-color-azul {
+  background-color: #3683C3;
+}
+
+.bg-color-celeste {
+  background-color: #A0EBF1;
+}
+
+.bg-color-beige {
+  background-color: #FFF8EB;
+}
+
+.bg-color-amarillo {
+  background-color: #FFED66;
 }
 
 .py-100 {
