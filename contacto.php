@@ -115,7 +115,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
     
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-3">
+                <div class="col-md-3 py-100">
                     <ul class="datos-contacto">
                         <li>
                             <a href="https://wa.me/+56978402893" target="_blank">
