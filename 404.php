@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <div class="container-fluid px-100">
     <div class="row py-100">
         <div class="col-md-4 mx-auto">
@@ -12,3 +14,5 @@
         </div>
     </div>
 </div>
+
+<?php get_footer(); ?>

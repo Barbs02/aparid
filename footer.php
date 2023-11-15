@@ -1,7 +1,7 @@
 <!-- -----------Footer------------- -->
 
 <div class="container-fluid px-100 footer">
-    <div class="row pt-3">
+    <div class="row pt-4">
         <div class="col-md-2">
             <img src="assets/Vector.png" alt="" class="">
         </div>
@@ -13,8 +13,7 @@
                 <div class="col-9">
                     <h3 class="color-azul font-size-3">Contacto</h3>
                     <br>
-                    <p class="font-size-1">Tel: (32) 236 75 57</p>
-                    <br>
+                    <p class="font-size-1 pb-2">Tel: (32) 236 75 57</p>
                     <p class="font-size-1">aparid.gmail.com</p>
                 </div>
             </div>
@@ -64,10 +63,9 @@
                     <h3 class="color-azul font-size-3">Términos y condiciones</h3>
                     <br>
                     <a href="#">
-                        <p class="font-size-1">Microsoft iconos creados por Freepik - Flaticon</p>
+                        <p class="font-size-1 pb-2">Microsoft iconos creados por Freepik - Flaticon</p>
                     </a>
                     
-                    <br>
                     <a href="#">
                         <p class="font-size-1">Foto de RDNE Stock project - Pexels</p>
                     </a>
@@ -76,9 +74,8 @@
                     <h3 class="color-invicible font-size-3"> . </h3>
                     <br>
                     <a href="#">
-                        <p class="font-size-1">Foto de Anna Shvets - Pexels</p>
+                        <p class="font-size-1 pb-2">Foto de Anna Shvets - Pexels</p>
                     </a>
-                    <br>
                     <a href="#">
                         <p class="font-size-1">Foto de Pavol Štugel en Unsplash</p>
                     </a>

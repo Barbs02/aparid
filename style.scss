@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
     font-family: $kulim;
-    color: #121212;
+    
 }
 .font-kulimpark{
     font-family: $kulim;
@@ -153,6 +153,15 @@ p{
 }
 .datos-contacto{
     list-style: none;
+
+    a{
+        text-decoration: none;
+        color: #121212;
+
+        &:hover{
+            color: $color1;
+        }
+    }
 }
 /* ++++++++++++++++++++++++++++++ estilo del iframe ++++++++++++++++++++++++++++++++++++++++++  */
 
@@ -176,6 +185,14 @@ p{
 .footer{
     background-color: $color3;
     border-top: 3px $color1 solid;
+
+    a{
+        text-decoration: none;
+        color: #121212;
+        &:hover{
+            color: $color1;
+        }
+    }
 }
 .color-invicible{
     color: $color3;
