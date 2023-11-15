@@ -171,3 +171,19 @@ p{
     height: 100%;
     float: left;
 }
+
+/////////////////////////////Footer///////////////////////
+.footer{
+    background-color: $color3;
+    border-top: 3px $color1 solid;
+}
+.color-invicible{
+    color: $color3;
+}
+.footer-rrss{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+}
