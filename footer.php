@@ -1,7 +1,7 @@
 <!-- -----------Footer------------- -->
 
 <div class="container-fluid px-100 footer">
-    <div class="row pt-5">
+    <div class="row pt-3">
         <div class="col-md-2">
             <img src="assets/Vector.png" alt="" class="">
         </div>
@@ -50,7 +50,7 @@
 
     </div>
 
-    <div class="row pt-5 pb-5">
+    <div class="row py-3">
         <div class="col-md-2">
             
         </div>
