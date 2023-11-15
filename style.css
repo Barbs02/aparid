@@ -143,6 +143,17 @@ p {
   box-shadow: rgba(18, 18, 18, 0.1921568627) 3px 3px;
 }
 
+.iframe-mapa {
+  width: 100%;
+  border-radius: 10px;
+  border: 5px #3683C3 solid;
+  height: 500px;
+}
+
+.datos-contacto {
+  list-style: none;
+}
+
 /* ++++++++++++++++++++++++++++++ estilo del iframe ++++++++++++++++++++++++++++++++++++++++++  */
 .iframe-container {
   width: 1050px; /* Ancho del contenedor */
@@ -160,4 +171,21 @@ p {
   width: 50%;
   height: 100%;
   float: left;
+}
+
+.footer {
+  background-color: #FFF8EB;
+  border-top: 3px #3683C3 solid;
+}
+
+.color-invicible {
+  color: #FFF8EB;
+}
+
+.footer-rrss {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
 }/*# sourceMappingURL=style.css.map */
