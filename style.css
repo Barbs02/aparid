@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 Theme Name: APARID 
 Theme URI: www.aparid.cl
@@ -201,4 +202,9 @@ p {
   flex-direction: row;
   justify-content: space-between;
   padding: 0px;
+}
+
+.logo img {
+  max-width: 150px; /* Ajusta el tamaño máximo según tus preferencias */
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

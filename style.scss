@@ -124,8 +124,11 @@ p{
 
 
  /* +++++++++++++++++++++++++++++++++++++NAV++++++++++++++++++++++++++++++++++++++++++ */
+ 
+
 .navbar{
     border-bottom: solid $color1 2px;
+
 }
 .navbar-nav .nav-link{
     color: $color6;
@@ -203,4 +206,9 @@ p{
     flex-direction: row;
     justify-content: space-between;
     padding: 0px;
+}
+
+.logo img {
+    max-width: 150px; /* Ajusta el tamaño máximo según tus preferencias */
+    height: auto;
 }
