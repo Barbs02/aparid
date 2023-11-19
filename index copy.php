@@ -111,7 +111,7 @@ Template Name: Inicio
 
         <div class="col-md-1"></div>
 
-        <div class="col-md-2 align-items-center">
+        <div class="col-md-2">
             <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a> 
         </div>
 
@@ -166,7 +166,7 @@ Template Name: Inicio
             <div class="col-md-6">
                 <!---imagen para programas-->
 
-                <h4 class="text-center font-size-6 color-azul font-kulim">Programas</h4>
+                <h4 class="text-center font-size-7 color-azul font-kulim">Programas</h4>
                 <hr>
                 <p>A través de programas individuales de estimulación y educación para habilitar y desarrollar al máximo las capacidades de las personas con síndrome de Down, podemos acercarnos a un desarrollo cognitivo que les permitirá tener una educación en colegios regulares y tener las habilidades sociales adecuadas.
                 <br>
@@ -179,7 +179,7 @@ Template Name: Inicio
 
             <div class="col-md-6">
                 <!---imagen para servicios-->
-                <h4 class="text-center font-size-6 color-azul font-kulim">Servicios</h4>
+                <h4 class="text-center font-size-7 color-azul font-kulim">Servicios</h4>
                 <hr>
                 <p>Como organización, nuestra prioridad es enfocarnos hacia un(a) joven con Síndrome de Down brindando las mejores oportunidades para que sea capaz de lograr insertarse y manejar su entorno en las mejores condiciones.
                 <br>
@@ -193,32 +193,30 @@ Template Name: Inicio
 <!-------------------------------CONOCE LAS OPINIONES DE NUSTRAS FAMILIAS------------------------------------------>
 
 <div class="container-fluid">
-    <div class="row align-items-center">
+    <div class="row"></div>
 
      <!---TITULO CON HR A LA IZQUIERDA Y HR A LA DERECHA--> <!-- ....ok sergio -->
 
-        <div class="col-md-3 text-center">
-            <hr class="my-4 border2 bg-color-naranjo">
+        <div class="col-md-4 text-center">
+            <hr class="my-4">
         </div>
 
-        <div class="col-md-6 text-center">
-            <h2 class="font-size-7 font-solway color-azul">Conoce las opiniones de nuestras familias</h2>
+        <div class="col-md-4 text-center">
+            <h2>Conoce las opiniones de nuestras familias</h2>
         </div>
 
-         <div class="col-md-3 text-center">
-            <hr class="my-4 border2 bg-color-naranjo">
+         <div class="col-md-4 text-center">
+            <hr class="my-4">
          </div>
-         <br>
+        
     </div>
 </div>
 
-<!---TESTIMONIOOOOOOOOOOOS-->
-
     <div class="container-fluid">
         <div class="row">
-            
+
             <div class="col-md-6">
-                <h2 class="font-size-6 font-kulim text-dark">Jorge Salas</h2>
+                <h2>Jorge Salas</h2>
                 <hr>
                 <p>Como organización comunitaria, nos enfocamos hacia un(a) joven con Síndrome de Down para que sea capaz de manejarse y manejar su entorno. 
                 <br>
@@ -226,7 +224,7 @@ Template Name: Inicio
             </div>
 
             <div class="col-md-6">
-                <h2 class="font-size-6 font-kulim text-dark"></h2>Cecilia Martínez</h2>
+                <h2>Cecilia Martínez</h2>
                 <hr>
                 <p>Como organización comunitaria, nos enfocamos hacia un(a) joven con Síndrome de Down para que sea capaz de manejarse y manejar su entorno.  
                 <br>

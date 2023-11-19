@@ -18,10 +18,12 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
   color: #121212;
+  line-height: 150%;
 }
 
 p {
   font-family: "Kulim Park", sans-serif;
+  line-height: 150%;
 }
 
 .font-kulimpark {
@@ -118,6 +120,26 @@ p {
   padding-right: 100px;
 }
 
+.hover-boton:hover {
+  background-color: #FC9256;
+  border-color: #FC9256;
+  color: white;
+}
+
+.border1 {
+  border: 3px solid #3683C3;
+  border-radius: 10px;
+  box-shadow: rgba(18, 18, 18, 0.1921568627) 3px 3px;
+}
+
+.border2 {
+  border: 1.5px solid #FC9256;
+}
+
+hr {
+  opacity: 100%;
+}
+
 /* +++++++++++++++++++++++++++++++++++++NAV++++++++++++++++++++++++++++++++++++++++++ */
 .navbar {
   border-bottom: solid #3683C3 2px;
@@ -137,12 +159,6 @@ p {
 }
 
 /* ++++++++++++++++++++++++++++++++++++Contacto+++++++++++++++++++++++++++++++++++++++++++++ */
-.border1 {
-  border: 3px solid #3683C3;
-  border-radius: 10px;
-  box-shadow: rgba(18, 18, 18, 0.1921568627) 3px 3px;
-}
-
 .iframe-mapa {
   width: 100%;
   border-radius: 10px;
@@ -207,4 +223,11 @@ p {
 .logo img {
   max-width: 150px; /* Ajusta el tamaño máximo según tus preferencias */
   height: auto;
+}
+
+@media (max-width: 480px) {
+  .px-100 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */

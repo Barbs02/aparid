@@ -43,9 +43,11 @@ h1{
 }
 h1,h2,h3,h4,h5,h6{
     color: #121212;
+    line-height: 150%;
 }
 p{
     font-family: $kulim;
+    line-height: 150%;
     
 }
 .font-kulimpark{
@@ -122,6 +124,25 @@ p{
     padding-right: 100px;
 }
 
+.hover-boton:hover{
+    background-color: $color5;
+    border-color: $color5;
+    color: $white;
+}
+.border1{
+    border: 3px solid $color1;
+    border-radius: 10px;
+    box-shadow: #12121231 3px 3px;
+}
+.border2{
+    border: 1.5px solid $color5;
+}
+hr{
+    opacity: 100%;
+}
+//                            INICIO
+
+
 
  /* +++++++++++++++++++++++++++++++++++++NAV++++++++++++++++++++++++++++++++++++++++++ */
  
@@ -143,11 +164,7 @@ p{
     }
 }
 /* ++++++++++++++++++++++++++++++++++++Contacto+++++++++++++++++++++++++++++++++++++++++++++ */
-.border1{
-    border: 3px solid $color1;
-    border-radius: 10px;
-    box-shadow: #12121231 3px 3px;
-}
+
 .iframe-mapa{
     width: 100%;
     border-radius: 10px;
@@ -211,4 +228,12 @@ p{
 .logo img {
     max-width: 150px; /* Ajusta el tamaño máximo según tus preferencias */
     height: auto;
+}
+
+@media (max-width: 480px){
+
+    .px-100{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }

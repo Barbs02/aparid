@@ -12,7 +12,7 @@
 <body>
         <!-- Barra de navegacion  -->
 <?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), '' ); ?>
-<nav class="navbar navbar-expand-md navbar-light bg-color-beige p-2 ">
+<nav class="navbar navbar-expand-md navbar-light bg-color-beige p-2 fixed-top">
     <div class="container-fluid">
     <a href="<?php echo home_url(); ?>">
     <div class="logo">
@@ -36,4 +36,6 @@
             ?>
         </div>
     </div>
+    
 </nav>
+<div class="pt-100"></div>
