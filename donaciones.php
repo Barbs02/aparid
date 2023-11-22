@@ -30,12 +30,17 @@ Template Name: Donaciones
                             <div class="col-md-5 font-size-3 font-kulimpark">
                                 <!-- Texto de ¿Quieres Ayudarnos? -->
                                 <p>
-                                    <?php the_content(); ?>
+                                    <?php the_field(''); ?>
                                 </p>
                             </div>
                             <div class="col-md-5">
                                 <!-- IMG de ¿Quieres Ayudarnos? -->
-                                <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                <?php
+                                $image = get_field('');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
                             </div>
                             <br>
                             <!------- Boton ------->
@@ -74,7 +79,7 @@ Template Name: Donaciones
                             <div class="col-md-6 font-size-3 font-kulimpark">
                                 <!-- Texto de Otras formas de Apoyarnos -->
                                 <p>
-                                    <?php the_content(); ?>
+                                    <?php the_field(''); ?>
                                 </p>
                             </div>
                             <div class="col-md-6">
@@ -103,7 +108,7 @@ Template Name: Donaciones
                                 <?php the_title(); ?>
                             </h3>
                             <p class="font-size-3 font-kulimpark">
-                                <?php the_content(); ?>
+                                <?php the_field(''); ?>
                             </p>
                         </div>
                     <?php endwhile; ?>
@@ -134,7 +139,12 @@ Template Name: Donaciones
                             the_post(); ?>
                             <div class="col-md-5">
                                 <!-- IMG de Somos Aparid -->
-                                <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                <?php
+                                $image = get_field('');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
                             </div>
                             <div class="col-md-5 font-size-3 font-kulimpark">
                                 <!-- Texto de Somos Aparid -->
@@ -154,12 +164,44 @@ Template Name: Donaciones
 
 <!--------------------------------- Quieres Ser Socio de Nosotros --------------------------------->
 <section>
+    <div class="container-fluid px-100">
+        <div class="row py-100">
+            <!-----todo esto va dentro de un background image(?----->
+            <?php if (have_posts()): ?>
+            <?php query_posts("category_name=socio"); ?>
+            <?php while (have_posts()):
+                the_post(); ?>
+            <div class="col-md-8 mx-auto text-center">
+                <h2 class="font-solway font-size-5 color-naranjo">
+                    <?php the_title(); ?>
+                </h2>
+            </div>
+            <br>
 
+            <div class="col-md-8">
+                <p class="font-size-3 color-light">
+                    <?php the_content(); ?>
+                </p>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2 align-items-center">
+                <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
+            </div>
+
+            <div class="col-md-1"></div>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+        </div>
+    </div>
 </section>
 
 <!-------------------------------------- Slider Colaboradores -------------------------------------->
 <section>
-    
+
 </section>
 
 <!-------------------------------------- Seccion Colaboradores -------------------------------------->
@@ -173,10 +215,15 @@ Template Name: Donaciones
                         <?php while (have_posts()):
                             the_post(); ?>
                             <div class="col-md-4">
-                                <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                <?php
+                                $image = get_field('');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
                                 <br>
                                 <p class="font-size-2 font-kulimpark">
-                                    <?php the_content(); ?>
+                                    <?php the_field(''); ?>
                                 </p>
                             </div>
                         <?php endwhile; ?>
@@ -196,7 +243,9 @@ Template Name: Donaciones
                             the_post(); ?>
                             <div class="col-md-5">
                                 <!-- Texto de Certificacion -->
-                                <h3 class="font-size-7 font-solway"><?php the_title(); ?></h3>
+                                <h3 class="font-size-7 font-solway">
+                                    <?php the_title(); ?>
+                                </h3>
                                 <br>
                                 <p class="font-size-3 font-kulimpark">
                                     <?php the_excerpt(); ?>
@@ -204,7 +253,12 @@ Template Name: Donaciones
                             </div>
                             <div class="col-md-5">
                                 <!-- IMG de Certificacion -->
-                                <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                <?php
+                                $image = get_field('');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
                             </div>
                         <?php endwhile; ?>
                     <?php else: ?>
