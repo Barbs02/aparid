@@ -123,7 +123,7 @@ Template Name: Inicio
                     </h2>
                     <p class="font-size-1">
                         <?php the_field('descripcion_somos'); ?>
-                        <a href="#">Ver más</a>
+                        <a href="quienes-somos">Ver más</a>
                     </p>
                 </div>
             <?php endwhile; ?>
@@ -158,7 +158,7 @@ Template Name: Inicio
 
         <div class="col-md-1"></div>
 
-        <div class="col-md-2 align-items-center">
+        <div class="col-md-2 align-self-center">
             <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
         </div>
 
@@ -210,12 +210,12 @@ Template Name: Inicio
 <!-------------------------------CONOCE NUESTROS SERVICIOS------------------------------------------>
 
 <div class="container-fluid px-100 bg-color-beige">
+<h2 class="font-size-7 font-solway color-azul">Conoce nuestros servicios</h2>
     <div class="row py-100">
         <?php if (have_posts()): ?>
-            <?php query_posts(""); ?>
+            <?php query_posts("category_name=inicio"); ?>
             <?php while (have_posts()):
                 the_post(); ?>
-                <h2 class="font-size-7 font-solway color-azul">Conoce nuestros servicios</h2>
 
                 <!---PROGRAMAS-->
 
