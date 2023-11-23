@@ -16,44 +16,47 @@ Template Name: Inicio
 <!-------------------------------primera sección------------------------------------------>
 
 
-<div class="container-fluid px-100">
-    <div class="row pt-100 ">
-        <?php if (have_posts()): ?>
-            <?php query_posts("category_name=inicio"); ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-                <div class="col-md-8 mx-auto text-center">
-                    <p class="font-size-3">
-                        <?php the_field('introduccion_aparid'); ?>
-                    </p>
+<section class="inicio">
+    <div class="container-fluid px-100">
+        <div class="row pt-100 ">
+            <?php if (have_posts()): ?>
+                <?php query_posts("category_name=inicio"); ?>
+                <?php while (have_posts()):
+                    the_post(); ?>
+                    <div class="col-md-8 mx-auto text-center">
+                        <p class="font-size-3">
+                            <?php the_field('introduccion_aparid'); ?>
+                        </p>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="row py-100">
-                <div class="col-md-10 mx-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <?php
-                            $image = get_field('logo_instagram_blanco');
-                            if (!empty($image)): ?>
-                                <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
-                                    alt="<?php echo esc_attr($image['alt']); ?>" />
-                            <?php endif; ?>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <h1 class="font-size-7 font-solway color-azul">
-                                <?php the_field('frase_motivadora'); ?>​
-                            </h1>
+                <div class="row py-100">
+                    <div class="col-md-10 mx-auto">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <?php
+                                $image = get_field('imagen_inicio_frase');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid position-relative" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                                <div class="cuadrado bg-color-azul position-absolute "></div>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <h1 class="font-size-7 font-solway color-azul">
+                                    <?php the_field('frase_motivadora'); ?>​
+                                </h1>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        <?php endwhile; ?>
-    <?php else: ?>
-    <?php endif; ?>
-    <?php wp_reset_query(); ?>
-</div>
+            <?php endwhile; ?>
+        <?php else: ?>
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
+    </div>
+</section>
 
 <!-------------------------------Bienvenido a Holanda------------------------------------------>
 
@@ -88,7 +91,7 @@ Template Name: Inicio
 
 
                 <div class="col-md-2  ">
-                    <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Ver Carta</button></a>
+                    <a href="https://www.smcoe.org/assets/files/About_FIL/San%20Mateo%20County%20SELPA_FIL/Parent%20and%20Community_FIL/RPC%20Handbook_FIL/Bienvenido%20a%20Holanda%20-%20Copy.pdf" target="blank"><button class="border1 p-2 w-100 bg-color-beige hover-boton">Ver Carta</button></a>
                 </div>
 
                 <div class="col-md-1"></div>
@@ -101,74 +104,84 @@ Template Name: Inicio
 
 <!-------------------------------Somos Aparid------------------------------------------>
 
-<div class="container-fluid px-100">
-    <div class="row py-100">
-        <?php if (have_posts()): ?>
-            <?php query_posts("category_name=somos"); ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
-                    <?php
-                    $image = get_field('logo_instagram_blanco');
-                    if (!empty($image)): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
-                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                    <h2 class="font-size-7 font-solway color-azul">
-                        <?php the_title(); ?>
-                    </h2>
-                    <p class="font-size-1">
-                        <?php the_field('descripcion_somos'); ?>
-                        <a href="quienes-somos">Ver más</a>
-                    </p>
-                </div>
-            <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
+<section class="somos">
+    <div class="container-fluid px-100">
+        <div class="row py-100">
+            <?php if (have_posts()): ?>
+                <?php query_posts("category_name=somos"); ?>
+                <?php while (have_posts()):
+                    the_post(); ?>
+                    <div class="col-md-5 align-self-center">
+                        <?php
+                        $image = get_field('imagen_somos');
+                        if (!empty($image)): ?>
+                            <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                        <div class="cuadrado bg-color-azul position-absolute "></div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <h2 class="font-size-7 font-solway color-azul">
+                            <?php the_title(); ?>
+                        </h2>
+                        <p class="font-size-1">
+                            <?php the_field('descripcion_somos'); ?>
+                            <a href="quienes-somos">Ver más</a>
+                        </p>
+                    </div>
+                <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+        </div>
     </div>
-</div>
+</section>
 
 <!-------------------------------QUIERES SER SOCIO------------------------------------------>
 
 
-<div class="container-fluid px-100">
-    <div class="row py-100">
-        <!-----todo esto va dentro de un background image(?----->
-        <?php if (have_posts()): ?>
-        <?php query_posts("category_name=socio"); ?>
-        <?php while (have_posts()):
-            the_post(); ?>
-        <div class="col-md-8 mx-auto text-center">
-            <h2 class="font-solway font-size-5 color-naranjo">
-                <?php the_title(); ?>
-            </h2>
+<section class="socios">
+    <div class="container-fluid px-100 qss">
+        <div class="row py-100">
+            <!-----todo esto va dentro de un background image(?----->
+            <?php if (have_posts()): ?>
+            <?php query_posts("category_name=socio"); ?>
+            <?php while (have_posts()):
+                the_post(); ?>
+                <div class="container-fluid p-0 position-relative">
+                    <?php
+                    echo do_shortcode('[smartslider3 slider="3"]');
+                    ?>
+                </div>
+                <div class="container position-absolute ">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto text-center pt-5">
+                            <h2 class="font-solway font-size-5 color-naranjo">
+                                <?php the_title(); ?>
+                            </h2>
+                        </div>
+                    <br>
+                        <div class="col-md-8">
+                            <p class="font-size-2">
+                                <?php the_content(); ?>
+                            </p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2 align-self-center">
+                            <a href="donaciones"><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-md-1"></div>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
         </div>
-        <br>
-
-        <div class="col-md-8">
-            <p class="font-size-3 color-light">
-                <?php the_content(); ?>
-            </p>
-        </div>
-
-        <div class="col-md-1"></div>
-
-        <div class="col-md-2 align-self-center">
-            <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
-        </div>
-
-        <div class="col-md-1"></div>
-        <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
     </div>
-</div>
+</section>
 
 <!-------------------------------CASOS DE ÉXITO------------------------------------------>
 <div class="container-fluid px-100">

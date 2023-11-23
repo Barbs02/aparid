@@ -228,6 +228,176 @@ Template Name: Sindrome de Down
 
 
 
+<!-- Primera sección -->
 
+
+<section> 
+    <div class="container-fluid px-100 py-100">
+        <div class="row">
+            <div class="col-md-5">
+                    <p class="font-size-2">
+                        El síndrome de Down tiene su primera data del año 1.500 A.C. Es identificado inicialmente el siglo pasado por el médico Británico John Langdon Down, pero no fue hasta 1957 cuando el Dr. Jerome Lejeune descubrió la explicación genética y principal de su existencia .
+                        <br>
+                        Nuestro cuerpo está compuesto por miles de células, en cuyo núcleo se encuentran los cromosomas. Estas contienen la información genética de cada ser humano. El código genético de cada persona es único: es una combinación de cromosomas de la madre y el padre. 
+                    </p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <h2 class="font-size-6 font-solway text-center color-azul">"Somos igual que tú"</h2>
+                <p class="font-solway font-size-3 font-light text-end color-azul">Francisco Garrido Pimentel-</p>
+            </div>
+
+            <div class="col-md-6 align-self-center">
+                <h1>Imágen cromosomas</h1>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <p class="font-size-2">
+                    Por lo tanto, cada célula contiene 46 cromosomas en total (Figura Nº 1). 44 de estos cromosomas son llamados regulares, y forman parejas de la 1 a la 22. Los otros 2 restantes corresponden a los cromosomas sexuales, llamados XX si el bebé es niña y XY si es niño.
+                    <br><br>
+                    La célula formada luego comienza a dividirse en 2, 4, 8...y así sucesivamente. En un niño con síndrome de Down, por un error de la naturaleza, la célula formada, en vez de contar con 46 cromosomas, cuenta con 47 (Figura Nº 2).
+                    <br><br>
+                    No se sabe cómo ni por qué el óvulo femenino o el espermatozoide masculino han aportado con 24 cromosomas en vez de los 23 en el par Nº 21. De manera que el padre o la madre aportan 2 cromosomas 21 que, sumados al cromosoma 21 del cónyuge, resultan 3 cromosomas del par 21.
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <p class="font-size-2">
+                    Como esta anomalía se da en el par 21, se le denomina trisomía 21, término que se utiliza también con frecuencia para referirse al síndrome de Down. 
+                    <br><br>
+                    Los últimos estudios señalan que la alteración aparece antes de la concepción, cuando se están formando los óvulos y los espermatozoides. Los óvulos se forman cuando la futura mujer es todavía un feto y está en el vientre de su madre. Por este motivo no debe haber ningún sentimiento de culpabilidad, ya que la alteración no guarda relación alguna con lo que los padres hicieron o dejaron de hacer durante el período del embarazo. (Pueschel, 1997).
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 align-self-center">
+                <h1>Imágen cromosomas</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--     ------------Proceso--------------      -->
+<section>
+    <div class="container-fluid px-100 pb-100">
+        <div class="row">
+            <div class="col-md-5 align-self-center">
+                <h1>Imágen</h1>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <p class="font-size-2">
+                    Nuestro objetivo es que las personas con Síndrome de Down tenga el mejor desarrollo posible, por lo que realizamos diferentes  actividades y talleres que ayuden a su crecimiento personal
+                    <br><br>
+                    Trabajamos incansablemente para que los niños sean primeramente acogidos en el seno familiar y luego incorporándolos a la sociedad por medio de una educación Inclusiva, tanto en Jardines Infantiles como en Colegios comunes de enseñanza.
+                    <br><br>
+                    Desarrollamos actividades que nos permiten generar recursos para dar cabida a numerosas familias de escasos recursos o de ingresos moderados para que sus hijos puedan asistir a nuestros distintos programas de atención.
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <p class="font-size-2">
+                    Proporcionamos un espacio de formación para alumnos de universidades provenientes de carreras afines como, educación diferencial, psicología, educación parvularia, educación física, terapia ocupacional, fonoaudiología, entre otros.
+                    <br><br>
+                    Nos enfocamos hacia un(a) joven con Síndrome de Down, capaz de manejarse y manejar su entorno, una persona con discapacidad intelectual que producto del desarrollo de sus capacidades esté fortalecido(a) para aprovechar las oportunidades que les brinde la sociedad, buscando las oportunidades de desarrollo laboral y ser un aporte a la sociedad.
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 align-self-center">
+                <h1>Imágen</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ---------------A tener en cuenta---------------- -->
+<section>
+    <div class="container-fluid px-100 py-100">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>
+                        <p class="font-size-2">
+                            No existen “grados” de Síndrome de Down. Solo se tiene o no.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font-size-2">
+                            No es una enfermedad, es una condición genética.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font-size-2">
+                            No son “bendiciones” ni “ángeles”
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font-size-2">
+                            No son niños eternos, respetar su edad cronológica
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font-size-2">
+                            Tienen derecho, como todas las otras personas, a tener la oportunidad de desarrollar todo su potencial físico, afectivo y cognitivo, a lo largo de su vida.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font-size-2">
+                            Las personas con discapacidad son sujetos de derechos y no de caridad.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4 align-self-center">
+                <h1>Imágen</h1>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row py-100">
+            
+            <div class="col-md-4 justify-content-center">
+                <h1>IMG</h1>
+                <br>
+                <h2 class="color-azul font-solway font-size-6">
+                    Comunicación
+                </h2>
+                <br>
+                <p class="font-size-2">
+                    La comunicación es clave. Habla con ellos de manera clara y amigable, manteniendo un contacto visual y siendo paciente si tienen dificultades para expresarse. Escucha activamente lo que tienen que decir.
+                </p>
+            </div>
+            <div class="col-md-4 justify-content-center">
+                <h1>IMG</h1>
+                <br>
+                <h2 class="color-azul font-solway font-size-6">
+                    Trátalos con respeto
+                </h2>
+                <br>
+                <p class="font-size-2">
+                    Es fundamental tratar a las personas con síndrome de Down con respeto y dignidad, reconociendo su individualidad y valor como seres humanos.
+                </p>
+            </div>
+            <div class="col-md-4 justify-content-center">
+                <h1>IMG</h1>
+                <br>
+                <h2 class="color-azul font-solway font-size-6">
+
+                </h2>
+                <br>
+                <p class="font-size-2">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+
+</section>
 
 <?php get_footer(); ?>
