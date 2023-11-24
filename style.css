@@ -124,6 +124,11 @@ p {
   padding-right: 100px;
 }
 
+.px-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .hover-boton:hover {
   background-color: #FC9256;
   border-color: #FC9256;
@@ -140,8 +145,25 @@ p {
   border: 1.5px solid #FC9256;
 }
 
+.border3 {
+  background-color: #FFF8EB;
+  border: 3px #FC9256 solid;
+  border-radius: 10px;
+}
+
+.border4 {
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: rgba(18, 18, 18, 0.1921568627) 3px 3px;
+  color: white;
+}
+
 hr {
   opacity: 100%;
+}
+
+.bg-boton {
+  background-color: transparent;
 }
 
 /* +++++++++++++++++++++++++++++++++++++NAV++++++++++++++++++++++++++++++++++++++++++ */

@@ -50,7 +50,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                     <br><br>
 
                     <div class="col-md-4 pt-4 me-5">
-                        <button type="submit" class="border1 p-2 w-100 hover-boton">Enviar</button>
+                        <button type="submit" class="border1 bg-boton p-2 w-100 hover-boton">Enviar</button>
                     </div>
                 </form>
             </div>

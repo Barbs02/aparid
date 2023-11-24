@@ -100,40 +100,88 @@ Template Name: Sindrome de Down
 </div>
 
 <!------------------------------------------------- Quieres Ser Socio ------------------------------------------------->
+<!-------------------------------Somos Aparid------------------------------------------>
 
-<div class="container-fluid px-100">
-    <div class="row py-100">
-        <!-----todo esto va dentro de un background image(?----->
-        <?php if (have_posts()): ?>
-        <?php query_posts("category_name=socio"); ?>
-        <?php while (have_posts()):
-            the_post(); ?>
-        <div class="col-md-8 mx-auto text-center">
-            <h2 class="font-solway font-size-5 color-naranjo">
-                <?php the_title(); ?>
-            </h2>
+<section class="somos">
+    <div class="container-fluid px-100">
+        <div class="row py-100">
+            <?php if (have_posts()): ?>
+                <?php query_posts("category_name=somos"); ?>
+                <?php while (have_posts()):
+                    the_post(); ?>
+                    <div class="col-md-5 align-self-center">
+                        <?php
+                        $image = get_field('imagen_somos');
+                        if (!empty($image)): ?>
+                            <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                        <div class="cuadrado bg-color-azul position-absolute "></div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <h2 class="font-size-7 font-solway color-azul">
+                            <?php the_title(); ?>
+                        </h2>
+                        <p class="font-size-1">
+                            <?php the_field('descripcion_somos'); ?>
+                            <a href="quienes-somos">Ver más</a>
+                        </p>
+                    </div>
+                <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
         </div>
-        <br>
-
-        <div class="col-md-8">
-            <p class="font-size-3 color-light">
-                <?php the_content(); ?>
-            </p>
-        </div>
-
-        <div class="col-md-1"></div>
-
-        <div class="col-md-2 align-self-center">
-            <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
-        </div>
-
-        <div class="col-md-1"></div>
-        <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
     </div>
-</div>
+</section>
+
+<!-------------------------------QUIERES SER SOCIO------------------------------------------>
+
+
+<section class="socios">
+    <div class="container-fluid px-100 qss">
+        <div class="row py-100">
+            <!-----todo esto va dentro de un background image(?----->
+            <?php if (have_posts()): ?>
+            <?php query_posts("category_name=socio"); ?>
+            <?php while (have_posts()):
+                the_post(); ?>
+                <div class="container-fluid p-0 position-relative">
+                    <?php
+                    echo do_shortcode('[smartslider3 slider="3"]');
+                    ?>
+                </div>
+                <div class="container position-absolute ">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto text-center pt-5">
+                            <h2 class="font-solway font-size-5 color-naranjo">
+                                <?php the_title(); ?>
+                            </h2>
+                        </div>
+                        <div class="container mx-auto pt-5">
+                            <div class="row">
+                                <div class="col-md-6 mx-5 px-100">
+                                    <p class="font-size-2 mx-4">
+                                    <?php the_field('parrafo_socio'); ?>
+                                    </p>
+                                </div>
+                                <div class="col-md-2 align-self-center">
+                                    <a href="donaciones"><button class="border4 bg-boton p-2 w-100  hover-boton">Conócenos</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-md-1"></div>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+        </div>
+    </div>
+</section>
 
 <!----------------------------------------------------- Banner Proceso ----------------------------------------------------->
 
@@ -242,7 +290,7 @@ Template Name: Sindrome de Down
                     </p>
             </div>
             <div class="col-md-2"></div>
-            <div class="col-md-5">
+            <div class="col-md-5 align-self-center">
                 <h2 class="font-size-6 font-solway text-center color-azul">"Somos igual que tú"</h2>
                 <p class="font-solway font-size-3 font-light text-end color-azul">Francisco Garrido Pimentel-</p>
             </div>
@@ -384,20 +432,145 @@ Template Name: Sindrome de Down
                 <h1>IMG</h1>
                 <br>
                 <h2 class="color-azul font-solway font-size-6">
-
+                    Evita prejuicios
                 </h2>
                 <br>
                 <p class="font-size-2">
-
+                    No asumas que las personas con síndrome de Down son limitadas en sus capacidades. Cada individuo es único, y muchos tienen talentos y habilidades sorprendentes.
                 </p>
             </div>
         </div>
+        <br>
+        <hr>
     </div>
-    
+ 
+</section>
 
-    
+<!-- ---------------------Trabajamos la inclusión a través de nuestros---------------------------- -->
 
+<section>
+    <div class="container-fluid px-100">
+        <div class="row align-items-center pb-100"></div>
 
+            <div class="col-md-3 text-center">
+                <hr class="my-4 border2 bg-color-naranjo">
+            </div>
+
+            <div class="col-md-6 text-center">
+                <h2 class="font-size-7 font-solway color-azul">Trabajamos la inclusión a través de nuestros programas</h2>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <hr class="my-4 border2 bg-color-naranjo">
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="container-fluid px-100">
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <div class="row border3">
+                    <div class="col-md-4">
+                        <h1>IMG</h1>
+                        <br>
+                        <p class="font-size-2">
+                            Esta foto fue tomada durante una de nuestras actividades de nuestro programas.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="font-size-7 font-solway color-azul">PER</h2>
+                        <br>
+                        <p class="font-size-2">
+                            El Programa de Educación Regular (P.E.R.) es esencial para garantizar que las personas con síndrome de Down, que no han completado la enseñanza básica o media, tengan una transición efectiva a la enseñanza media. Este programa permite trabajar con los estudiantes de acuerdo a programas establecidos por el Ministerio de Educación, Ver màs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 p-4">
+                <div class="row border3">
+                    <div class="col-md-4">
+                        <h1>IMG</h1>
+                        <br>
+                        <p class="font-size-2">
+                            Esta foto fue tomada durante una de nuestras actividades de nuestro programas.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="font-size-7 font-solway color-azul">PEC</h2>
+                        <br>
+                        <p class="font-size-2">
+                        Este programa es grupal, tiene como objetivo mantener en las mejores condiciones cognitivas a los adultos que por falta de oportunidades académicas, laborales, sociales, etc. han perdido habilidades. Este programa apunta a conseguir autonomía funcional, recuperar funciones alteradas, estimular el funcionamiento cognitivo, aumentar el rendimiento y las capacidades cerebrales, recuperar la capacidad cognitiva, Ver más
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mx-auto py-100">
+                <button class="border1 p-2 w-100 hover-boton">Programas</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ---------------------Encuentra más información sobre el Síndrome de Down---------------------------- -->
+
+<section>
+    <div class="container-fluid px-100">
+        <div class="row align-items-center pb-100"></div>
+
+            <div class="col-md-3 text-center">
+                <hr class="my-4 border2 bg-color-naranjo">
+            </div>
+
+            <div class="col-md-6 text-center">
+                <h2 class="font-size-7 font-solway color-azul">Encuentra más información sobre el Síndrome de Down </h2>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <hr class="my-4 border2 bg-color-naranjo">
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="container-fluid px-100">
+        <div class="row">
+            <div class="col-md-4 p-4">
+                <div class="row border3">
+                    <h1>IMG</h1>
+                    <div class=" text-center py-5">
+                        <h2 class="font-solway font-light font-size-4 color-azul">
+                            Federación Española de síndrome de Down
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 p-4">
+                <div class="row border3">
+                    <h1>IMG</h1>
+                    <div class=" text-center py-5">
+                        <h2 class="font-solway font-light font-size-4 color-azul">
+                            Fundación Síndrome de Down de Cantabria
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-4">
+                <div class="row border3">
+                    <h1>IMG</h1>
+                    <div class=" text-center py-5">
+                        <h2 class="font-solway font-light font-size-4 color-azul">
+                            Fundación Iberoamericana Down 21
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </section>
 
 <?php get_footer(); ?>

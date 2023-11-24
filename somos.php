@@ -12,36 +12,41 @@ Template Name: Quienes somos
 
 <!-------------------------------Somos Aparid------------------------------------------>
 
-<div class="container-fluid px-100">
-    <div class="row py-100">
-        <?php if (have_posts()): ?>
-            <?php query_posts("category_name=somos"); ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
-                    <?php
-                    $image = get_field('logo_instagram_blanco');
-                    if (!empty($image)): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
-                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                    <h2 class="font-size-7 font-solway color-azul">
-                        <?php the_title(); ?>
-                    </h2>
-                    <p class="font-size-1">
-                        <?php the_field('descripcion_somos'); ?>
-                    </p>
-                </div>
-            <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
+<!-------------------------------Somos Aparid------------------------------------------>
+
+<section class="somos">
+    <div class="container-fluid px-100">
+        <div class="row py-100">
+            <?php if (have_posts()): ?>
+                <?php query_posts("category_name=somos"); ?>
+                <?php while (have_posts()):
+                    the_post(); ?>
+                    <div class="col-md-5 align-self-center">
+                        <?php
+                        $image = get_field('imagen_somos');
+                        if (!empty($image)): ?>
+                            <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                        <div class="cuadrado bg-color-azul position-absolute "></div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <h2 class="font-size-7 font-solway color-azul">
+                            <?php the_title(); ?>
+                        </h2>
+                        <p class="font-size-1">
+                            <?php the_field('descripcion_somos'); ?>
+                            <a href="quienes-somos">Ver más</a>
+                        </p>
+                    </div>
+                <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+        </div>
     </div>
-</div>
+</section>
 
 <!-------------------------------METODOLOGIA------------------------------------------>
 
@@ -274,40 +279,49 @@ Template Name: Quienes somos
 
 <!-------------------------------QUIERES SER SOCIO------------------------------------------>
 
+<section class="socios">
+    <div class="container-fluid px-100 qss">
+        <div class="row py-100">
+            <!-----todo esto va dentro de un background image(?----->
+            <?php if (have_posts()): ?>
+            <?php query_posts("category_name=socio"); ?>
+            <?php while (have_posts()):
+                the_post(); ?>
+                <div class="container-fluid p-0 position-relative">
+                    <?php
+                    echo do_shortcode('[smartslider3 slider="3"]');
+                    ?>
+                </div>
+                <div class="container position-absolute ">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto text-center pt-5">
+                            <h2 class="font-solway font-size-5 color-naranjo">
+                                <?php the_title(); ?>
+                            </h2>
+                        </div>
+                        <div class="container mx-auto pt-5">
+                            <div class="row">
+                                <div class="col-md-6 mx-5 px-100">
+                                    <p class="font-size-2 mx-4">
+                                    <?php the_field('parrafo_socio'); ?>
+                                    </p>
+                                </div>
+                                <div class="col-md-2 align-self-center">
+                                    <a href="donaciones"><button class="border4 bg-boton p-2 w-100  hover-boton">Conócenos</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<div class="container-fluid px-100">
-    <div class="row py-100">
-        <!-----todo esto va dentro de un background image(?----->
-        <?php if (have_posts()): ?>
-        <?php query_posts("category_name=socio"); ?>
-        <?php while (have_posts()):
-            the_post(); ?>
-        <div class="col-md-8 mx-auto text-center">
-            <h2 class="font-solway font-size-5 color-naranjo">
-                <?php the_title(); ?>
-            </h2>
+            <div class="col-md-1"></div>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
         </div>
-        <br>
-
-        <div class="col-md-8">
-            <p class="font-size-3 color-light">
-                <?php the_content(); ?>
-            </p>
-        </div>
-
-        <div class="col-md-1"></div>
-
-        <div class="col-md-2 align-self-center">
-            <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
-        </div>
-
-        <div class="col-md-1"></div>
-        <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
     </div>
-</div>
+</section>
 
 <!-------------------------------RESEÑAS------------------------------------------>
     <!-- SLIDER PARA RESEÑAS -->

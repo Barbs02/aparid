@@ -8,169 +8,171 @@ Template Name: Servicios
 
 <!------- AQUÍ DEBES PONER EL BANNER DEL SMART SLIDER PRINCIPAL------->
 
-<!-------------------------------CONTENIDO METODOLOGÍA DE TRABAJO------------------------------------------>
-<div class="container-fluid py-100 px-100">
-    <div class="wrap">
-        <div class="timeline-wrap">
-            <h2 class="timeline-title font-solway font-size-7 text-center">Metodologías de trabajo</h2>
-            <p class="font-size-5" >Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
-                vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
-                para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
-            <ul class="timeline">
-                <li class="timeline-item bmw">
-                    <div class="p-timeline-item">
-                        <time class="p-timeline-date font-solway font-size-6">1</time>
-                        <span class="p-timeline-carmodel font-kulim" data-car="1">Programa de Atención Temprana</span>
-                        <div class="p-timeline-block"></div>
-                    </div>
-                </li>
-                <li class="timeline-item mini">
-                    <div class="p-timeline-item">
-                        <time class="p-timeline-date font-solway font-size-6">2</time>
-                        <span class="p-timeline-carmodel font-kulim" data-car="2">Programa de Atención Temprana</span>
-                        <div class="p-timeline-block"></div>
-                    </div>
-                </li>
-                <li class="timeline-item mini">
-                    <div class="p-timeline-item">
-                        <time class="p-timeline-date font-solway font-size-6">3</time>
-                        <span class="p-timeline-carmodel font-kulim" data-car="3">Programa de Atención Temprana</span>
-                        <div class="p-timeline-block"></div>
-                    </div>
-                </li>
-                <li class="timeline-item bmw">
-                    <div class="p-timeline-item">
-                        <time class="p-timeline-date font-solway font-size-6">4</time>
-                        <span class="p-timeline-carmodel font-kulim" data-car="4">Programa de Atención Temprana</span>
-                        <div class="p-timeline-block"></div>
-                    </div>
-                </li>
-                <li class="timeline-item bmw">
-                    <div class="p-timeline-item">
-                        <time class="p-timeline-date font-solway font-size-6">5</time>
-                        <span class="p-timeline-carmodel font-kulim" data-car="5">Programa de Atención Temprana</span>
-                        <div class="p-timeline-block"></div>
-                    </div>
-                </li>
-                <li class="timeline-item bmw">
-                    <div class="p-timeline-item">
-                        <time class="p-timeline-date font-solway font-size-6">6</time>
-                        <span class="p-timeline-carmodel font-kulim" data-car="6">Programa de Atención Temprana</span>
-                        <div class="p-timeline-block"></div>
-                    </div>
-                </li>
-            </ul>
-            <div class="timeline-content">
 
-                <div class="p-timeline-content" data-car="1">
-                    <div class="timeline-content-card">
-                        <h3 class="timeline-content-title bmw">1</h3>
-                        <time class="timeline-content-date font-kulim">Programa de Atención Temprana (0 a 6 años): Kinesiología -
-                            Educación – Fonoaudiología –
-                            Terapia Ocupacional</time>
-                        <p class="font-size-3 font-kulim">
-                            Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
-                            considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas
-                            las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                            Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las
-                            primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                        <div class="close" data-type-close></div>
+
+<!-------------------------------CONTENIDO METODOLOGÍA DE TRABAJO------------------------------------------>
+<section>
+    <div class="container-fluid py-100 px-100">
+        <div class="wrap">
+            <div class="timeline-wrap">
+                <h2 class="timeline-title font-solway font-size-7 text-center">Metodologías de trabajo</h2>
+                <p class="font-size-5">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
+                    vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
+                    para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
+                <ul class="timeline">
+                    <li class="timeline-item bmw">
+                        <div class="p-timeline-item">
+                            <time class="p-timeline-date font-solway font-size-6">1</time>
+                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="1">Programa de Atención
+                                Temprana</span>
+                            <div class="p-timeline-block"></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item mini">
+                        <div class="p-timeline-item">
+                            <time class="p-timeline-date font-solway font-size-6">2</time>
+                            <span class="p-timeline-carmodel font-kulim font-size-4"  data-car="2">Programa de Atención
+                                Temprana</span>
+                            <div class="p-timeline-block"></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item mini">
+                        <div class="p-timeline-item">
+                            <time class="p-timeline-date font-solway font-size-6">3</time>
+                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="3">Programa de Atención
+                                Temprana</span>
+                            <div class="p-timeline-block"></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item bmw">
+                        <div class="p-timeline-item">
+                            <time class="p-timeline-date font-solway font-size-6">4</time>
+                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="4">Programa de Atención
+                                Temprana</span>
+                            <div class="p-timeline-block"></div>
+                        </div>
+                    </li>
+                    <li class="timeline-item bmw">
+                        <div class="p-timeline-item">
+                            <time class="p-timeline-date font-solway font-size-6">5</time>
+                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="5">Programa de Atención
+                                Temprana</span>
+                            <div class="p-timeline-block"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="timeline-content">
+
+                    <div class="p-timeline-content" data-car="1">
+                        <div class="timeline-content-card">
+                            <h3 class="timeline-content-title bmw">1</h3>
+                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
+                                Kinesiología -
+                                Educación – Fonoaudiología –
+                                Terapia Ocupacional</time>
+                            <p class="font-size-3 font-kulim">
+                                Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
+                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
+                                todas
+                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
+                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
+                                las
+                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
+                            <div class="close" data-type-close></div>
+                        </div>
+                        <div class="timeline-content-image">
+                            <!-- Imagen Representativa  -->
+                        </div>
                     </div>
-                    <div class="timeline-content-image">
-                        <!-- Imagen Representativa  -->
+                    <div class="p-timeline-content" data-car="2">
+                        <div class="timeline-content-card">
+                            <h3 class="timeline-content-title mini">2</h3>
+                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
+                                Kinesiología -
+                                Educación – Fonoaudiología –
+                                Terapia Ocupacional</time>
+                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
+                                las habilidades motrices,
+                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
+                                todas
+                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
+                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
+                                las
+                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
+                            <div class="close" data-type-close></div>
+                        </div>
+                        <div class="timeline-content-image">
+                            <!-- Imagen Representativa  -->
+                        </div>
                     </div>
-                </div>
-                <div class="p-timeline-content" data-car="2">
-                    <div class="timeline-content-card">
-                        <h3 class="timeline-content-title mini">2</h3>
-                        <time class="timeline-content-date font-kulim">Programa de Atención Temprana (0 a 6 años): Kinesiología -
-                            Educación – Fonoaudiología –
-                            Terapia Ocupacional</time>
-                        <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
-                            considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas
-                            las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                            Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las
-                            primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                        <div class="close" data-type-close></div>
+                    <div class="p-timeline-content" data-car="3">
+                        <div class="timeline-content-card">
+                            <h3 class="timeline-content-title mini">3</h3>
+                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
+                                Kinesiología -
+                                Educación – Fonoaudiología –
+                                Terapia Ocupacional</time>
+                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
+                                las habilidades motrices,
+                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
+                                todas
+                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
+                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
+                                las
+                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
+                            <div class="close" data-type-close></div>
+                        </div>
+                        <div class="timeline-content-image">
+                            <!-- Imagen Representativa  -->
+                        </div>
                     </div>
-                    <div class="timeline-content-image">
-                        <!-- Imagen Representativa  -->
+                    <div class="p-timeline-content" data-car="4">
+                        <div class="timeline-content-card">
+                            <h3 class="timeline-content-title bmw">4</h3>
+                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
+                                Kinesiología -
+                                Educación – Fonoaudiología –
+                                Terapia Ocupacional</time>
+                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
+                                las habilidades motrices,
+                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
+                                todas
+                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
+                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
+                                las
+                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
+                            <div class="close" data-type-close></div>
+                        </div>
+                        <div class="timeline-content-image">
+                            <!-- Imagen Representativa  -->
+                        </div>
                     </div>
-                </div>
-                <div class="p-timeline-content" data-car="3">
-                    <div class="timeline-content-card">
-                        <h3 class="timeline-content-title mini">3</h3>
-                        <time class="timeline-content-date font-kulim">Programa de Atención Temprana (0 a 6 años): Kinesiología -
-                            Educación – Fonoaudiología –
-                            Terapia Ocupacional</time>
-                        <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
-                            considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas
-                            las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                            Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las
-                            primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                        <div class="close" data-type-close></div>
-                    </div>
-                    <div class="timeline-content-image">
-                        <!-- Imagen Representativa  -->
-                    </div>
-                </div>
-                <div class="p-timeline-content" data-car="4">
-                    <div class="timeline-content-card">
-                        <h3 class="timeline-content-title bmw">4</h3>
-                        <time class="timeline-content-date font-kulim">Programa de Atención Temprana (0 a 6 años): Kinesiología -
-                            Educación – Fonoaudiología –
-                            Terapia Ocupacional</time>
-                        <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
-                            considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas
-                            las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                            Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las
-                            primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                        <div class="close" data-type-close></div>
-                    </div>
-                    <div class="timeline-content-image">
-                        <!-- Imagen Representativa  -->
-                    </div>
-                </div>
-                <div class="p-timeline-content" data-car="5">
-                    <div class="timeline-content-card">
-                        <h3 class="timeline-content-title bmw">5</h3>
-                        <time class="timeline-content-date font-kulim">Programa de Atención Temprana (0 a 6 años): Kinesiología -
-                            Educación – Fonoaudiología –
-                            Terapia Ocupacional</time>
-                        <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
-                            considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas
-                            las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                            Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las
-                            primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                        <div class="close" data-type-close></div>
-                    </div>
-                    <div class="timeline-content-image">
-                        <!-- Imagen Representativa  -->
-                    </div>
-                </div>
-                <div class="p-timeline-content" data-car="6">
-                    <div class="timeline-content-card">
-                        <h3 class="timeline-content-title bmw">6</h3>
-                        <time class="timeline-content-date font-kulim">Programa de Atención Temprana (0 a 6 años): Kinesiología -
-                            Educación – Fonoaudiología –
-                            Terapia Ocupacional</time>
-                        <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
-                            considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas
-                            las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                            Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las
-                            primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                        <div class="close" data-type-close></div>
-                    </div>
-                    <div class="timeline-content-image">
-                        <!-- Imagen Representativa  -->
+                    <div class="p-timeline-content" data-car="5">
+                        <div class="timeline-content-card">
+                            <h3 class="timeline-content-title bmw">5</h3>
+                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
+                                Kinesiología -
+                                Educación – Fonoaudiología –
+                                Terapia Ocupacional</time>
+                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
+                                las habilidades motrices,
+                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
+                                todas
+                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
+                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
+                                las
+                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
+                            <div class="close" data-type-close></div>
+                        </div>
+                        <div class="timeline-content-image">
+                            <!-- Imagen Representativa  -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-------------------------------LINEA DE TIEMPO---------------------------------------
+</section>
 
 <!-------------------------------Somos Aparid------------------------------------------>
 
@@ -208,46 +210,56 @@ Template Name: Servicios
 
 <!-------------------------------QUIERES SER SOCIO------------------------------------------>
 
+<section class="socios">
+    <div class="container-fluid px-100 qss">
+        <div class="row py-100">
+            <!-----todo esto va dentro de un background image(?----->
+            <?php if (have_posts()): ?>
+            <?php query_posts("category_name=socio"); ?>
+            <?php while (have_posts()):
+                the_post(); ?>
+                <div class="container-fluid p-0 position-relative">
+                    <?php
+                    echo do_shortcode('[smartslider3 slider="3"]');
+                    ?>
+                </div>
+                <div class="container position-absolute ">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto text-center pt-5">
+                            <h2 class="font-solway font-size-5 color-naranjo">
+                                <?php the_title(); ?>
+                            </h2>
+                        </div>
+                        <div class="container mx-auto pt-5">
+                            <div class="row">
+                                <div class="col-md-6 mx-5 px-100">
+                                    <p class="font-size-2 mx-4">
+                                    <?php the_field('parrafo_socio'); ?>
+                                    </p>
+                                </div>
+                                <div class="col-md-2 align-self-center">
+                                    <a href="donaciones"><button class="border4 bg-boton p-2 w-100  hover-boton">Conócenos</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<div class="container-fluid px-100">
-    <div class="row py-100">
-        <!-----todo esto va dentro de un background image(?----->
-        <?php if (have_posts()): ?>
-        <?php query_posts("category_name=socio"); ?>
-        <?php while (have_posts()):
-            the_post(); ?>
-        <div class="col-md-8 mx-auto text-center">
-            <h2 class="font-solway font-size-5 color-naranjo">
-                <?php the_title(); ?>
-            </h2>
+            <div class="col-md-1"></div>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
         </div>
-        <br>
-
-        <div class="col-md-8">
-            <p class="font-size-3 color-light">
-                <?php the_content(); ?>
-            </p>
-        </div>
-
-        <div class="col-md-1"></div>
-
-        <div class="col-md-2 align-self-center">
-            <a href=""><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
-        </div>
-
-        <div class="col-md-1"></div>
-        <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
     </div>
-</div>
+</section>
 
 <!-------AQUÍ DEBES PONER EL BANNER DEL SMART SLIDER PRINCIPAL------->
 
 <h1>BANNER QUE DIGA: PROGAMAS</h1>
 
 <!-------PROGRAMA P.E.R------->
+<section id="programas"></section>
 <div class="container-fluid px-100 py-100">
     <div class="row">
         <div class="col-md-12">
@@ -370,7 +382,7 @@ Template Name: Servicios
 <!-------AQUÍ DEBES PONER EL BANNER DEL SMART SLIDER QUE DIGA "Otras Actividades y Talleres------->
 
 <!-------PRIMERAS 2 TARJETAS------->
-
+<section id="actividades" ></section>
 <div class="container-fluid px-100 pt-100">
     <div class="row">
 

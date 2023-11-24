@@ -127,6 +127,11 @@ p{
     padding-right: 100px;
 }
 
+.px-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .hover-boton:hover{
     background-color: $color5;
     border-color: $color5;
@@ -140,8 +145,22 @@ p{
 .border2{
     border: 1.5px solid $color5;
 }
+.border3{
+    background-color: $color3;
+    border: 3px $color5 solid;
+    border-radius: 10px;
+}
+.border4{
+    border: 3px solid $white;
+    border-radius: 10px;
+    box-shadow: #12121231 3px 3px;
+    color: $white;
+}
 hr{
     opacity: 100%;
+}
+.bg-boton{
+    background-color: transparent;
 }
 //                            INICIO
 

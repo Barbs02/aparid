@@ -91,7 +91,7 @@ Template Name: Inicio
 
 
                 <div class="col-md-2  ">
-                    <a href="https://www.smcoe.org/assets/files/About_FIL/San%20Mateo%20County%20SELPA_FIL/Parent%20and%20Community_FIL/RPC%20Handbook_FIL/Bienvenido%20a%20Holanda%20-%20Copy.pdf" target="blank"><button class="border1 p-2 w-100 bg-color-beige hover-boton">Ver Carta</button></a>
+                    <a href="https://www.smcoe.org/assets/files/About_FIL/San%20Mateo%20County%20SELPA_FIL/Parent%20and%20Community_FIL/RPC%20Handbook_FIL/Bienvenido%20a%20Holanda%20-%20Copy.pdf" target="blank"><button class="border1 p-2 w-100 bg-boton hover-boton">Ver Carta</button></a>
                 </div>
 
                 <div class="col-md-1"></div>
@@ -161,15 +161,17 @@ Template Name: Inicio
                                 <?php the_title(); ?>
                             </h2>
                         </div>
-                    <br>
-                        <div class="col-md-8">
-                            <p class="font-size-2">
-                                <?php the_content(); ?>
-                            </p>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2 align-self-center">
-                            <a href="donaciones"><button class="border1 p-2 w-100 bg-color-beige hover-boton">Conócenos</button></a>
+                        <div class="container mx-auto pt-5">
+                            <div class="row">
+                                <div class="col-md-6 mx-5 px-100">
+                                    <p class="font-size-2 mx-4">
+                                    <?php the_field('parrafo_socio'); ?>
+                                    </p>
+                                </div>
+                                <div class="col-md-2 align-self-center">
+                                    <a href="donaciones"><button class="border4 bg-boton p-2 w-100  hover-boton">Conócenos</button></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -238,7 +240,7 @@ Template Name: Inicio
                     <h4 class="text-center font-size-6 color-azul font-kulim"><?php the_field('titulo_servicio_1'); ?></h4>
                     <hr>
                     <p><?php the_field('descripcion_del_servicio_2'); ?>
-                        <a href="#">Ver más</a>
+                        <a href="servicios-#programas">Ver más</a>
                     </p>
                 </div>
 
@@ -249,7 +251,7 @@ Template Name: Inicio
                     <h4 class="text-center font-size-6 color-azul font-kulim"><?php the_field('titulo_servicio_2'); ?></h4>
                     <hr>
                     <p><?php the_field('descripcion_del_servicio_2'); ?>
-                        <a href="#">Ver más</a>
+                        <a href="servicios-#actividades">Ver más</a>
                     </p>
                 </div>
             <?php endwhile; ?>
@@ -261,7 +263,7 @@ Template Name: Inicio
 
 <!-------------------------------CONOCE LAS OPINIONES DE NUSTRAS FAMILIAS------------------------------------------>
 
-<div class="container-fluid">
+<div class="container-fluid px-100">
     <div class="row align-items-center">
 
         <!---TITULO CON HR A LA IZQUIERDA Y HR A LA DERECHA--> <!-- ....ok sergio -->
