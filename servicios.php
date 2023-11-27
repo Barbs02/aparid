@@ -7,212 +7,207 @@ Template Name: Servicios
 <?php get_header(); ?>
 
 <!------- AQUÍ DEBES PONER EL BANNER DEL SMART SLIDER PRINCIPAL------->
-
+<header>
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="14"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</header>
 
 
 <!-------------------------------CONTENIDO METODOLOGÍA DE TRABAJO------------------------------------------>
 <section>
-    <div class="container-fluid py-100 px-100">
-        <div class="wrap">
-            <div class="timeline-wrap">
-                <h2 class="timeline-title font-solway font-size-7 text-center">Metodologías de trabajo</h2>
-                <p class="font-size-5">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
-                    vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
-                    para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
-                <ul class="timeline">
-                    <li class="timeline-item bmw">
-                        <div class="p-timeline-item">
-                            <time class="p-timeline-date font-solway font-size-6">1</time>
-                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="1">Programa de Atención
-                                Temprana</span>
-                            <div class="p-timeline-block"></div>
-                        </div>
-                    </li>
-                    <li class="timeline-item mini">
-                        <div class="p-timeline-item">
-                            <time class="p-timeline-date font-solway font-size-6">2</time>
-                            <span class="p-timeline-carmodel font-kulim font-size-4"  data-car="2">Programa de Atención
-                                Temprana</span>
-                            <div class="p-timeline-block"></div>
-                        </div>
-                    </li>
-                    <li class="timeline-item mini">
-                        <div class="p-timeline-item">
-                            <time class="p-timeline-date font-solway font-size-6">3</time>
-                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="3">Programa de Atención
-                                Temprana</span>
-                            <div class="p-timeline-block"></div>
-                        </div>
-                    </li>
-                    <li class="timeline-item bmw">
-                        <div class="p-timeline-item">
-                            <time class="p-timeline-date font-solway font-size-6">4</time>
-                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="4">Programa de Atención
-                                Temprana</span>
-                            <div class="p-timeline-block"></div>
-                        </div>
-                    </li>
-                    <li class="timeline-item bmw">
-                        <div class="p-timeline-item">
-                            <time class="p-timeline-date font-solway font-size-6">5</time>
-                            <span class="p-timeline-carmodel font-kulim font-size-4" data-car="5">Programa de Atención
-                                Temprana</span>
-                            <div class="p-timeline-block"></div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="timeline-content">
+    <?php if (have_posts()) : ?>
+            <?php query_posts("category_name=metodologia-servicios "); ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <div class="container-fluid py-100 px-100">
+            <div class="wrap">
+                <div class="timeline-wrap">
+                    <h2 class="timeline-title font-solway font-size-6 font-bold text-center color-azul">Metodologías de trabajo</h2>
+                    <p class="font-size-1 text-center">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
+                        vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
+                        para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
 
-                    <div class="p-timeline-content" data-car="1">
-                        <div class="timeline-content-card">
-                            <h3 class="timeline-content-title bmw">1</h3>
-                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
-                                Kinesiología -
-                                Educación – Fonoaudiología –
-                                Terapia Ocupacional</time>
-                            <p class="font-size-3 font-kulim">
-                                Desde los 0 a 2 años trabajamos principalmente lo que son las habilidades motrices,
-                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
-                                todas
-                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
-                                las
-                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                            <div class="close" data-type-close></div>
+                    <ul class="timeline">
+                        <li class="timeline-item bmw">
+                            <div class="p-timeline-item">
+                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia'); ?></time>
+                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="1"><?php the_field('titulo_paso'); ?></span>
+                                <div class="p-timeline-block"></div>
+                            </div>
+                        </li>
+                        <li class="timeline-item mini">
+                            <div class="p-timeline-item">
+                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_2'); ?></time>
+                                <span class="p-timeline-carmodel font-kulim font-size-4"  data-car="2"><?php the_field('titulo_paso_2'); ?></span>
+                                <div class="p-timeline-block"></div>
+                            </div>
+                        </li>
+                        <li class="timeline-item mini">
+                            <div class="p-timeline-item">
+                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_3'); ?></time>
+                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="3"><?php the_field('titulo_paso_3'); ?></span>
+                                <div class="p-timeline-block"></div>
+                            </div>
+                        </li>
+                        <li class="timeline-item bmw">
+                            <div class="p-timeline-item">
+                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_4'); ?></time>
+                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="4"><?php the_field('titulo_paso_4'); ?></span>
+                                <div class="p-timeline-block"></div>
+                            </div>
+                        </li>
+                        <li class="timeline-item bmw">
+                            <div class="p-timeline-item">
+                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_5'); ?></time>
+                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="5"><?php the_field('titulo_paso_5'); ?></span>
+                                <div class="p-timeline-block"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="timeline-content">
+
+                        <div class="p-timeline-content" data-car="1">
+                            <div class="timeline-content-card">
+                                <h3 class="timeline-content-title bmw"><?php the_field('id_metodologia'); ?></h3>
+                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?></time>
+                                <p class="font-size-1 font-kulim"><?php the_field('descripcion_metodologia'); ?></p>
+                                <div class="close" data-type-close></div>
+                            </div>
+                            <div class="timeline-content-image">
+                                <!-- Imagen Representativa  -->
+                                <?php
+                                $image = get_field('imagen_referencial_metodologia');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
                         </div>
-                        <div class="timeline-content-image">
-                            <!-- Imagen Representativa  -->
+                        <div class="p-timeline-content" data-car="2">
+                            <div class="timeline-content-card">
+                                <h3 class="timeline-content-title mini"><?php the_field('id_metodologia_2'); ?></h3>
+                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?></time>
+                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_metodologia_2'); ?></p>
+                                <div class="close" data-type-close></div>
+                            </div>
+                            <div class="timeline-content-image">
+                                <!-- Imagen Representativa  -->
+                                <?php
+                                $image = get_field('imagen_referencial_metodologia_2');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-timeline-content" data-car="2">
-                        <div class="timeline-content-card">
-                            <h3 class="timeline-content-title mini">2</h3>
-                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
-                                Kinesiología -
-                                Educación – Fonoaudiología –
-                                Terapia Ocupacional</time>
-                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
-                                las habilidades motrices,
-                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
-                                todas
-                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
-                                las
-                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                            <div class="close" data-type-close></div>
+                        <div class="p-timeline-content" data-car="3">
+                            <div class="timeline-content-card">
+                                <h3 class="timeline-content-title mini"><?php the_field('id_metodologia_3'); ?></h3>
+                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_3'); ?><?php the_field('rango_de_edad_3'); ?><?php the_field('programas_3'); ?></time>
+                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_metodologia_3'); ?></p>
+                                <div class="close" data-type-close></div>
+                            </div>
+                            <div class="timeline-content-image">
+                                <!-- Imagen Representativa  -->
+                                <?php
+                                $image = get_field('imagen_referencial_metodologia_3');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
                         </div>
-                        <div class="timeline-content-image">
-                            <!-- Imagen Representativa  -->
+                        <div class="p-timeline-content" data-car="4">
+                            <div class="timeline-content-card">
+                                <h3 class="timeline-content-title bmw"><?php the_field('id_metodologia_4'); ?></h3>
+                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_4'); ?><?php the_field('rango_de_edad_4'); ?><?php the_field('programas_4'); ?></time>
+                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_metodologia_4'); ?></p>
+                                <div class="close" data-type-close></div>
+                            </div>
+                            <div class="timeline-content-image">
+                                <!-- Imagen Representativa  -->
+                                <?php
+                                $image = get_field('imagen_referencial_metodologia_4');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-timeline-content" data-car="3">
-                        <div class="timeline-content-card">
-                            <h3 class="timeline-content-title mini">3</h3>
-                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
-                                Kinesiología -
-                                Educación – Fonoaudiología –
-                                Terapia Ocupacional</time>
-                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
-                                las habilidades motrices,
-                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
-                                todas
-                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
-                                las
-                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                            <div class="close" data-type-close></div>
-                        </div>
-                        <div class="timeline-content-image">
-                            <!-- Imagen Representativa  -->
-                        </div>
-                    </div>
-                    <div class="p-timeline-content" data-car="4">
-                        <div class="timeline-content-card">
-                            <h3 class="timeline-content-title bmw">4</h3>
-                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
-                                Kinesiología -
-                                Educación – Fonoaudiología –
-                                Terapia Ocupacional</time>
-                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
-                                las habilidades motrices,
-                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
-                                todas
-                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
-                                las
-                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                            <div class="close" data-type-close></div>
-                        </div>
-                        <div class="timeline-content-image">
-                            <!-- Imagen Representativa  -->
-                        </div>
-                    </div>
-                    <div class="p-timeline-content" data-car="5">
-                        <div class="timeline-content-card">
-                            <h3 class="timeline-content-title bmw">5</h3>
-                            <time class="timeline-content-date font-kulim font-size-4">Programa de Atención Temprana (0 a 6 años):
-                                Kinesiología -
-                                Educación – Fonoaudiología –
-                                Terapia Ocupacional</time>
-                            <p class="font-size-3 font-kulim"> Desde los 0 a 2 años trabajamos principalmente lo que son
-                                las habilidades motrices,
-                                considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular
-                                todas
-                                las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                                Entre los 2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con
-                                las
-                                primeras etapas de Lectura Global, facilitando así la inclusión escolar.</p>
-                            <div class="close" data-type-close></div>
-                        </div>
-                        <div class="timeline-content-image">
-                            <!-- Imagen Representativa  -->
+                        <div class="p-timeline-content" data-car="5">
+                            <div class="timeline-content-card">
+                                <h3 class="timeline-content-title bmw"><?php the_field('id_metodologia_5'); ?></h3>
+                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_5'); ?><?php the_field('rango_de_edad_5'); ?><?php the_field('programas_5'); ?></time>
+                                <p class="font-size-1 font-kulim"><?php the_field('descripcion_metodologia_5'); ?></p>
+                                <div class="close" data-type-close></div>
+                            </div>
+                            <div class="timeline-content-image">
+                                <!-- Imagen Representativa  -->
+                                <?php
+                                $image = get_field('imagen_referencial_metodologia_5');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
+<!--------------------------------------------------- Somos APARID --------------------------------------------------->
+
+<section class="somos">
+    <div class="container-fluid px-100 bg-color-beige">
+        <div class="row py-100">
+            <?php if (have_posts()): ?>
+                <?php query_posts("category_name=somos"); ?>
+                <?php while (have_posts()):
+                    the_post(); ?>
+                    <div class="col-md-5 align-self-center">
+                        <?php
+                        $image = get_field('imagen_somos');
+                        if (!empty($image)): ?>
+                            <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                        <div class="cuadrado bg-color-azul position-absolute "></div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <h2 class="font-size-7 font-solway color-azul">
+                            <?php the_title(); ?>
+                        </h2>
+                        <p class="font-size-1">
+                            <?php the_field('descripcion_somos'); ?>
+                            <a href="quienes-somos">Ver más</a>
+                        </p>
+                    </div>
+                <?php endwhile; ?>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+        </div>
     </div>
 </section>
 
-<!-------------------------------Somos Aparid------------------------------------------>
-
-<div class="container-fluid px-100 bg-color-beige">
-    <div class="row py-100">
-        <?php if (have_posts()): ?>
-            <?php query_posts("category_name=somos"); ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
-                    <?php
-                    $image = get_field('logo_instagram_blanco');
-                    if (!empty($image)): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
-                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                    <h2 class="font-size-7 font-solway color-azul">
-                        <?php the_title(); ?>
-                    </h2>
-                    <p class="font-size-1">
-                        <?php the_field('descripcion_somos'); ?>
-                        <a href="#">Ver más</a>
-                    </p>
-                </div>
-            <?php endwhile; ?>
-        <?php else: ?>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
-    </div>
-</div>
-
 <!-------------------------------QUIERES SER SOCIO------------------------------------------>
+
 
 <section class="socios">
     <div class="container-fluid px-100 qss">
-        <div class="row py-100">
+        <div class="row">
             <!-----todo esto va dentro de un background image(?----->
             <?php if (have_posts()): ?>
             <?php query_posts("category_name=socio"); ?>
@@ -255,182 +250,213 @@ Template Name: Servicios
 </section>
 
 <!-------AQUÍ DEBES PONER EL BANNER DEL SMART SLIDER PRINCIPAL------->
+<section>
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="13"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
 
-<h1>BANNER QUE DIGA: PROGAMAS</h1>
+<!-------PROGRAMAS------->
+<section id="programas">
+    <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=programas"); ?>
+    <?php while (have_posts()) : the_post(); ?> 
+    <div class="container-fluid mx-auto  py-100">
+        <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h2 class="font-size-6 color-azul font-solway font-bold"><?php the_title(); ?> (<?php the_field('siglas_programas'); ?>)</h2>
+                    <br>
+                </div>
+                <div class="col-md-5">
 
-<!-------PROGRAMA P.E.R------->
-<section id="programas"></section>
-<div class="container-fluid px-100 py-100">
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="font-size-6 color-azul font-solway">Programa de Educación Regular (P.E.R.)</h2>
-            <br>
-        </div>
-        <div class="col-md-5">
+                    <p class="font-size-1">
+                        <?php the_content(); ?>
+                    </p>
+                </div>
 
-            <p class="font-size-1">Busca preparar a los estudiantes para rendir exámenes libres en los distintos cursos
-                (educación básica y educación media) con el fin de certificar sus estudios ante el Ministerio de
-                Educación.
-                <br>
-                El Programa de Educación Regular (P.E.R.) es esencial para garantizar que las personas con síndrome de
-                Down, que no han completado la enseñanza básica o media, tengan una transición efectiva a la enseñanza
-                media. Este programa permite trabajar con los estudiantes de acuerdo a programas establecidos por el
-                Ministerio de Educación, realizando las adaptaciones curriculares correspondientes para que rindan
-                exámenes  libres a fin de cada año escolar en las fechas fijadas por Mineduc, evitando con esto retrasos
-                significativos en su desarrollo académico. El apoyo ofrecidos por el P.E.R. es fundamental promover la
-                igualdad de oportunidades en jóvenes y adultos de nuestra organización.
-            </p>
-        </div>
+                <div class="col-md-2"></div>
 
-        <div class="col-md-2"></div>
-
-        <div class="col-md-5">
-            <h1>AQUÍ NECESITAMOS UNA IMG</h1>
-            <p class="font-size-1">Sin duda alguna este programa ha dado muy buenos resultados y ha sido el responsable
-                de que muchas personas de nuestro Centro  se puedan graduar a tiempo de la enseñanza media y que puedan
-                optar  al mundo laboral obteniendo mejores oportunidades.</p>
-        </div>
-    </div>
-</div>
-
-<!-------OBJETIVOS DEL PROGRAMA P.E.R------->
-<div class="container-fluid py-100 px-100 bg-color-beige">
-    <div class="row">
-        <h2 class="font-size-6 color-azul text-center">Objetivos</h2>
-    </div>
-</div>
-
-<div class="container-fluid px-100 bg-color-beige pb-100">
-    <div class="row">
-
-        <div class="col-md-4">
-            <h1>imageeeen</h1>
-            <p class="font-size-1">Integración óptima al mundo laboral</p>
-        </div>
-
-        <div class="col-md-4">
-            <h1>imageeeen</h1>
-            <p class="font-size-1">Termino de enseñanza media en un tiempo ideal</p>
-        </div>
-
-        <div class="col-md-4">
-            <h1>imageeeen</h1>
-            <p class="font-size-1">Generación de competencias necesarias para el mundo laboral</p>
-        </div>
-
-    </div>
-</div>
-
-<!-------PROGRAMA P.E.C------->
-
-<div class="container-fluid px-100 pt-100">
-    <div class="row">
-        <div class="col-md-12">
-            <h2 class="font-size-6 color-azul font-solway">Programa de Estimulación Cognitiva (P.E.C.)</h2>
-            <br>
-        </div>
-        <div class="col-md-5">
-            <p class="font-size-1">Este programa es grupal, tiene como objetivo mantener en las mejores condiciones
-                cognitivas a los adultos que por falta de oportunidades académicas, laborales, sociales, etc. han
-                perdido habilidades. Este programa apunta a conseguir autonomía funcional, recuperar funciones
-                alteradas, estimular el funcionamiento cognitivo, aumentar el rendimiento y las capacidades cerebrales,
-                recuperar la capacidad cognitiva, evitando o retrasando a edad temprana el Alzheimer en los mayores.
-                <br>
-                La estimulación cognitiva es el conjunto de actividades y técnicas dirigidas a mantener y perfeccionar
-                el funcionamiento cognitivo, a través de ejercicios de memoria, atención, concentración, lenguaje,
-                razonamiento y control, etc.
-            </p>
-        </div>
-
-        <div class="col-md-2"></div>
-
-        <div class="col-md-5">
-            <h1>AQUÍ NECESITAMOS UNA IMG</h1>
-            <p class="font-size-1">Este programa es abordado por  3 profesionales y se imparte 1 vez por semana.</p>
+                <div class="col-md-5">
+                    <?php
+                    $image = get_field('imagen_referencial_programa');
+                    if (!empty($image)): ?>
+                        <img class="img-fluid " src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <p class="font-size-1"><?php the_field('descripcion_extra_del_programa'); ?></p>
+                </div>
         </div>
     </div>
-</div>
+    <!-------OBJETIVOS DEL PROGRAMA ------->
+    <div class="container-fluid mx-auto ">
+        <div class="row">
+            <div class=" pt-4 px-100 bg-color-beige">
+            <div class="row">
+                <h2 class="font-size-6 color-azul text-center  font-solway font-bold">Objetivos</h2>
+            </div>
+        </div>
 
-<!-------OBJETIVOS DEL PROGRAMA P.E.C------->
-<div class="container-fluid py-100 px-100 bg-color-beige">
-    <div class="row">
-        <h2 class="font-size-6 color-azul text-center">Objetivos</h2>
+        <div class="container-fluid px-100 bg-color-beige pb-100 pt-4">
+            <div class="row">
+                    <div class="col-md-4">
+                        <div class="col-md-6 mx-auto">
+                        <?php
+                        $image = get_field('icono_referencial_objetivos_1');
+                        if (!empty($image)): ?>
+                            <img class="img-c mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                        </div>
+                        <p class="font-size-1"><?php the_field('descripcion_objetivo_1'); ?></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-6 mx-auto">
+                        <?php
+                        $image = get_field('icono_referencial_objetivos_2');
+                        if (!empty($image)): ?>
+                            <img class="img-c mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                        </div>
+                        <p class="font-size-1"><?php the_field('descripcion_objetivo_2'); ?></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-6 mx-auto">
+                        <?php
+                        $image = get_field('icono_referencial_objetivos_3');
+                        if (!empty($image)): ?>
+                            <img class="img-c mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <?php endif; ?>
+                        </div>
+                        <p class="font-size-1"><?php the_field('descripcion_objetivo_3'); ?></p>
+                    </div>
+            </div>
+        </div>
+        </div>
     </div>
-</div>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
 
-<div class="container-fluid px-100 bg-color-beige pb-100">
-    <div class="row">
-
-        <div class="col-md-4">
-            <h1>imageeeen</h1>
-            <p class="font-size-1">Recuperar funciones alteradas</p>
-        </div>
-
-        <div class="col-md-4">
-            <h1>imageeeen</h1>
-            <p class="font-size-1">Estimular el funcionamiento cognitivo</p>
-        </div>
-
-        <div class="col-md-4">
-            <h1>imageeeen</h1>
-            <p class="font-size-1">Conseguir Autonomía funcional</p>
-        </div>
-
-    </div>
-</div>
 
 <!-------AQUÍ DEBES PONER EL BANNER DEL SMART SLIDER QUE DIGA "Otras Actividades y Talleres------->
 
-<!-------PRIMERAS 2 TARJETAS------->
-<section id="actividades" ></section>
-<div class="container-fluid px-100 pt-100">
-    <div class="row">
+<section>
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="9"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
 
-        <div class="col-md-3">
-            <h1>IMAGEN</h1>
-        </div>
-        <div class="col-md-3">
-            <p class="font-size-1">
-                Salidas deportivas: Visitas a las  cercanías del plano de Viña del Mar (Quinta Vergara, Playa las
-                Salinas, Laguna Sausalito y diversas plazas).
-            </p>
+<section id="actividades" class="pb-100" >
+    <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=actividades"); ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <!-------PRIMERAS 2 TARJETAS------->
+        <div class="container-fluid  mx-auto px-100 pt-100">
+            <div class="row">
+
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6 p-0 ">
+                            <?php
+                            $image = get_field('imagen_actividad_1');
+                            if (!empty($image)): ?>
+                                <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                    alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <?php endif; ?>
+                        </div>
+                        <div class="col-md-6 bg-color-naranjo p-3 ">
+                            <p class="font-size-1 color-blanco">
+                                <?php the_field('descripcion_actividad_1'); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5 ">
+                    <div class="row">
+                        <div class="col-md-6 bg-color-azul p-3">
+                            <p class="font-size-1 color-blanco"><?php the_field('descripcion_actividad_2'); ?></p>
+                        </div>
+                        <div class="col-md-6 p-0">
+                            <?php
+                            $image = get_field('imagen_actividad_2');
+                            if (!empty($image)): ?>
+                                <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                    alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-3">
-            <p class="font-size-1">
-                Salidas deportivas: Visitas a las  cercanías del plano de Viña del Mar (Quinta Vergara, Playa las
-                Salinas, Laguna Sausalito y diversas plazas).
-            </p>
-        </div>
-        <div class="col-md-3">
-            <h1>IMAGEN</h1>
-        </div>
-        <br><br>
-    </div>
-</div>
+        <!-------ULTIMAS 2 TARJETAS------->
 
-<!-------ULTIMAS 2 TARJETAS------->
+        <div class="container-fluid px-100 pb-100 py-3">
+            <div class="row">
 
-<div class="container-fluid px-100 pb-100">
-    <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6 p-0">
+                            <?php
+                            $image = get_field('imagen_actividad_3');
+                            if (!empty($image)): ?>
+                                <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                    alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <?php endif; ?>
+                        </div>
+                        <div class="col-md-6 bg-color-celeste p-3">
+                            <p class="font-size-1">
+                                <?php the_field('descripcion_actividad_3'); ?>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6 bg-color-amarillo p-3">
+                            <p class="font-size-1">
+                            <?php the_field('descripcion_actividad_4'); ?>
+                            </p>
+                        </div>
+                        <div class="col-md-6 p-0">
+                            <?php
+                            $image = get_field('imagen_actividad_4');
+                            if (!empty($image)): ?>
+                                <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                    alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
 
-        <div class="col-md-3">
-            <h1>IMAGEN</h1>
-        </div>
-        <div class="col-md-3">
-            Salidas deportivas: Visitas a las  cercanías del plano de Viña del Mar (Quinta Vergara, Playa las Salinas,
-            Laguna Sausalito y diversas plazas).
-        </div>
-
-        <div class="col-md-3">
-            Salidas deportivas: Visitas a las  cercanías del plano de Viña del Mar (Quinta Vergara, Playa las Salinas,
-            Laguna Sausalito y diversas plazas).
-        </div>
-        <div class="col-md-3">
-            <h1>IMAGEN</h1>
-        </div>
-    </div>
-</div>
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

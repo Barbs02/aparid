@@ -9,11 +9,20 @@ Template Name: Quienes somos
     <!-------------------------------SOMOS------------------------------------------>
 
     <!-- SLIDER -->
+<header>
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="4"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</header>
+
 
 <!-------------------------------Somos Aparid------------------------------------------>
-
-<!-------------------------------Somos Aparid------------------------------------------>
-
 <section class="somos">
     <div class="container-fluid px-100">
         <div class="row py-100">
@@ -25,7 +34,7 @@ Template Name: Quienes somos
                         <?php
                         $image = get_field('imagen_somos');
                         if (!empty($image)): ?>
-                            <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         <div class="cuadrado bg-color-azul position-absolute "></div>
@@ -37,7 +46,6 @@ Template Name: Quienes somos
                         </h2>
                         <p class="font-size-1">
                             <?php the_field('descripcion_somos'); ?>
-                            <a href="quienes-somos">Ver más</a>
                         </p>
                     </div>
                 <?php endwhile; ?>
@@ -51,6 +59,17 @@ Template Name: Quienes somos
 <!-------------------------------METODOLOGIA------------------------------------------>
 
     <!-- SLIDER DE METODOLOGIA -->
+<section class="pb-100">
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="17"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
 
 <div class="container-fluid px-100 mx-auto pb-100">
     <div class="row">
@@ -112,176 +131,308 @@ Template Name: Quienes somos
 </div>
 
 <!-------------------------------CASOS DE ÉXITO------------------------------------------>
+<section class="casos">
+        <div class="container-fluid px-100 bg-color-beige">
+            <h2 class="font-size-7 font-solway color-azul py-4">Casos de éxito</h2>
+            <div class="row pb-100">
+                <?php if (have_posts()): ?>
+                    <?php query_posts("category_name=casos-de-exito"); ?>
+                    <?php while (have_posts()):
+                        the_post(); ?>
+                        <div class="col-md-4 text-center">
+                            <?php
+                            $image = get_field('imagen_casos');
+                            if (!empty($image)): ?>
+                                <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                                    alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <?php endif; ?>
 
+                            <h4 class="color-azul font-size-4 font-kulim">
+                                <?php the_title(); ?>
+                            </h4>
+                            <p class="font-size-1">
+                                <?php the_field('profesion_casos'); ?>
+                            </p>
+                            <a href="">Ver más</a>
+                        </div>
 
-<div class="container-fluid px-100 bg-color-beige pt-5">
-    <h2 class="font-size-7 font-solway color-azul">Casos de éxito</h2>
-    <br>
-    
-    <div class="row pb-100">
-        <?php if (have_posts()): ?>
-            <?php query_posts("category_name=casos-de-exito"); ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-                <div class="col-md-4">
+                    <?php endwhile; ?>
+                <?php else: ?>
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+        </div>
+</section>
+
+<!-------------------------------DIRECTORIO------------------------------------------>
+
+<section class="pb-100">
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="16"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
+<section class="directorio">
+    <div class="container-fluid px-100">
+        <div class="row justify-content-center">
+            <?php if (have_posts()) : ?>
+                <?php query_posts("category_name=directorio"); ?>
+            <?php while (have_posts()) : the_post(); ?> 
+            <div class="col-md-6 text-center"> <!-- Directora -->
+                <?php
+                $image = get_field('imagen_directora');
+                if (!empty($image)): ?>
+                    <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+                <h3 class="font-size-3 color-azul"><?php the_field('nombre_directora_directorio'); ?></h3>
+                <h4 class="font-size-1 color-naranjo"><?php the_field('cargo_directora'); ?></h4>
+                <p class="font-size-1"><?php the_field('descripcion_de_cargo'); ?></p>
+            </div>
+            <?php endwhile; ?>	
+            <?php else : ?>  
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+    </div>
+</div>
+
+    <div class="container-fluid px-100">
+        <div class="row justify-content-center">
+            <?php if (have_posts()) : ?>
+                <?php query_posts("category_name=directorio"); ?>
+            <?php while (have_posts()) : the_post(); ?> 
+                <div class="col-md-3 text-center"> <!-- Vice-Presidenta -->
                     <?php
-                    $image = get_field('logo_instagram_blanco');
+                    $image = get_field('imagen_vicepresidenta');
                     if (!empty($image)): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                        <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
                             alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
-
-                    <h4>
-                        <?php the_title(); ?>
-                    </h4>
-                    <p>
-                        <?php the_field('profesion_casos'); ?>
-                    </p>
-                    <a href="">Ver más</a>
+                    <h3 class="font-size-3 color-azul"><?php the_field('nombre_vicepresidenta_directorio'); ?></h3>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('cargo_vicepresidenta'); ?></h4>
+                    <p class="font-size-1"><?php the_field('descripcion_de_cargo_v'); ?></p>
                 </div>
 
-            <?php endwhile; ?>
-        <?php else: ?>
+                <div class="col-md-3 text-center"> <!-- Secretaria -->
+                    <?php
+                    $image = get_field('imagen_secretaria');
+                    if (!empty($image)): ?>
+                        <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3 class="font-size-3 color-azul"><?php the_field('nombre_secretaria_directorio'); ?></h3>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('cargo_secretaria'); ?></h4>
+                    <p class="font-size-1"><?php the_field('descripcion_de_cargo_s'); ?></p>
+                </div>
+
+                <div class="col-md-3 text-center"> <!-- Tesorera -->
+                    <?php
+                    $image = get_field('imagen_tesorera');
+                    if (!empty($image)): ?>
+                        <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3 class="font-size-3 color-azul"><?php the_field('nombre_tesorera_directorio'); ?></h3>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('cargo_tesorera'); ?></h4>
+                    <p class="font-size-1"><?php the_field('descripcion_de_cargo_t'); ?></p>
+                </div>
+
+                <div class="col-md-3 text-center"> <!-- 1era Directora -->
+                    <?php
+                    $image = get_field('imagen_1era__directora');
+                    if (!empty($image)): ?>
+                        <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3 class="font-size-3 color-azul"><?php the_field('nombre__1era_directora_directorio'); ?></h3>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('cargo_1era_directora'); ?></h4>
+                    <p class="font-size-1"><?php the_field('descripcion_de_cargo_1d'); ?></p>
+                </div>
+            <?php endwhile; ?>	
+            <?php else : ?>  
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+
+        </div>
+    </div>
+
+    <div class="container-fluid px-100">
+        <div class="row justify-content-center">
+            <?php if (have_posts()) : ?>
+                <?php query_posts("category_name=directorio"); ?>
+            <?php while (have_posts()) : the_post(); ?> 
+                <div class="col-md-4 text-center"> <!-- Rep. profesionales -->
+                    <?php
+                    $image = get_field('imagen_rep_profesionales');
+                    if (!empty($image)): ?>
+                        <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3 class="font-size-3 color-azul"><?php the_field('nombre_rep_profesionales_directorio'); ?></h3>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('cargo_rep_profesionales'); ?></h4>
+                    <p class="font-size-1"><?php the_field('descripcion_de_cargo_p'); ?></p>
+                </div>
+
+                <div class="col-md-4 text-center"> <!-- Secretaria -->
+                    <?php
+                    $image = get_field('imagen_secretaria_2');
+                    if (!empty($image)): ?>
+                        <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3 class="font-size-3 color-azul"><?php the_field('nombre_secretaria_directorio_2'); ?></h3>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('descripcion_de_cargo_s2'); ?></h4>
+                    <p class="font-size-1"><?php the_field('descripcion_de_cargo_s2'); ?></p>
+                </div>
+
+                <div class="col-md-4 text-center"> <!-- Coordinadora Pedagógica -->
+                    <?php
+                    $image = get_field('imagen_coordinadora_pedagogica');
+                    if (!empty($image)): ?>
+                        <img class="img-d pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                    <h3 class="font-size-3 color-azul"><?php the_field('nombre_coordinadora_pedagogica_directorio'); ?></h3>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('cargo_coordinadora_pedagogica'); ?></h4>
+                    <p class="font-size-1"><?php the_field('descripcion_de_cargo_cp'); ?></p>
+                </div>
+            <?php endwhile; ?>	
+            <?php else : ?>  
+            <?php endif; ?>
+            <?php wp_reset_query(); ?>
+            
+        </div>
+    </div>
+    <div class="container-fluid bg-color-beige pt-5">
+    <div class="row">
+        <?php if (have_posts()) : ?>
+            <?php query_posts("category_name=directorio"); ?>
+        <?php while (have_posts()) : the_post(); ?> 
+        <!---tiene un background color por detras--->
+            <h2 class="text-center font-size-6 font-bold font-solway color-azul">Contamos con profesionales</h2>
+            <p class="text-center font-size-1">
+                <?php the_field('titulo_profesionales'); ?>
+            </p>
+            <p class="text-center font-size-1">
+                <?php the_field('nombre_de_profesionales'); ?>
+            </p>
+        <?php endwhile; ?>	
+        <?php else : ?>  
         <?php endif; ?>
         <?php wp_reset_query(); ?>
     </div>
 </div>
+</section>
 
 
 
-<!-------------------------------DIRECTORIO------------------------------------------>
-
-<div class="container-fluid px-100">
-  <div class="row justify-content-center">
-
-    <div class="col-md-6 text-center">
-      <h2>IMAGEN</h2>
-        <h3 class="font-size-3 color-azul">Patricia </h3>
-        <h4 class="font-size-1 color-naranjo">Directora</h4>
-      <p class="font-size-1">Encargada de organizar a aparid y ver que todo funcione como debería ser.</p>
-    </div>
-
-  </div>
-</div>
-
-<div class="container-fluid px-100">
-    <div class="row justify-content-center">
-
-        <div class="col-md-3 text-center">
-            <h3 class="font-size-3 color-azul">Georgette Montañana</h3>
-            <h4 class="font-size-1 color-naranjo">Vice-Presidenta</h4>
-            <p class="font-size-1">Encargada de organizar a aparid y ver que todo funcione como debería ser.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <h3 class="font-size-3 color-azul">Tonka Saavedra</h3>
-            <h4 class="font-size-1 color-naranjo">Secretaria</h4>
-            <p class="font-size-1">Recepciona a las personas y recibe llamadas durante el día.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <h3 class="font-size-3 color-azul">Nina Olivares</h3>
-            <h4 class="font-size-1 color-naranjo">Tesorera</h4>
-            <p class="font-size-1">Maneja temas monetarios dentro de la organización.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <h3 class="font-size-3 color-azul">Ma. José Vergara</h3>
-            <h4 class="font-size-1 color-naranjo">1° Directora</h4>
-            <p class="font-size-1">Maneja temas monetarios dentro de la organización.</p>
-        </div>
-
-    </div>
-</div>
-
-<div class="container-fluid px-100">
-    <div class="row justify-content-center">
-
-        <div class="col-md-4 text-center">
-            <h3 class="font-size-3 color-azul">Ivonne Sandoval</h3>
-            <h4 class="font-size-1 color-naranjo">Rep.Profesionales </h4>
-            <p class="font-size-1">Encargada de organizar a aparid y ver que todo funcione como debería ser.</p>
-        </div>
-
-        <div class="col-md-4 text-center">
-            <h3 class="font-size-3 color-azul">Jacqueline Mora</h3>
-            <h4 class="font-size-1 color-naranjo">Secretaria</h4>
-            <p class="font-size-1">Recepciona a las personas y recibe llamadas durante el día.</p>
-        </div>
-
-        <div class="col-md-4 text-center">
-            <h3 class="font-size-3 color-azul">Sandra Millones</h3>
-            <h4 class="font-size-1 color-naranjo">Coordinadora Pedagógica</h4>
-            <p class="font-size-1">Maneja temas monetarios dentro de la organización.</p>
-        </div>
-        
-    </div>
-</div>
-
-<div class="container-fluid bg-color-beige py-5">
-    <div class="row">
-         <!---tiene un background color por detras--->
-         <h2 class="text-center font-size-6">Contamos con profesionales</h2>
-         <p class="text-center font-size-1">
-         Aparid cuenta con servicios de distintos profesionales como:
-         <br>
-        Kinesióloga - Educadoras diferenciales – Fonoaudiólogas – Terapeuta Ocupacional – Computación – Artes – Yoga 
-         </p>
-    </div>
-</div>
 
 <!-------------------------------ALIANZAS------------------------------------------>
 
     <!-- SLIDER PARA ALIANZAS -->
+<section class="pb-100">
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="15"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
 
-    <div class="container-fluid">
-        <div class="row">
+</section>
+    <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=alianzas"); ?>
+        <?php while (have_posts()) : the_post(); ?> 
+            <div class="container-fluid px-100">
+            <div class="row">
 
-            <div class="col-md-3">
-                <h2>IMAGEN1</h2>
+                <div class="col-md-3">
+                    <?php
+                    $image = get_field('imagen_galeria_1');
+                    if (!empty($image)): ?>
+                        <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+
+
+                <div class="col-md-3">
+                    <?php
+                    $image = get_field('imagen_galeria_2');
+                    if (!empty($image)): ?>
+                        <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+
+                <div class="col-md-3">
+                    <?php
+                    $image = get_field('imagen_galeria_3');
+                    if (!empty($image)): ?>
+                        <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+
+                <div class="col-md-3">
+                    <?php
+                    $image = get_field('imagen_galeria_4');
+                    if (!empty($image)): ?>
+                        <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+
+                <p class="text-center font-size-3"><?php the_field('descripcion_alianzas'); ?></p>
             </div>
-
-
-            <div class="col-md-3">
-                <h2>IMAGEN2</h2>
-            </div>
-
-            <div class="col-md-3">
-                <h2>IMAGEN3</h2>
-            </div>
-
-            <div class="col-md-3">
-                <h2>IMAGEN4</h2>
-            </div>
-
-            <p class="text-center font-size-3">Nuestras alianzas son importantes para poder potenciar las distintas actividades en conjunto, tenemos convenio de colaboración con otras organizaciones como Down21, centros de aprendizaje y diferentes organizaciones que ayuden al Síndrome de Down.</p>
         </div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row">
+        <div class="container-fluid">
+            <div class="row">
 
-            <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
 
-            <div class="col-md-4"> 
-                <h2>IMAGEN EMPRESA 1</h2>
+                <div class="col-md-4"> 
+                    <?php
+                    $image = get_field('logo_alianzas_1');
+                    if (!empty($image)): ?>
+                        <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+
+                <div class="col-md-2"></div>
+
+                <div class="col-md-4"> 
+                    <?php
+                    $image = get_field('logo_alianzas_2');
+                    if (!empty($image)): ?>
+                        <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                            alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+
+                <div class="col-md-1"></div>
             </div>
-
-            <div class="col-md-2"></div>
-
-            <div class="col-md-4"> 
-                <h2>IMAGEN EMPRESA 1</h2>
-            </div>
-
-            <div class="col-md-1"></div>
         </div>
-    </div>
+        <?php endwhile; ?>	
+        <?php else : ?>  
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
+    
 
 <!-------------------------------QUIERES SER SOCIO------------------------------------------>
 
 <section class="socios">
     <div class="container-fluid px-100 qss">
-        <div class="row py-100">
+        <div class="row pt-100">
             <!-----todo esto va dentro de un background image(?----->
             <?php if (have_posts()): ?>
             <?php query_posts("category_name=socio"); ?>
@@ -325,31 +476,34 @@ Template Name: Quienes somos
 
 <!-------------------------------RESEÑAS------------------------------------------>
     <!-- SLIDER PARA RESEÑAS -->
-
-    <div class="container-fluid px-100 py-5">
-        <div class="row">
-            
-            <div class="col-md-1"><p>IMAGEN FLECHA IZQUIERDA</p></div>
-
-            <div class="col-md-5">
-                <h2 class="font-size-6 font-kulim color-azul">Jorge Salas</h2>
-                <hr>
-                <p class="font-size-2">Como organización comunitaria, nos enfocamos hacia un(a) joven con Síndrome de Down para que sea capaz de manejarse y manejar su entorno. 
-                <br>
-                Una persona con discapacidad intelectual puede adaptarse producto del desarrollo de sus capacidades y así aprovechar las oportunidades que les brinde la sociedad, buscando las oportunidades de desarrollo laboral y ser un aporte a la sociedad. <a href="#">Ver más</a> 
-            </div>
-
-            <div class="col-md-5">
-                <h2 class="font-size-6 font-kulim color-azul">Cecilia Martínez</h2>
-                <hr>
-                <p class="font-size-2">Como organización comunitaria, nos enfocamos hacia un(a) joven con Síndrome de Down para que sea capaz de manejarse y manejar su entorno.  
-                <br>
-                Una persona con discapacidad intelectual puede adaptarse producto del desarrollo de sus capacidades y así aprovechar las oportunidades que les brinde la sociedad, buscando las oportunidades de desarrollo laboral y ser un aporte a la sociedad. <a href="#">Ver más</a> 
-            </div>
-
-            <div class="col-md-1"><p>IMAGEN FLECHA DERECHA</p></div>
-
-        </div>
+<section>
+    <?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?> 
+        <?php
+        echo do_shortcode('[smartslider3 slider="6"]');
+        ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</section>
+<section>
+<div class="container-fluid px-100">
+    <div class="row py-100">
+        <?php if (have_posts()) : ?>
+            <?php query_posts("category_name=resenas&showposts=2"); ?>
+        <?php while (have_posts()) : the_post(); ?> 
+                <div class="col-md-6"> 
+                <h2 class="font-size-6 font-solway color-azul"><?php the_field('nombre_resena'); ?></h2>
+                <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
+            <hr>
+            <p> <?php the_field('resena'); ?></p><a href="#">Ver más</a>
+                </div>
+        <?php endwhile; ?>
+        <?php else : ?>  
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
     </div>
-
-<?php get_footer(); ?>
+</div>
+</section>
+<?php get_footer(); ?> 
