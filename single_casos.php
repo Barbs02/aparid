@@ -55,7 +55,7 @@
             </div>
     </div>
 </section>
-
+<!-- Casos de exito ------------------------------------------------------------------>
 <section class="casos">
     <div class="container-fluid px-100">
         <h2 class="font-size-7 font-solway color-azul">Casos de éxito</h2>
@@ -159,7 +159,7 @@
 
 <section class="socios">
     <div class="container-fluid px-100 qss">
-        <div class="row py-100">
+        <div class="row pt-100">
             <!-----todo esto va dentro de un background image(?----->
             <?php if (have_posts()): ?>
             <?php query_posts("category_name=socio"); ?>
@@ -200,15 +200,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
 
 
 <?php get_footer(); ?>
