@@ -329,7 +329,7 @@ Template Name: Donaciones
                 <div class="container position-absolute ">
                     <div class="row">
                         <div class="col-md-8 mx-auto text-center pt-5">
-                            <h2 class="font-solway font-size-5 color-blanco">
+                            <h2 class="font-solway font-size-5 color-blanco font-bold">
                                 <?php the_title(); ?>
                             </h2>
                         </div>
