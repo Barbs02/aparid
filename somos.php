@@ -76,11 +76,11 @@ Template Name: Quienes somos
         <?php if (have_posts()) : ?>
             <?php query_posts("category_name=metodologia-somos"); ?>
         <?php while (have_posts()) : the_post(); ?> 
-            <div class="col-md-3">
+            <div class="col-md-3 align-items-center justify-content-center text-center">
                 <?php
                 $image = get_field('icono_referencial_metodologia');
                 if (!empty($image)): ?>
-                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                    <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
                         alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
                 <p><?php the_field('descripcion_metodologia_somos'); ?></p>
@@ -90,16 +90,16 @@ Template Name: Quienes somos
                     <?php
                     $image = get_field('icono_flecha_metodologia');
                     if (!empty($image)): ?>
-                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                        <img class="" src="<?php echo esc_url($image['url']); ?>"
                             alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 align-items-center justify-content-center text-center">
                 <?php
                 $image = get_field('icono_referencial_metodologia_2');
                 if (!empty($image)): ?>
-                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                    <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
                         alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
                 <p><?php the_field('descripcion_metodologia_somos_2'); ?></p>
@@ -114,11 +114,11 @@ Template Name: Quienes somos
                     <?php endif; ?>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 align-items-center justify-content-center text-center">
                 <?php
                 $image = get_field('icono_referencial_metodologia_3');
                 if (!empty($image)): ?>
-                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                    <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
                         alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
                 <p><?php the_field('descripcion_metodologia_somos_3'); ?></p>

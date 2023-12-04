@@ -25,7 +25,7 @@ Template Name: Servicios
     <?php if (have_posts()) : ?>
             <?php query_posts("category_name=metodologia-servicios "); ?>
     <?php while (have_posts()) : the_post(); ?> 
-        <div class="container-fluid py-100 px-100">
+        <div class="container-fluid py-100 px-100 clearfix">
             <div class="wrap">
                 <div class="timeline-wrap">
                     <h2 class="timeline-title font-solway font-size-6 font-bold text-center color-azul">Metodologías de trabajo</h2>
@@ -37,35 +37,35 @@ Template Name: Servicios
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="1"><?php the_field('titulo_paso'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="1"><?php the_field('titulo_paso'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item mini">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_2'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4"  data-car="2"><?php the_field('titulo_paso_2'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2"  data-car="2"><?php the_field('titulo_paso_2'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item mini">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_3'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="3"><?php the_field('titulo_paso_3'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="3"><?php the_field('titulo_paso_3'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_4'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="4"><?php the_field('titulo_paso_4'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="4"><?php the_field('titulo_paso_4'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_5'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="5"><?php the_field('titulo_paso_5'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="5"><?php the_field('titulo_paso_5'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
@@ -262,13 +262,13 @@ Template Name: Servicios
     <?php wp_reset_query(); ?>
 </section>
 
-<!-------PROGRAMAS------->
+<!-----------------------------------------------------PROGRAMAS----------------------------------------------------->
 <section id="programas">
     <?php if (have_posts()) : ?>
         <?php query_posts("category_name=programas"); ?>
     <?php while (have_posts()) : the_post(); ?> 
-    <div class="container-fluid mx-auto  py-100">
-        <div class="row">
+    <div class="container-fluid mx-auto">
+        <div class="row px-100 py-50">
                 <div class="col-md-12 mx-auto">
                     <h2 class="font-size-6 color-azul font-solway font-bold"><?php the_title(); ?> (<?php the_field('siglas_programas'); ?>)</h2>
                     <br>

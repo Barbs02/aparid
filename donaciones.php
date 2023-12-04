@@ -74,7 +74,7 @@ Template Name: Donaciones
     <?php if (have_posts()) : ?>
             <?php query_posts("category_name=trayecto "); ?>
     <?php while (have_posts()) : the_post(); ?> 
-        <div class="container-fluid py-100 px-100 bg-color-beige">
+        <div class="container-fluid py-100 px-100 bg-color-beige clearfix">
             <div class="wrap">
                 <div class="timeline-wrap">
                     <h2 class="timeline-title font-solway font-size-6 font-bold text-center color-azul"><?php the_title(); ?></h2>
@@ -83,42 +83,42 @@ Template Name: Donaciones
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="1"><?php the_field('titulo_paso_1'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="1"><?php the_field('titulo_paso_1'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item mini">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_2'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4"  data-car="2"><?php the_field('titulo_pasos_2'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2"  data-car="2"><?php the_field('titulo_pasos_2'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item mini">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_3'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="3"><?php the_field('titulo_pasos_3'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="3"><?php the_field('titulo_pasos_3'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_4'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="4"><?php the_field('titulo_pasos_4'); ?></span>
+                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id__trayecto_4'); ?></time>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="4"><?php the_field('titulo_pasos_4'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_5'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="5"><?php the_field('titulo_pasos_5'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="5"><?php the_field('titulo_pasos_5'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
                                 <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_6'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-4" data-car="5"><?php the_field('titulo_pasos_5'); ?></span>
+                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="5"><?php the_field('titulo_pasos_5'); ?></span>
                                 <div class="p-timeline-block"></div>
                             </div>
                         </li>
