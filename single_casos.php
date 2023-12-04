@@ -57,39 +57,36 @@
 </section>
 <!-- Casos de exito ------------------------------------------------------------------>
 <section class="casos">
-    <div class="container-fluid px-100">
-        <h2 class="font-size-7 font-solway color-azul">Casos de éxito</h2>
-    </div>
+        <div class="container-fluid px-100 bg-color-beige">
+            <h2 class="font-size-7 font-solway color-azul py-4">Casos de éxito</h2>
+            <div class="row pb-100">
+                <?php if (have_posts()): ?>
+                    <?php query_posts("category_name=casos-de-exito"); ?>
+                    <?php while (have_posts()):
+                        the_post(); ?>
+                        <div class="col-md-4 text-center">
+                            <?php
+                            $image = get_field('imagen_casos');
+                            if (!empty($image)): ?>
+                                <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
+                                    alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <?php endif; ?>
 
-    <div class="container-fluid px-100">
-        <div class="row pb-100">
-            <?php if (have_posts()): ?>
-                <?php query_posts("category_name=casos-de-exito"); ?>
-                <?php while (have_posts()):
-                    the_post(); ?>
-                    <div class="col-md-4 text-center">
-                        <?php
-                        $image = get_field('imagen_casos');
-                        if (!empty($image)): ?>
-                            <img class="img-fluid pb-3" src="<?php echo esc_url($image['url']); ?>"
-                                alt="<?php echo esc_attr($image['alt']); ?>" />
-                        <?php endif; ?>
+                            <h4 class="color-azul font-size-4 font-kulim">
+                                <?php the_title(); ?>
+                            </h4>
+                            <p class="font-size-1">
+                                <?php the_field('profesion_casos'); ?>
+                            </p>
+                            <a href="">Ver más</a>
+                        </div>
 
-                        <h4 class="color-azul font-size-4 font-kulim">
-                            <?php the_title(); ?>
-                        </h4>
-                        <p class="font-size-1">
-                            <?php the_field('profesion_casos'); ?>
-                        </p>
-                        <a href="<?php the_permalink() ?>">Ver más</a>
-                    </div>
-
-                <?php endwhile; ?>
-            <?php else: ?>
-            <?php endif; ?>
-            <?php wp_reset_query(); ?>
+                    <?php endwhile; ?>
+                <?php else: ?>
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
         </div>
-    </div>
 </section>
 
 <!-- ---------------------Trabajamos la inclusión a través de nuestros---------------------------- -->
