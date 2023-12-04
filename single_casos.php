@@ -91,8 +91,8 @@
 
 <!-- ---------------------Trabajamos la inclusión a través de nuestros---------------------------- -->
 
-<div class="container-fluid px-100 ">
-    <div class="row align-items-center">
+<div class="container-fluid px-100 pt-100">
+    <div class="row align-items-center ">
 
         <!---TITULO CON HR A LA IZQUIERDA Y HR A LA DERECHA--> <!-- ....ok sergio -->
 
