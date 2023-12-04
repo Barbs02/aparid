@@ -26,7 +26,7 @@ Template Name: Inicio
 
 <!-------------------------------primera sección------------------------------------------>
 
-
+<h1>Holaaaaaa</h1>
 <section class="inicio">
     <div class="container-fluid px-100">
         <div class="row pt-100 ">
