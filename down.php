@@ -43,7 +43,7 @@ Template Name: Sindrome de Down
             <?php endif; ?>
             <?php wp_reset_query(); ?>
         </div>
-        <div class="row ">
+        <div class="row "> <!-- segundo loop -->
             <?php if (have_posts()): ?>
                 <?php query_posts("category_name=down"); ?>
                 <?php while (have_posts()):
