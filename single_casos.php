@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container-fluid px-100">
+<div class="container-fluid px-100 clearfix">
 <div class="row "> 
             <?php if (have_posts()): ?>
                 <?php while (have_posts()):
