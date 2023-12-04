@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
 <div class="container-fluid px-100">
-<div class="row "> <!-- segundo loop -->
+<div class="row "> 
             <?php if (have_posts()): ?>
                 <?php while (have_posts()):
                     the_post(); ?>
                     <div class="col-md-1"></div>
                     <div class="col-md-4">
                         <?php
-                        $image = get_field('imagen_cromosomas_1');
+                        $image = get_field('imagen_casos');
                         if (!empty($image)): ?>
                             <img class="img-fluid position-relative " src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
@@ -17,8 +17,9 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
+                        <h2 class="font-solway font-size-5 font-bold color-azul"><?php the_title(); ?></h2>
                         <p class="font-size-1">
-                            <?php the_field('descripcion_sd_2'); ?>
+                            <?php the_field('historia_parte_1_casos'); ?>
                         </p>
                     </div>
                 <?php endwhile; ?>
@@ -33,13 +34,13 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <p class="font-size-1">
-                            <?php the_field('descripcion_sd_3'); ?>
+                            <?php the_field('historia_parte_2_casos'); ?>
                         </p>
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-4">
                         <?php
-                        $image = get_field('imagen_cromosomas_2');
+                        $image = get_field('imagen_casos_2');
                         if (!empty($image)): ?>
                             <img class="img-fluid position-relative" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
