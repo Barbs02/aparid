@@ -220,7 +220,7 @@ Template Name: Inicio
                         <p class="font-size-1">
                             <?php the_field('profesion_casos'); ?>
                         </p>
-                        <a href="">Ver más</a>
+                        <a href="<?php the_permalink() ?>">Ver más</a>
                     </div>
 
                 <?php endwhile; ?>
