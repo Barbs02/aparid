@@ -3,7 +3,6 @@
 <div class="container-fluid px-100">
 <div class="row "> <!-- segundo loop -->
             <?php if (have_posts()): ?>
-                <?php query_posts("category_name=down"); ?>
                 <?php while (have_posts()):
                     the_post(); ?>
                     <div class="col-md-1"></div>
@@ -29,7 +28,6 @@
         </div>
         <div class="row py-100">
             <?php if (have_posts()): ?>
-                <?php query_posts("category_name=down"); ?>
                 <?php while (have_posts()):
                     the_post(); ?>
                     <div class="col-md-1"></div>
