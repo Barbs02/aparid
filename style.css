@@ -270,6 +270,13 @@ hr {
   height: 150px;
 }
 
+.single-casos .cuadrado {
+  padding: 140px 160px;
+  margin-top: -260px;
+  margin-left: -30px;
+  z-index: -1;
+}
+
 /* ++++++++++++++++++++++++++++++++++++Contacto+++++++++++++++++++++++++++++++++++++++++++++ */
 .iframe-mapa {
   width: 100%;
