@@ -156,7 +156,7 @@
 
 <section class="socios">
     <div class="container-fluid px-100 qss">
-        <div class="row pt-100">
+        <div class="row">
             <!-----todo esto va dentro de un background image(?----->
             <?php if (have_posts()): ?>
             <?php query_posts("category_name=socio"); ?>
