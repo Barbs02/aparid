@@ -353,7 +353,7 @@ Template Name: Servicios
 <?php while (have_posts()) : the_post(); ?> 
 			
             <div class="modal " tabindex="-1" id="modal1">
-                <div class="modal-dialog modal-xl mx-auto">
+                <div class="modal-dialog modal-xl mx-auto overflow-auto">
                     <div class="modal-content">
                     <div class="modal-header bg-color-beige">
                         <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
