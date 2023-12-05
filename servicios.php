@@ -34,7 +34,7 @@ Template Name: Servicios
                         para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
 
                         <br>
-                        <?php the_post_thumbnail('full', array('class' => 'mx-auto')); ?>
+                        <?php the_post_thumbnail('full', array('class' => 'mx-auto align-self-center text-center')); ?>
                         <button type="button" class="border1 p-2 w-100 bg-boton hover-boton" data-bs-toggle="modal" data-bs-target="#modal1">
                             Ver Línea de Tiempo
                         </button>
