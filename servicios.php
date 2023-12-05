@@ -40,7 +40,8 @@ Template Name: Servicios
                 </div>
                 <div class="col-md-8 mx-auto">
                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
-                    <button type="button" class="border1 p-2 bg-boton hover-boton" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <br>
+                    <button type="button" class="border1 p-2 mx-auto bg-boton hover-boton" data-bs-toggle="modal" data-bs-target="#modal1">
                             Ver Línea de Tiempo
                         </button>
                 </div>
