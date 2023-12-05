@@ -481,6 +481,7 @@ Template Name: Servicios
                                     <h2 class="color-naranjo font-solway font-size-6">
                                         Programa de Atención Temprana (0 a 6 años): Kinesiología - Educación – Fonoaudiología – Terapia Ocupacional
                                     </h2>
+                                    <h1>holas</h1>
                                     <p class="font-size-3">
                                         Desde los 0 a 2  años trabajamos principalmente lo que son las habilidades motrices, considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
                                         Entre los  2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las primeras etapas de Lectura Global, facilitando así la inclusión escolar.  
