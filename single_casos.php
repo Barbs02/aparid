@@ -145,9 +145,6 @@
             <?php else : ?>  
             <?php endif; ?>
             <?php wp_reset_query(); ?>
-            <div class="col-md-2 mx-auto py-100">
-                    <button class="border1 p-2 w-100 hover-boton" href="servicios-#programas">Programas</button>
-            </div>
         </div>
     </div>
 </section>
