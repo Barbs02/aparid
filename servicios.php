@@ -33,6 +33,10 @@ Template Name: Servicios
                         vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
                         para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
 
+                        <br>
+                        <button type="button" class="border1 p-2 w-100 bg-boton hover-boton" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Abrir Modal
+                        </button>
                     <ul class="timeline">
                         <li class="timeline-item bmw">
                             <div class="p-timeline-item">
@@ -457,6 +461,45 @@ Template Name: Servicios
     <?php wp_reset_query(); ?>
 </section>
 
+<!-- -----------------------------------Modal-------------------------------------- -->
+<div class="container-fluid">
+
+            <div class="modal w-100" tabindex="-1" id="modal1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                    <div class="modal-header bg-color-beige bg-gradient">
+                        <h5 class="modal-title font-solway font-size-6 color-azul">Línea de Tiempo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer bg-color-beige">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-10">
+                                    <h2 class="color-azul font-solway font-size-6">
+                                        Programa de Atención Temprana (0 a 6 años): Kinesiología - Educación – Fonoaudiología – Terapia Ocupacional
+                                    </h2>
+                                    
+                                    <p class="font-size-3">
+                                        Desde los 0 a 2  años trabajamos principalmente lo que son las habilidades motrices, considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
+                                        Entre los  2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las primeras etapas de Lectura Global, facilitando así la inclusión escolar.  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <button type="button" class="border1 p-2 bg-boton hover-boton align-self-end" data-bs-dismiss="modal">Cerrar</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
