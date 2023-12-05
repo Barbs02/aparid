@@ -34,8 +34,9 @@ Template Name: Servicios
                         para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
 
                         <br>
+                        <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                         <button type="button" class="border1 p-2 w-100 bg-boton hover-boton" data-bs-toggle="modal" data-bs-target="#modal1">
-                            Abrir Modal
+                            Ver Línea de Tiempo
                         </button>
                     <ul class="timeline">
                         <li class="timeline-item bmw">
