@@ -462,8 +462,8 @@ Template Name: Servicios
 </section>
 
 <!-- -----------------------------------Modal-------------------------------------- -->
-<div class="modal w-100" tabindex="-1" id="modal1">
-  <div class="modal-dialog">
+<div class="modal " tabindex="-1" id="modal1">
+  <div class="modal-dialog w-100">
     <div class="modal-content">
       <div class="modal-header bg-color-beige bg-gradient">
         <h5 class="modal-title  color-azul">Línea de Tiempo</h5>
