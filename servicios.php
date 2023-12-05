@@ -38,10 +38,10 @@ Template Name: Servicios
                         
                         
                 </div>
-                <div class="col-md-8 mx-auto">
+                <div class="col-md-8 mx-auto text-center align-items-center justify-content-center">
                     <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
                     <br>
-                    <button type="button" class="border1 p-2 mx-auto bg-boton hover-boton color-azul font-size-4" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-4" data-bs-toggle="modal" data-bs-target="#modal1">
                             Ver Línea de Tiempo
                         </button>
                 </div>
