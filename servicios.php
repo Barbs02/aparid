@@ -346,216 +346,218 @@ Template Name: Servicios
 
 <!-- -----------------------------------Modal-------------------------------------- -->
 
-
-
-<?php if (have_posts()) : ?>
-    <?php query_posts("category_name=metodologia-servicios"); ?>
-<?php while (have_posts()) : the_post(); ?> 
-			
-            <div class="modal " tabindex="-1" id="modal1">
-                <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                    <div class="modal-content">
-                    <div class="modal-header bg-color-beige">
-                        <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-footer bg-color-beige">
-                        <div class="pt-3"></div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-2">
-                                <?php
-                                    $image = get_field('imagen_numero_metodologia');
-                                    if (!empty($image)): ?>
-                                        <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                </div>
-                                <div class="col-md-10">
-                                    <h2 class="color-azul font-solway font-size-5">
-                                        <?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
-
-                                    </h2>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p class="font-size-2">
-                                                <?php the_field('descripcion_metodologia'); ?>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                        <?php
-                                    $image = get_field('imagen_referencial_metodologia');
-                                    if (!empty($image)): ?>
-                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="pt-5"></div>
-
-                            <div class="row">
-                                <div class="col-md-2">
-                                <?php
-                                    $image = get_field('imagen_numero_metodologia_2');
-                                    if (!empty($image)): ?>
-                                        <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                </div>
-                                <div class="col-md-10">
-                                    <h2 class="color-azul font-solway font-size-5">
-                                        <?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
-
-                                    </h2>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p class="font-size-2">
-                                                <?php the_field('descripcion_metodologia_2'); ?>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                        <?php
-                                    $image = get_field('imagen_referencial_metodologia_2');
-                                    if (!empty($image)): ?>
-                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-
-                            <div class="pt-5"></div>
-
-                            <div class="row">
-                                <div class="col-md-2">
-                                <?php
-                                    $image = get_field('imagen_numero_metodologia_3');
-                                    if (!empty($image)): ?>
-                                        <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                </div>
-                                <div class="col-md-10">
-                                    <h2 class="color-azul font-solway font-size-5">
-                                        <?php the_field('titulo_paso_3'); ?><?php the_field('rango_de_edad_3'); ?><?php the_field('programas_3'); ?>
-
-                                    </h2>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p class="font-size-2">
-                                                <?php the_field('descripcion_metodologia_3'); ?>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                        <?php
-                                    $image = get_field('imagen_referencial_metodologia_3');
-                                    if (!empty($image)): ?>
-                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-
-                            <div class="pt-5"></div>
-
-                            <div class="row">
-                                <div class="col-md-2">
-                                <?php
-                                    $image = get_field('imagen_numero_metodologia_4');
-                                    if (!empty($image)): ?>
-                                        <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                </div>
-                                <div class="col-md-10">
-                                    <h2 class="color-azul font-solway font-size-5">
-                                        <?php the_field('titulo_paso_4'); ?><?php the_field('rango_de_edad_4'); ?><?php the_field('programas_4'); ?>
-
-                                    </h2>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p class="font-size-2">
-                                                <?php the_field('descripcion_metodologia_4'); ?>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                        <?php
-                                    $image = get_field('imagen_referencial_metodologia_4');
-                                    if (!empty($image)): ?>
-                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-
-                            <div class="pt-5"></div>
-
-
-                            <div class="row">
-                                <div class="col-md-2">
-                                <?php
-                                    $image = get_field('imagen_numero_metodologia_5');
-                                    if (!empty($image)): ?>
-                                        <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                </div>
-                                <div class="col-md-10">
-                                    <h2 class="color-azul font-solway font-size-5">
-                                        <?php the_field('titulo_paso_5'); ?><?php the_field('rango_de_edad_5'); ?><?php the_field('programas_5'); ?>
-
-                                    </h2>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p class="font-size-2">
-                                                <?php the_field('descripcion_metodologia_5'); ?>
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                        <?php
-                                    $image = get_field('imagen_referencial_metodologia_5');
-                                    if (!empty($image)): ?>
-                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                            alt="<?php echo esc_attr($image['alt']); ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-
-                            <div class="pt-5"></div>
-                            
+<div class="container-fluid mx-auto">
+    <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=metodologia-servicios"); ?>
+    <?php while (have_posts()) : the_post(); ?> 
+                
+                <div class="modal " tabindex="-1" id="modal1">
+                    <div class="modal-dialog modal-xl mx-auto overflow-auto">
+                        <div class="modal-content">
+                        <div class="modal-header bg-color-beige">
+                            <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        
-                        
-                        <button type="button" class="border1 p-2 bg-boton hover-boton align-self-end" data-bs-dismiss="modal">Cerrar</button>
+                        <div class="modal-footer bg-color-beige">
+                            <div class="pt-3"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <?php
+                                        $image = get_field('imagen_numero_metodologia');
+                                        if (!empty($image)): ?>
+                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 class="color-azul font-solway font-size-5">
+                                            <?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
 
+                                        </h2>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="font-size-2">
+                                                    <?php the_field('descripcion_metodologia'); ?>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <?php
+                                        $image = get_field('imagen_referencial_metodologia');
+                                        if (!empty($image)): ?>
+                                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="pt-5"></div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <?php
+                                        $image = get_field('imagen_numero_metodologia_2');
+                                        if (!empty($image)): ?>
+                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 class="color-azul font-solway font-size-5">
+                                            <?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
+
+                                        </h2>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="font-size-2">
+                                                    <?php the_field('descripcion_metodologia_2'); ?>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <?php
+                                        $image = get_field('imagen_referencial_metodologia_2');
+                                        if (!empty($image)): ?>
+                                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="pt-5"></div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <?php
+                                        $image = get_field('imagen_numero_metodologia_3');
+                                        if (!empty($image)): ?>
+                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 class="color-azul font-solway font-size-5">
+                                            <?php the_field('titulo_paso_3'); ?><?php the_field('rango_de_edad_3'); ?><?php the_field('programas_3'); ?>
+
+                                        </h2>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="font-size-2">
+                                                    <?php the_field('descripcion_metodologia_3'); ?>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <?php
+                                        $image = get_field('imagen_referencial_metodologia_3');
+                                        if (!empty($image)): ?>
+                                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="pt-5"></div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <?php
+                                        $image = get_field('imagen_numero_metodologia_4');
+                                        if (!empty($image)): ?>
+                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 class="color-azul font-solway font-size-5">
+                                            <?php the_field('titulo_paso_4'); ?><?php the_field('rango_de_edad_4'); ?><?php the_field('programas_4'); ?>
+
+                                        </h2>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="font-size-2">
+                                                    <?php the_field('descripcion_metodologia_4'); ?>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <?php
+                                        $image = get_field('imagen_referencial_metodologia_4');
+                                        if (!empty($image)): ?>
+                                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="pt-5"></div>
+
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                    <?php
+                                        $image = get_field('imagen_numero_metodologia_5');
+                                        if (!empty($image)): ?>
+                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2 class="color-azul font-solway font-size-5">
+                                            <?php the_field('titulo_paso_5'); ?><?php the_field('rango_de_edad_5'); ?><?php the_field('programas_5'); ?>
+
+                                        </h2>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="font-size-2">
+                                                    <?php the_field('descripcion_metodologia_5'); ?>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <?php
+                                        $image = get_field('imagen_referencial_metodologia_5');
+                                        if (!empty($image)): ?>
+                                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                                alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="pt-5"></div>
+                                
+                            </div>
+                            
+                            
+                            <button type="button" class="border1 p-2 bg-boton hover-boton align-self-end" data-bs-dismiss="modal">Cerrar</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-<?php endwhile; ?>	
-<?php else : ?>  
-<?php endif; ?>
-<?php wp_reset_query(); ?>
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+</div>
+
+
 
 
 
