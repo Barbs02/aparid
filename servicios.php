@@ -465,7 +465,7 @@ Template Name: Servicios
 <div class="container-fluid">
 
             <div class="modal w-100" tabindex="-1" id="modal1">
-                <div class="modal-dialog modal-fullscreen">
+                <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                     <div class="modal-header bg-color-beige bg-gradient">
                         <h5 class="modal-title  color-azul">Línea de Tiempo</h5>
