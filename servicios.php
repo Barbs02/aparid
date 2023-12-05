@@ -485,6 +485,7 @@ Template Name: Servicios
                                     if (!empty($image)): ?>
                                         <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                             alt="<?php echo esc_attr($image['alt']); ?>" />
+                                            <?php endif; ?>
                                 </div>
                                 <div class="col-md-10">
                                     <h2 class="color-azul font-solway font-size-5">
@@ -503,6 +504,7 @@ Template Name: Servicios
                                     if (!empty($image)): ?>
                                         <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                             alt="<?php echo esc_attr($image['alt']); ?>" />
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                     
