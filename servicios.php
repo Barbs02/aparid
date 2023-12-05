@@ -347,7 +347,10 @@ Template Name: Servicios
 <!-- -----------------------------------Modal-------------------------------------- -->
 
 <div class="container-fluid mx-auto">
-    <?php if (have_posts()) : ?>
+    <div class="row">
+        <div class="col-md-12">
+
+        <?php if (have_posts()) : ?>
         <?php query_posts("category_name=metodologia-servicios"); ?>
     <?php while (have_posts()) : the_post(); ?> 
                 
@@ -555,6 +558,10 @@ Template Name: Servicios
     <?php else : ?>  
     <?php endif; ?>
     <?php wp_reset_query(); ?>
+
+        </div>
+    </div>
+   
 </div>
 
 
