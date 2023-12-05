@@ -468,7 +468,7 @@ Template Name: Servicios
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                     <div class="modal-header bg-color-beige bg-gradient">
-                        <h5 class="modal-title font-solway font-size-6 color-azul">Línea de Tiempo</h5>
+                        <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-footer bg-color-beige">
