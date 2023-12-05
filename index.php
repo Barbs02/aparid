@@ -44,7 +44,7 @@ Template Name: Inicio
                 <div class="row py-100">
                     <div class="col-md-10 mx-auto">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <?php
                                 $image = get_field('imagen_inicio_frase');
                                 if (!empty($image)): ?>
@@ -53,8 +53,9 @@ Template Name: Inicio
                                 <?php endif; ?>
                                 <div class="cuadrado bg-color-azul position-absolute "></div>
                             </div>
-                            <div class="col-md-6 text-center align-self-center">
-                                <h1 class="font-size-7 font-solway color-azul text-center">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-5 text-center align-self-center just">
+                                <h1 class="font-size-7 font-solway color-azul">
                                     <?php the_field('frase_motivadora'); ?>​
                                 </h1>
                             </div>
