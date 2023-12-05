@@ -463,8 +463,7 @@ Template Name: Servicios
 
 <!-- -----------------------------------Modal-------------------------------------- -->
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
+
             <div class="modal w-100" tabindex="-1" id="modal1">
                 <div class="modal-dialog w-100">
                     <div class="modal-content">
@@ -498,8 +497,7 @@ Template Name: Servicios
             </div>
         </div>
 
-        </div>
-    </div>
+
 </div>
 
 
