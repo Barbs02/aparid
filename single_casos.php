@@ -113,7 +113,7 @@
 </div>
 <section>
 
-    <div class="container-fluid px-100">
+    <div class="container-fluid px-100 pb-100">
         <div class="row">
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=programas"); ?>
