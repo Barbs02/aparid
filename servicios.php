@@ -462,8 +462,13 @@ Template Name: Servicios
 </section>
 
 <!-- -----------------------------------Modal-------------------------------------- -->
+
 <div class="container-fluid">
 
+<?php if (have_posts()) : ?>
+    <?php query_posts("category_name=metodologia-servicios"); ?>
+<?php while (have_posts()) : the_post(); ?> 
+			
             <div class="modal w-100" tabindex="-1" id="modal1">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
@@ -475,7 +480,11 @@ Template Name: Servicios
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-2">
-
+                                <?php
+                                    $image = get_field('imagen_numero_metodologia');
+                                    if (!empty($image)): ?>
+                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                            alt="<?php echo esc_attr($image['alt']); ?>" />
                                 </div>
                                 <div class="col-md-10">
                                     <h2 class="color-azul font-solway font-size-5">
@@ -489,7 +498,11 @@ Template Name: Servicios
                                             </p>
                                         </div>
                                         <div class="col-md-6">
-                                            
+                                        <?php
+                                    $image = get_field('imagen_referencial_metodologia');
+                                    if (!empty($image)): ?>
+                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                            alt="<?php echo esc_attr($image['alt']); ?>" />
                                         </div>
                                     </div>
                                     
@@ -506,8 +519,13 @@ Template Name: Servicios
             </div>
         </div>
 
-
+<?php endwhile; ?>	
+<?php else : ?>  
+<?php endif; ?>
+<?php wp_reset_query(); ?>
 </div>
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
