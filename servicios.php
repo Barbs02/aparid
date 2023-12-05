@@ -346,13 +346,13 @@ Template Name: Servicios
 
 <!-- -----------------------------------Modal-------------------------------------- -->
 
-<div class="container-fluid">
+<div class="container-fluid px-100">
 
 <?php if (have_posts()) : ?>
     <?php query_posts("category_name=metodologia-servicios"); ?>
 <?php while (have_posts()) : the_post(); ?> 
 			
-            <div class="modal w-100" tabindex="-1" id="modal1">
+            <div class="modal" tabindex="-1" id="modal1">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                     <div class="modal-header bg-color-beige">
