@@ -468,7 +468,7 @@ Template Name: Servicios
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                     <div class="modal-header bg-color-beige bg-gradient">
-                        <h5 class="modal-title font-solway font-size-6 color-azul">Línea de Tiempo</h5>
+                        <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-footer bg-color-beige">
@@ -478,15 +478,20 @@ Template Name: Servicios
 
                                 </div>
                                 <div class="col-md-10">
-                                    <h2 class="color-azul font-solway font-size-6">
+                                    <h2 class="color-azul font-solway font-size-5">
                                         Programa de Atención Temprana (0 a 6 años): Kinesiología - Educación – Fonoaudiología – Terapia Ocupacional
                                     </h2>
                                     
-                                    <p class="font-size-3">
+                                    <p class="font-size-2">
                                         Desde los 0 a 2  años trabajamos principalmente lo que son las habilidades motrices, considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
                                         Entre los  2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las primeras etapas de Lectura Global, facilitando así la inclusión escolar.  
                                     </p>
                                 </div>
+
+                                <div class="col-md-2">
+
+                                </div>
+                                
                             </div>
                         </div>
                         
