@@ -478,7 +478,7 @@ Template Name: Servicios
 
                                 </div>
                                 <div class="col-md-10">
-                                    <h2 class="color-azul font-solway font-size-6">
+                                    <h2 class="color-naranjo font-solway font-size-6">
                                         Programa de Atención Temprana (0 a 6 años): Kinesiología - Educación – Fonoaudiología – Terapia Ocupacional
                                     </h2>
                                     <p class="font-size-3">
