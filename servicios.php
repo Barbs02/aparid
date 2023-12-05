@@ -481,15 +481,18 @@ Template Name: Servicios
                                     <h2 class="color-azul font-solway font-size-5">
                                         Programa de Atención Temprana (0 a 6 años): Kinesiología - Educación – Fonoaudiología – Terapia Ocupacional
                                     </h2>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="font-size-2">
+                                                Desde los 0 a 2  años trabajamos principalmente lo que son las habilidades motrices, considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
+                                                Entre los  2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las primeras etapas de Lectura Global, facilitando así la inclusión escolar.  
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            
+                                        </div>
+                                    </div>
                                     
-                                    <p class="font-size-2">
-                                        Desde los 0 a 2  años trabajamos principalmente lo que son las habilidades motrices, considerando que generalmente los niños con S.D. , tienen hipotonía debemos estimular todas las áreas motoras, lo que les permitirá lograr en menor tiempo la marcha.
-                                        Entre los  2 a 6 años se realiza estimulación cognitiva, en esta etapa se comienza con las primeras etapas de Lectura Global, facilitando así la inclusión escolar.  
-                                    </p>
-                                </div>
-
-                                <div class="col-md-2">
-
                                 </div>
                                 
                             </div>
