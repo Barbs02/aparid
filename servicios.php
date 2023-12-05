@@ -490,7 +490,7 @@ Template Name: Servicios
                         </div>
                         
                         
-                        <button type="button" class="border1 p-2 w-100 bg-boton hover-boton align-self-end" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="border1 p-2 bg-boton hover-boton align-self-end" data-bs-dismiss="modal">Cerrar</button>
 
                     </div>
                 </div>
