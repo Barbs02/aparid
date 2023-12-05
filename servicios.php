@@ -462,7 +462,7 @@ Template Name: Servicios
 </section>
 
 <!-- -----------------------------------Modal-------------------------------------- -->
-<div class="modal " tabindex="-1" id="modal1">
+<div class="modal w-100" tabindex="-1" id="modal1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-color-beige bg-gradient">
