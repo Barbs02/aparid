@@ -53,8 +53,8 @@ Template Name: Inicio
                                 <?php endif; ?>
                                 <div class="cuadrado bg-color-azul position-absolute "></div>
                             </div>
-                            <div class="col-md-6 text-center align-self-center justify-content-center">
-                                <h1 class="font-size-7 font-solway color-azul">
+                            <div class="col-md-6 text-center align-self-center">
+                                <h1 class="font-size-7 font-solway color-azul text-center">
                                     <?php the_field('frase_motivadora'); ?>​
                                 </h1>
                             </div>
