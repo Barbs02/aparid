@@ -26,8 +26,8 @@ Template Name: Servicios
             <?php query_posts("category_name=metodologia-servicios "); ?>
     <?php while (have_posts()) : the_post(); ?> 
         <div class="container-fluid py-100 px-100 clearfix">
-            <div class="wrap">
-                <div class="timeline-wrap">
+            <div class="row">
+                <div class="col-md-12">
                     <h2 class="timeline-title font-solway font-size-6 font-bold text-center color-azul">Metodologías de trabajo</h2>
                     <p class="font-size-1 text-center">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
                         vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
@@ -38,133 +38,9 @@ Template Name: Servicios
                         <button type="button" class="border1 p-2 w-100 bg-boton hover-boton" data-bs-toggle="modal" data-bs-target="#modal1">
                             Ver Línea de Tiempo
                         </button>
-                    <ul class="timeline">
-                        <li class="timeline-item bmw">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="1"><?php the_field('titulo_paso'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item mini">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_2'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2"  data-car="2"><?php the_field('titulo_paso_2'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item mini">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_3'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="3"><?php the_field('titulo_paso_3'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item bmw">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_4'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="4"><?php the_field('titulo_paso_4'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item bmw">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_metodologia_5'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="5"><?php the_field('titulo_paso_5'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="timeline-content">
-
-                        <div class="p-timeline-content" data-car="1">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title bmw"><?php the_field('id_metodologia'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?></time>
-                                <p class="font-size-1 font-kulim"><?php the_field('descripcion_metodologia'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                                <!-- Imagen Representativa  -->
-                                <?php
-                                $image = get_field('imagen_referencial_metodologia');
-                                if (!empty($image)): ?>
-                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
-                                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="2">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title mini"><?php the_field('id_metodologia_2'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?></time>
-                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_metodologia_2'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                                <!-- Imagen Representativa  -->
-                                <?php
-                                $image = get_field('imagen_referencial_metodologia_2');
-                                if (!empty($image)): ?>
-                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
-                                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="3">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title mini"><?php the_field('id_metodologia_3'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_3'); ?><?php the_field('rango_de_edad_3'); ?><?php the_field('programas_3'); ?></time>
-                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_metodologia_3'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                                <!-- Imagen Representativa  -->
-                                <?php
-                                $image = get_field('imagen_referencial_metodologia_3');
-                                if (!empty($image)): ?>
-                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
-                                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="4">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title bmw"><?php the_field('id_metodologia_4'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_4'); ?><?php the_field('rango_de_edad_4'); ?><?php the_field('programas_4'); ?></time>
-                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_metodologia_4'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                                <!-- Imagen Representativa  -->
-                                <?php
-                                $image = get_field('imagen_referencial_metodologia_4');
-                                if (!empty($image)): ?>
-                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
-                                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="5">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title bmw"><?php the_field('id_metodologia_5'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_5'); ?><?php the_field('rango_de_edad_5'); ?><?php the_field('programas_5'); ?></time>
-                                <p class="font-size-1 font-kulim"><?php the_field('descripcion_metodologia_5'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                                <!-- Imagen Representativa  -->
-                                <?php
-                                $image = get_field('imagen_referencial_metodologia_5');
-                                if (!empty($image)): ?>
-                                    <img class="img-fluid position-relative z-3" src="<?php echo esc_url($image['url']); ?>"
-                                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+            
         </div>
     <?php endwhile; ?>	
     <?php else : ?>  
