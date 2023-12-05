@@ -54,7 +54,7 @@ Template Name: Inicio
                                 <div class="cuadrado bg-color-azul position-absolute "></div>
                             </div>
                             <div class="col-md-6 text-center align-self-center">
-                                <h1 class="font-size-7 font-solway color-azul">
+                                <h1 class="font-size-7 font-solway color-azul text-center">
                                     <?php the_field('frase_motivadora'); ?>​
                                 </h1>
                             </div>
