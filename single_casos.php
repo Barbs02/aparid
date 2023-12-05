@@ -113,7 +113,7 @@
 </div>
 <section>
 
-    <div class="container-fluid px-100">
+    <div class="container-fluid px-100 pb-100">
         <div class="row">
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=programas"); ?>
@@ -145,9 +145,6 @@
             <?php else : ?>  
             <?php endif; ?>
             <?php wp_reset_query(); ?>
-            <div class="col-md-2 mx-auto py-100">
-                    <button class="border1 p-2 w-100 hover-boton" href="servicios-#programas">Programas</button>
-            </div>
         </div>
     </div>
 </section>
