@@ -512,7 +512,7 @@ Template Name: Servicios
                                 </div>
                                 
                             </div>
-                            <div class="pt-3"></div>
+                            <div class="pt-5"></div>
 
                             <div class="row">
                                 <div class="col-md-2">
@@ -548,7 +548,7 @@ Template Name: Servicios
                                 
                             </div>
 
-                            <div class="pt-3"></div>
+                            <div class="pt-5"></div>
 
                             <div class="row">
                                 <div class="col-md-2">
@@ -584,7 +584,7 @@ Template Name: Servicios
                                 
                             </div>
 
-                            <div class="pt-3"></div>
+                            <div class="pt-5"></div>
 
                             <div class="row">
                                 <div class="col-md-2">
@@ -620,7 +620,7 @@ Template Name: Servicios
                                 
                             </div>
 
-                            <div class="pt-3"></div>
+                            <div class="pt-5"></div>
 
 
                             <div class="row">
@@ -657,7 +657,7 @@ Template Name: Servicios
                                 
                             </div>
 
-                            <div class="pt-3"></div>
+                            <div class="pt-5"></div>
                             
                         </div>
                         
