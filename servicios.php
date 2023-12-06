@@ -191,7 +191,7 @@ Template Name: Servicios
 
         <div class="container-fluid px-100 bg-color-beige pb-100 pt-4">
             <div class="row">
-                    <div class="col-md-4 mx-auto justify-content-center">
+                    <div class="col-md-4 mx-auto text-center">
                         
                         <?php
                         $image = get_field('icono_referencial_objetivos_1');
@@ -203,7 +203,7 @@ Template Name: Servicios
                         <p class="font-size-1"><?php the_field('descripcion_objetivo_1'); ?></p>
                     </div>
 
-                    <div class="col-md-4 mx-auto justify-content-center">
+                    <div class="col-md-4 mx-auto text-center">
                         
                         <?php
                         $image = get_field('icono_referencial_objetivos_2');
@@ -215,7 +215,7 @@ Template Name: Servicios
                         <p class="font-size-1"><?php the_field('descripcion_objetivo_2'); ?></p>
                     </div>
 
-                    <div class="col-md-4 mx-auto align-items-center">
+                    <div class="col-md-4 mx-auto align-self-center">
                         
                         <?php
                         $image = get_field('icono_referencial_objetivos_3');
