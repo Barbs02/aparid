@@ -92,7 +92,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php 
                                     $image = get_field('contacto_telefono_icono');
                                     if( !empty( $image ) ): ?>
-                                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                        <img class="img-fluid w-r-30" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                     <?php endif; ?>
                                     </a>
                                 </div>  
@@ -111,7 +111,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php 
                                     $image = get_field('contacto_correo_icono');
                                     if( !empty( $image ) ): ?>
-                                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                        <img class="img-fluid w-r-30" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                     <?php endif; ?>
                                     </a>
                                 </div>  
@@ -130,7 +130,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php 
                                     $image = get_field('contacto_instagram_icono');
                                     if( !empty( $image ) ): ?>
-                                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                        <img class="img-fluid w-r-30" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                     <?php endif; ?>
                                     </a>
                                 </div>  
@@ -149,7 +149,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php 
                                     $image = get_field('contacto_facebook_icono');
                                     if( !empty( $image ) ): ?>
-                                        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                        <img class="img-fluid w-r-30" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                     <?php endif; ?>
                                     </a>
                                 </div>  

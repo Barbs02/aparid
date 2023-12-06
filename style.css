@@ -784,4 +784,8 @@ hr {
   .qss-padding {
     padding-top: 4px;
   }
+  .w-r-30 {
+    width: 30px;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
