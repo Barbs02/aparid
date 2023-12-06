@@ -196,7 +196,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_1');
                         if (!empty($image)): ?>
-                            <img class="img-c mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
@@ -208,7 +208,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_2');
                         if (!empty($image)): ?>
-                            <img class="img-c mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
@@ -220,7 +220,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_3');
                         if (!empty($image)): ?>
-                            <img class="img-c mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
@@ -354,7 +354,7 @@ Template Name: Servicios
         <?php query_posts("category_name=metodologia-servicios"); ?>
     <?php while (have_posts()) : the_post(); ?> 
                 
-                <div class="modal pe-5" tabindex="-1" id="modal1">
+                <div class="modal" tabindex="-1" id="modal1">
                     <div class="modal-dialog w-100 mx-auto overflow-auto">
                         <div class="modal-content">
                         <div class="modal-header bg-color-beige">
