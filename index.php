@@ -269,7 +269,7 @@ Template Name: Inicio
 
                 <!---PROGRAMAS-->
 
-                <div class="col-md-6 pt-3">
+                <div class="col-md-6 pt-3" data-aos="zoom-in" data-aos-duration="3000">
                         <?php
                         $image = get_field('imagen_referencial_servicios_1');
                         if (!empty($image)): ?>
@@ -286,7 +286,7 @@ Template Name: Inicio
 
                 <!---SERVICIOS-->
 
-                <div class="col-md-6 pt-3">
+                <div class="col-md-6 pt-3" data-aos="zoom-in" data-aos-duration="3000">
                         <?php
                         $image = get_field('imagen_referencial_servicios_2');
                         if (!empty($image)): ?>
