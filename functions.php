@@ -98,4 +98,5 @@ register_nav_menu('main-menu', 'Main menu');
 
 // mostramos miniatura en las entradas 
 add_theme_support( 'post-thumbnails' );
+
 ?>
