@@ -196,7 +196,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_1');
                         if (!empty($image)): ?>
-                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid align-self-center mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
@@ -208,7 +208,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_2');
                         if (!empty($image)): ?>
-                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid align-self-center mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
@@ -220,7 +220,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_3');
                         if (!empty($image)): ?>
-                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid align-self-center mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
