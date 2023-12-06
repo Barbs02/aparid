@@ -115,7 +115,7 @@ Template Name: Servicios
                         <div class="container mx-auto qss-padding">
                             <div class="row">
                                 <div class="col-md-6 mx-5 px-100 d-r-none">
-                                    <p class="font-size-2 mx-4">
+                                    <p class="font-size-2 mx-4 d-r-none">
                                     <?php the_field('parrafo_socio'); ?>
                                     </p>
                                 </div>
