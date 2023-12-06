@@ -215,7 +215,7 @@ Template Name: Servicios
                         <p class="font-size-1"><?php the_field('descripcion_objetivo_2'); ?></p>
                     </div>
 
-                    <div class="col-md-4 mx-auto align-self-center">
+                    <div class="col-md-4 mx-auto text-center">
                         
                         <?php
                         $image = get_field('icono_referencial_objetivos_3');
