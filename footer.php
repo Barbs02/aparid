@@ -5,7 +5,7 @@
         <?php query_posts("category_name=contacto"); ?>
     <?php while (have_posts()) : the_post(); ?> 
         <div class="row pt-4">
-            <div class="col-md-2 w-r-60">
+            <div class="col-md-2">
             <?php 
                 $image = get_field('logo_aparid');
                 if( !empty( $image ) ): ?>
