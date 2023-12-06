@@ -107,12 +107,12 @@ Template Name: Servicios
                 </div>
                 <div class="container position-absolute ">
                     <div class="row">
-                        <div class="col-md-8 mx-auto text-center pt-5">
+                        <div class="col-md-8 mx-auto text-center qss-padding">
                             <h2 class="font-solway color-blanco font-bold qss-texto">
                                 <?php the_title(); ?>
                             </h2>
                         </div>
-                        <div class="container mx-auto pt-5">
+                        <div class="container mx-auto qss-padding">
                             <div class="row">
                                 <div class="col-md-6 mx-5 px-100 d-r-none">
                                     <p class="font-size-2 mx-4">

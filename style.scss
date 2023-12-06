@@ -704,6 +704,9 @@ hr{
 .qss-texto{
     font-size: 36px;
 }
+.qss-padding{
+    padding-top: 20px;
+}
 
 /*  ========== Media Queries ========== */
 
@@ -845,6 +848,9 @@ hr{
 
     .qss-texto{
         font-size: 24px;
+    }
+    .qss-padding{
+        padding-top: 10px;
     }
 }
 
