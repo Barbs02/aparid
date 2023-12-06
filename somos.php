@@ -399,7 +399,7 @@ Template Name: Quienes somos
 
                 <div class="col-md-1"></div>
 
-                <div class="col-md-4"> 
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000"> 
                     <?php
                     $image = get_field('logo_alianzas_1');
                     if (!empty($image)): ?>
@@ -410,7 +410,7 @@ Template Name: Quienes somos
 
                 <div class="col-md-2"></div>
 
-                <div class="col-md-4"> 
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000"> 
                     <?php
                     $image = get_field('logo_alianzas_2');
                     if (!empty($image)): ?>
