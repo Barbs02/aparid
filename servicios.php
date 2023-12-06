@@ -354,7 +354,7 @@ Template Name: Servicios
         <?php query_posts("category_name=metodologia-servicios"); ?>
     <?php while (have_posts()) : the_post(); ?> 
                 
-                <div class="modal ps-5" tabindex="-1" id="modal1">
+                <div class="modal pe-5" tabindex="-1" id="modal1">
                     <div class="modal-dialog w-100 mx-auto overflow-auto">
                         <div class="modal-content">
                         <div class="modal-header bg-color-beige">
