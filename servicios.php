@@ -191,15 +191,15 @@ Template Name: Servicios
 
         <div class="container-fluid px-100 bg-color-beige pb-100 pt-4">
             <div class="row">
-                    <div class="col-md-4">
-                        <div class="col-md-6 mx-auto">
+                    <div class="col-md-4 mx-auto">
+                        
                         <?php
                         $image = get_field('icono_referencial_objetivos_1');
                         if (!empty($image)): ?>
-                            <img class="img-fluid align-self-center mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
-                        </div>
+                        
                         <p class="font-size-1"><?php the_field('descripcion_objetivo_1'); ?></p>
                     </div>
 
@@ -208,7 +208,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_2');
                         if (!empty($image)): ?>
-                            <img class="img-fluid align-self-center mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
@@ -220,7 +220,7 @@ Template Name: Servicios
                         <?php
                         $image = get_field('icono_referencial_objetivos_3');
                         if (!empty($image)): ?>
-                            <img class="img-fluid align-self-center mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                            <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         </div>
