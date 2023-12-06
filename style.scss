@@ -702,7 +702,7 @@ hr{
 
 /* Servicios */
 .qss-texto{
-    font-size: 24px;
+    font-size: 36px;
 }
 
 /*  ========== Media Queries ========== */
@@ -841,6 +841,10 @@ hr{
     // uuuuuuuuuuuuu
     .d-r-none{
         display: none;
+    }
+
+    .qss-texto{
+        font-size: 24px;
     }
 }
 
