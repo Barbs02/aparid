@@ -221,6 +221,17 @@ hr {
   z-index: -1;
 }
 
+.frase-motivadora {
+  top: 1100px;
+  right: 200px;
+}
+
+.circle-css {
+  max-width: 130%;
+  height: auto;
+  left: -50px;
+}
+
 /* ++++++++++++++++++++++++++++++++++++Somos+++++++++++++++++++++++++++++++++++++++++++++ */
 .somos .cuadrado {
   padding: 155px 210px;
@@ -650,6 +661,7 @@ hr {
 }
 
 /* Servicios */
+<<<<<<< Updated upstream
 .qss-texto {
   font-size: 36px;
 }
@@ -658,6 +670,8 @@ hr {
   padding-top: 20px;
 }
 
+=======
+>>>>>>> Stashed changes
 /*  ========== Media Queries ========== */
 /* laptop resolutions*/
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
