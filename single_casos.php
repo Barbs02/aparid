@@ -58,13 +58,13 @@
 <!-- Casos de exito ------------------------------------------------------------------>
 <section class="casos">
         <div class="container-fluid px-100 bg-color-beige">
-            <h2 class="font-size-7 font-solway color-azul py-4">Casos de éxito</h2>
+            <h2 class="font-size-7 font-solway color-azul py-4">Otros casos de éxito</h2>
             <div class="row pb-100">
                 <?php if (have_posts()): ?>
                     <?php query_posts("category_name=casos-de-exito"); ?>
                     <?php while (have_posts()):
                         the_post(); ?>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center"  data-aos="flip-left" data-aos-duration="3000">
                             <?php
                             $image = get_field('imagen_casos');
                             if (!empty($image)): ?>

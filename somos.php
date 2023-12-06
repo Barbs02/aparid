@@ -76,7 +76,7 @@ Template Name: Quienes somos
         <?php if (have_posts()) : ?>
             <?php query_posts("category_name=metodologia-somos"); ?>
         <?php while (have_posts()) : the_post(); ?> 
-            <div class="col-md-3 align-items-center justify-content-center text-center">
+            <div class="col-md-3 align-items-center justify-content-center text-center" data-aos="fade-right" data-aos-duration="1000">
                 <?php
                 $image = get_field('icono_referencial_metodologia');
                 if (!empty($image)): ?>
@@ -86,7 +86,7 @@ Template Name: Quienes somos
                 <p><?php the_field('descripcion_metodologia_somos'); ?></p>
             </div>
 
-            <div class="col-md-1 align-self-center">
+            <div class="col-md-1 align-self-center" data-aos="fade-right" data-aos-duration="1500">
                     <?php
                     $image = get_field('icono_flecha_metodologia');
                     if (!empty($image)): ?>
@@ -95,7 +95,7 @@ Template Name: Quienes somos
                     <?php endif; ?>
             </div>
 
-            <div class="col-md-4 align-items-center justify-content-center text-center">
+            <div class="col-md-4 align-items-center justify-content-center text-center" data-aos="fade-right" data-aos-duration="2000">
                 <?php
                 $image = get_field('icono_referencial_metodologia_2');
                 if (!empty($image)): ?>
@@ -105,7 +105,7 @@ Template Name: Quienes somos
                 <p><?php the_field('descripcion_metodologia_somos_2'); ?></p>
             </div>
 
-            <div class="col-md-1 align-self-center">
+            <div class="col-md-1 align-self-center" data-aos="fade-right" data-aos-duration="2500">
                     <?php
                     $image = get_field('icono_flecha_metodologia');
                     if (!empty($image)): ?>
@@ -114,7 +114,7 @@ Template Name: Quienes somos
                     <?php endif; ?>
             </div>
 
-            <div class="col-md-3 align-items-center justify-content-center text-center">
+            <div class="col-md-3 align-items-center justify-content-center text-center" data-aos="fade-right" data-aos-duration="3000">
                 <?php
                 $image = get_field('icono_referencial_metodologia_3');
                 if (!empty($image)): ?>
@@ -139,7 +139,7 @@ Template Name: Quienes somos
                     <?php query_posts("category_name=casos-de-exito"); ?>
                     <?php while (have_posts()):
                         the_post(); ?>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center"  data-aos="flip-left" data-aos-duration="3000">
                             <?php
                             $image = get_field('imagen_casos');
                             if (!empty($image)): ?>
