@@ -55,7 +55,7 @@ Template Name: Inicio
                             </div>
                             <div class="col-md-2"></div>
                             <div class="col-md-5 text-center  ">
-                            <svg data-aos="fade-up" data-aos-duration="600" class="position-relative circle-css" width="698" height="417" viewBox="0 0 698 417" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg data-aos="fade-up" data-aos-duration="8000" class="position-relative circle-css" width="698" height="417" viewBox="0 0 698 417" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle  cx="56.5" cy="105.5" r="27.5" fill="#FC9256"/>
                                 <path  d="M506 83.5C506 98.6878 493.912 111 479 111C464.088 111 452 98.6878 452 83.5C452 68.3122 464.088 56 479 56C493.912 56 506 68.3122 506 83.5Z" fill="#FC9256"/>
                                 <circle  cx="228.5" cy="352.5" r="24.5" fill="#FC9256"/>
