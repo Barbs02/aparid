@@ -292,7 +292,7 @@ Template Name: Sindrome de Down
                         <div class="row pt-100">
                             <div class="col-md-4 justify-content-center">
                                 <div class="row">
-                                    <div class="col-md-6 mx-auto">
+                                    <div class="col-md-6 mx-auto text-center">
                                     <?php
                                     $image = get_field('icono_referencial_1');
                                     if (!empty($image)): ?>
@@ -311,7 +311,7 @@ Template Name: Sindrome de Down
                             </div>
                             <div class="col-md-4 justify-content-center">
                                 <div class="row">
-                                    <div class="col-md-6 mx-auto">
+                                    <div class="col-md-6 mx-auto text-center">
                                     <?php
                                     $image = get_field('icono_referencial_2');
                                     if (!empty($image)): ?>
@@ -330,7 +330,7 @@ Template Name: Sindrome de Down
                             </div>
                             <div class="col-md-4 justify-content-center">
                                 <div class="row">
-                                    <div class="col-md-6 mx-auto">
+                                    <div class="col-md-6 mx-auto text-center">
                                     <?php
                                     $image = get_field('icono_referencial_3');
                                     if (!empty($image)): ?>
