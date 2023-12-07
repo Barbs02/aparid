@@ -731,8 +731,9 @@ hr{
 }
 /*  ========== Media Queries ========== */
 .z-index-modal{
+    position: static;
     z-index: 15;
-    position: inherit;
+    
 }
 
 /* Mobile devices */
