@@ -139,7 +139,7 @@ Template Name: Quienes somos
                     <?php query_posts("category_name=casos-de-exito"); ?>
                     <?php while (have_posts()):
                         the_post(); ?>
-                        <div class="col-md-4 text-center"  data-aos="flip-left" data-aos-duration="3000">
+                        <div class="col-md-4 text-center"  data-aos="zoom-in" data-aos-duration="3000">
                             <?php
                             $image = get_field('imagen_casos');
                             if (!empty($image)): ?>
