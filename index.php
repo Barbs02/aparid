@@ -208,8 +208,6 @@ Template Name: Inicio
                         </div>
                     </div>
                 </div>
-
-            <div class="col-md-1"></div>
             <?php endwhile; ?>
             <?php else: ?>
             <?php endif; ?>
