@@ -725,7 +725,7 @@ hr{
     left: 10%;
     width: 1px; /* Ancho de la línea vertical */
     height: 100%;
-    z-index: 100; /* Asegura que la línea esté detrás del contenido */
+    z-index: 11; /* Asegura que la línea esté detrás del contenido */
     transform: translateX(-50%);
     border: $color1 3px dashed;
 }
