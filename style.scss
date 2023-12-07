@@ -720,7 +720,7 @@ hr{
 }
 .linea-vertical-container::before {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     width: 1px; /* Ancho de la línea vertical */
