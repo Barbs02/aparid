@@ -676,7 +676,7 @@ hr {
   left: 6%;
   width: 1px; /* Ancho de la línea vertical */
   height: 100%;
-  z-index: 9; /* Asegura que la línea esté detrás del contenido */
+  z-index: 10; /* Asegura que la línea esté detrás del contenido */
   transform: translateX(-50%);
   border: #3683C3 3px dashed;
 }
