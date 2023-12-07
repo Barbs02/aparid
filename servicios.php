@@ -323,7 +323,7 @@ Template Name: Servicios
 
 <!-- -----------------------------------Modal-------------------------------------- -->
 
-<div class="container-fluid mx-auto">
+<div class="container-fluid mx-auto linea-vertical-container">
     <div class="row">
         <div class="col-md-12">
 
@@ -342,7 +342,9 @@ Template Name: Servicios
                             <div class="pt-3"></div>
                             <div class="container-fluid">
                                 <div class="row">
+            
                                     <div class="col-md-2">
+
                                     <?php
                                         $image = get_field('imagen_numero_metodologia');
                                         if (!empty($image)): ?>
