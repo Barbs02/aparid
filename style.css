@@ -669,6 +669,18 @@ hr {
   padding-top: 40px;
 }
 
+.linea-vertical-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 1px; /* Ancho de la línea vertical */
+  height: 100%;
+  background-color: #000; /* Color de la línea */
+  z-index: -1; /* Asegura que la línea esté detrás del contenido */
+  transform: translateX(-50%);
+}
+
 /*  ========== Media Queries ========== */
 /* laptop resolutions*/
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
