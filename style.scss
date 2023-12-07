@@ -725,7 +725,7 @@ hr{
     left: 50%;
     width: 1px; /* Ancho de la línea vertical */
     height: 100%;
-    background-color: #000; /* Color de la línea */
+    background-color: #212121; /* Color de la línea */
     z-index: -1; /* Asegura que la línea esté detrás del contenido */
     transform: translateX(-50%);
 }
