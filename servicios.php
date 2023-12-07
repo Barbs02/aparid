@@ -340,7 +340,7 @@ Template Name: Servicios
                         </div>
                         <div class="modal-footer bg-color-beige">
                             <div class="pt-3"></div>
-                            <div class="container-fluid z-index-modal ">
+                            <div class="container-fluid">
                                 <div class="row">
             
                                     <div class="col-md-2">
@@ -348,7 +348,7 @@ Template Name: Servicios
                                     <?php
                                         $image = get_field('imagen_numero_metodologia');
                                         if (!empty($image)): ?>
-                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                            <img class="mx-auto z-index-modal" src="<?php echo esc_url($image['url']); ?>"
                                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                                                 <?php endif; ?>
                                     </div>
@@ -383,7 +383,7 @@ Template Name: Servicios
                                     <?php
                                         $image = get_field('imagen_numero_metodologia_2');
                                         if (!empty($image)): ?>
-                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                            <img class="mx-auto z-index-modal" src="<?php echo esc_url($image['url']); ?>"
                                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                                                 <?php endif; ?>
                                     </div>
@@ -419,7 +419,7 @@ Template Name: Servicios
                                     <?php
                                         $image = get_field('imagen_numero_metodologia_3');
                                         if (!empty($image)): ?>
-                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                            <img class="mx-auto z-index-modal" src="<?php echo esc_url($image['url']); ?>"
                                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                                                 <?php endif; ?>
                                     </div>
@@ -455,7 +455,7 @@ Template Name: Servicios
                                     <?php
                                         $image = get_field('imagen_numero_metodologia_4');
                                         if (!empty($image)): ?>
-                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                            <img class="mx-auto z-index-modal" src="<?php echo esc_url($image['url']); ?>"
                                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                                                 <?php endif; ?>
                                     </div>
@@ -492,7 +492,7 @@ Template Name: Servicios
                                     <?php
                                         $image = get_field('imagen_numero_metodologia_5');
                                         if (!empty($image)): ?>
-                                            <img class="mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                            <img class="mx-auto z-index-modal" src="<?php echo esc_url($image['url']); ?>"
                                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                                                 <?php endif; ?>
                                     </div>
