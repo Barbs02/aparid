@@ -333,14 +333,14 @@ Template Name: Servicios
                 
                 <div class="modal" tabindex="-1" id="modal1">
                     <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                        <div class="modal-content">
+                        <div class="modal-content linea-vertical-container">
                         <div class="modal-header bg-color-beige">
                             <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-footer bg-color-beige">
                             <div class="pt-3"></div>
-                            <div class="container-fluid linea-vertical-container">
+                            <div class="container-fluid ">
                                 <div class="row">
             
                                     <div class="col-md-2">

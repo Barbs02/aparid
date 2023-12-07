@@ -669,7 +669,7 @@ hr {
   padding-top: 40px;
 }
 
-.linea-vertical-container::before {
+.modal-content .linea-vertical-container::before {
   content: "";
   position: fixed;
   top: 0;
