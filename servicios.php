@@ -105,29 +105,6 @@ Template Name: Servicios
                     echo do_shortcode('[smartslider3 slider="3"]');
                     ?>
                 </div>
-                <div class="container position-absolute ">
-                    <div class="row">
-                        <div class="col-md-8 mx-auto text-center qss-padding">
-                            <h2 class="font-solway color-blanco font-bold qss-texto">
-                                <?php the_title(); ?>
-                            </h2>
-                        </div>
-                        <div class="container mx-auto qss-padding">
-                            <div class="row">
-                                <div class="col-md-6 mx-5 px-100 d-r-none">
-                                    <p class="font-size-2 mx-4 d-r-none">
-                                    <?php the_field('parrafo_socio'); ?>
-                                    </p>
-                                </div>
-                                <div class="col-md-2 align-self-center">
-                                    <a href="donaciones"><button class="border4 bg-boton p-2 w-100  hover-boton">Conócenos</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="col-md-1"></div>
             <?php endwhile; ?>
             <?php else: ?>
             <?php endif; ?>
