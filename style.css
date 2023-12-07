@@ -684,6 +684,7 @@ hr {
 /*  ========== Media Queries ========== */
 .z-index-modal {
   z-index: 15;
+  position: relative;
 }
 
 /* Mobile devices */
