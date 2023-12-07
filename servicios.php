@@ -340,7 +340,7 @@ Template Name: Servicios
                         </div>
                         <div class="modal-footer bg-color-beige">
                             <div class="pt-3"></div>
-                            <div class="container-fluid ">
+                            <div class="container-fluid z-index-modal ">
                                 <div class="row">
             
                                     <div class="col-md-2">

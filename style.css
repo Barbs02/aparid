@@ -673,7 +673,7 @@ hr {
   content: "";
   position: absolute;
   top: 50px;
-  left: 6%;
+  left: 7%;
   width: 1px; /* Ancho de la línea vertical */
   height: 100%;
   z-index: 11; /* Asegura que la línea esté detrás del contenido */
@@ -682,6 +682,10 @@ hr {
 }
 
 /*  ========== Media Queries ========== */
+.z-index-modal {
+  z-index: 15;
+}
+
 /* Mobile devices */
 @media screen and (max-width: 768px) {
   body {
