@@ -101,9 +101,9 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5">
                     <?php the_field('titulo_paso_1'); ?>
                 </h2>
-                <h4 class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto'); ?>
-                </h4>
+                </p>
             </div>
         </div>
         <br><br>
@@ -121,9 +121,9 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5">
                     <?php the_field('titulo_pasos_2'); ?>
                 </h2>
-                <h4 class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto_2'); ?>
-                </h4>
+                </p>
             </div>
         </div>
         <br><br>
@@ -141,9 +141,9 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5">
                     <?php the_field('titulo_pasos_3'); ?>
                 </h2>
-                <h4 class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto_3'); ?>
-                </h4>
+                </p>
             </div>
         </div>
         <br><br>
@@ -161,9 +161,9 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5">
                     <?php the_field('titulo_pasos_4'); ?>
                 </h2>
-                <h4 class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto_4'); ?>
-                </h4>
+                </p>
             </div>
         </div>
         <br><br>
@@ -181,9 +181,9 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5">
                     <?php the_field('titulo_pasos_5'); ?>
                 </h2>
-                <h4 class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto_5'); ?>
-                </h4>
+                </p>
             </div>
         </div>
         <br><br>
@@ -201,9 +201,9 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5">
                     <?php the_field('titulo_pasos_6'); ?>
                 </h2>
-                <h4 class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto_6'); ?>
-                </h4>
+                </p>
             </div>
         </div>
         
