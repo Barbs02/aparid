@@ -672,7 +672,7 @@ hr {
 .linea-vertical-container::before {
   content: "";
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 11%;
   width: 1px; /* Ancho de la línea vertical */
   height: 100%;
