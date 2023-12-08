@@ -66,8 +66,11 @@ Template Name: Servicios
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
                     <h2 class="color-azul font-solway font-size-5">
-                        <?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
+                        <?php the_field('titulo_paso'); ?>
                     </h2>
+                    <h4 class="color-azul font-solway font-size-3">
+                        <?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
+                    </h4>
                 </div>
                 <div class="col-md-2 col-sm-4 align-self-center">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal1">
@@ -87,8 +90,11 @@ Template Name: Servicios
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
                     <h2 class="color-azul font-solway font-size-5">
-                        <?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
+                        <?php the_field('titulo_paso_2'); ?>
                     </h2>
+                    <h4 class="color-azul font-solway font-size-3">
+                        <?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
+                    </h4>
                 </div>
                 <div class="col-md-2 col-sm-4 align-self-center">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal1">
