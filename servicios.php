@@ -52,12 +52,12 @@ Template Name: Servicios
 
 
 
-        <div class="container-fluid px-100">
-            <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
+        <div class="container-fluid px-100 position-relative">
+            <h5 class="font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
             <br><br>
             <div class="row">
                 <div class="col-md-2 col-sm-4">
-                <?php
+                    <?php
                     $image = get_field('imagen_numero_metodologia');
                     if (!empty($image)): ?>
                         <img class="mx-auto " src="<?php echo esc_url($image['url']); ?>"
@@ -67,6 +67,19 @@ Template Name: Servicios
                 <div class="col-md-10 col-sm-8">
                     <h2 class="color-azul font-solway font-size-5">
                         <?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
+                    </h2>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <?php
+                    $image = get_field('imagen_numero_metodologia_2');
+                    if (!empty($image)): ?>
+                        <img class="mx-auto " src="<?php echo esc_url($image['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-10 col-sm-8">
+                    <h2 class="color-azul font-solway font-size-5">
+                        <?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
                     </h2>
                 </div>
             </div>
