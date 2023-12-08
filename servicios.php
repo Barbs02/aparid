@@ -52,10 +52,10 @@ Template Name: Servicios
 
 
 
-        <div class="container-fluid px-100 position-relative linea-vertical-container">
+        <div class="container-fluid px-100 position-relative ">
             <h5 class="font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
             <br><br>
-            <div class="row">
+            <div class="row linea-vertical-container">
                 <div class="col-md-2 col-sm-4 align-self-center">
                     <?php
                     $image = get_field('imagen_numero_metodologia');
@@ -79,7 +79,7 @@ Template Name: Servicios
                 </div>
             </div>
             <br><br>
-            <div class="row">
+            <div class="row linea-vertical-container">
                 <div class="col-md-2 col-sm-4 align-self-center">
                     <?php
                     $image = get_field('imagen_numero_metodologia_2');
@@ -103,7 +103,7 @@ Template Name: Servicios
                 </div>
             </div>
             <br><br>
-            <div class="row">
+            <div class="row linea-vertical-container">
                 <div class="col-md-2 col-sm-4 align-self-center">
                     <?php
                     $image = get_field('imagen_numero_metodologia_3');
@@ -127,7 +127,7 @@ Template Name: Servicios
                 </div>
             </div>
             <br><br>
-            <div class="row">
+            <div class="row linea-vertical-container">
                 <div class="col-md-2 col-sm-4 align-self-center">
                     <?php
                     $image = get_field('imagen_numero_metodologia_4');
@@ -151,7 +151,7 @@ Template Name: Servicios
                 </div>
             </div>
             <br><br>
-            <div class="row">
+            <div class="row linea-vertical-container">
                 <div class="col-md-2 col-sm-4 align-self-center">
                     <?php
                     $image = get_field('imagen_numero_metodologia_5');
