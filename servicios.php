@@ -70,7 +70,7 @@ Template Name: Servicios
                     </h2>
                 </div>
                 <div class="col-md-2 col-sm-4">
-                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-4" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal1">
                         Ver Metodología
                     </button>
                 </div>
