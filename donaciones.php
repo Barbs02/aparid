@@ -218,7 +218,7 @@ Template Name: Donaciones
 
 <!----------------------------------- Otras formas de Apoyarnos ----------------------------------->
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid px-100">
         <div class="row">
             <div class="col-md-12 mx-auto my-5">
                 <div class="row">
