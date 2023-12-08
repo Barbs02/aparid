@@ -72,7 +72,7 @@ Template Name: Donaciones
 <!-------------------------------- Trayecto de tu aporte monetario -------------------------------->
 <section>
     <?php if (have_posts()) : ?>
-            <?php query_posts("category_name=trayecto "); ?>
+            <?php query_posts("category_name=trayecto"); ?>
     <?php while (have_posts()) : the_post(); ?> 
 
     <div class="container-fluid px-100 pt-100">
