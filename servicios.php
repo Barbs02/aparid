@@ -60,15 +60,23 @@ Template Name: Servicios
                     <?php
                     $image = get_field('imagen_numero_metodologia');
                     if (!empty($image)): ?>
-                        <img class="mx-auto " src="<?php echo esc_url($image['url']); ?>"
+                        <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
                         alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
                 </div>
-                <div class="col-md-10 col-sm-8">
+                <div class="col-md-8 col-sm-4">
                     <h2 class="color-azul font-solway font-size-5">
                         <?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
                     </h2>
                 </div>
+                <div class="col-md-2 col-sm-4">
+                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-4" data-bs-toggle="modal" data-bs-target="#modal1">
+                        Ver Metodología
+                    </button>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
                 <div class="col-md-2 col-sm-4">
                     <?php
                     $image = get_field('imagen_numero_metodologia_2');
@@ -77,7 +85,7 @@ Template Name: Servicios
                         alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
                 </div>
-                <div class="col-md-10 col-sm-8">
+                <div class="col-md-8 col-sm-4">
                     <h2 class="color-azul font-solway font-size-5">
                         <?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
                     </h2>
