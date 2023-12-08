@@ -86,7 +86,7 @@ Template Name: Donaciones
         <h5 class="font-solway font-size-6 color-azul align-self-center">Trayecto Monetario</h5>
         <br><br>
     </div>
-    <div class="container-fluid px-100">
+    <div class="container-fluid px-100 linea-vertical-container">
         <div class="row">
             <div class="col-md-2 col-sm-4 align-self-center">
                 <?php
@@ -218,7 +218,7 @@ Template Name: Donaciones
 
 <!----------------------------------- Otras formas de Apoyarnos ----------------------------------->
 <section>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 mx-auto my-5">
                 <div class="row">
