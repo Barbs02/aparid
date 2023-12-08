@@ -343,12 +343,12 @@ Template Name: Servicios
                             <div class="container-fluid">
                                 <div class="row">
             
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 z-index-modal">
 
                                     <?php
                                         $image = get_field('imagen_numero_metodologia');
                                         if (!empty($image)): ?>
-                                            <img class="mx-auto z-index-modal" src="<?php echo esc_url($image['url']); ?>"
+                                            <img class="mx-auto " src="<?php echo esc_url($image['url']); ?>"
                                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                                                 <?php endif; ?>
                                     </div>
