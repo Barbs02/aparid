@@ -35,7 +35,7 @@ Template Name: Sindrome de Down
                         </p>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-left"  data-aos-duration="2000">
                         <h2 class="font-bold"><?php the_field('cita_sd'); ?></h2>
                     </div>
                 <?php endwhile; ?>
@@ -256,7 +256,7 @@ Template Name: Sindrome de Down
                             </p>
                         </div>
                         <div class="col-md-3"></div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="2000">
                             <?php
                             $image = get_field('imagen_referencial_1');
                             if (!empty($image)): ?>
@@ -267,7 +267,7 @@ Template Name: Sindrome de Down
                         </div>
                                 <!-- elemntos a 3 columnas -->
                         <div class="row pt-100">
-                            <div class="col-md-4 justify-content-center">
+                            <div class="col-md-4 justify-content-center" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="row">
                                     <div class="col-md-6 mx-auto text-center">
                                     <?php
@@ -286,7 +286,7 @@ Template Name: Sindrome de Down
                                     <?php the_field('descripcion_pautas_1'); ?>
                                 </p>
                             </div>
-                            <div class="col-md-4 justify-content-center">
+                            <div class="col-md-4 justify-content-center" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="row">
                                     <div class="col-md-6 mx-auto text-center">
                                     <?php
@@ -305,7 +305,7 @@ Template Name: Sindrome de Down
                                     <?php the_field('descripcion_pautas_2'); ?>
                                 </p>
                             </div>
-                            <div class="col-md-4 justify-content-center">
+                            <div class="col-md-4 justify-content-center" data-aos="fade-up" data-aos-duration="3000">
                                 <div class="row">
                                     <div class="col-md-6 mx-auto text-center">
                                     <?php
