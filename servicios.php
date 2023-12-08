@@ -39,14 +39,35 @@ Template Name: Servicios
                         
                 </div>
                 <div class="col-md-12 mx-auto text-center">
-                    <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                    <!-- <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?> -->
                     <br><br>
-                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-4" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <!-- <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-4" data-bs-toggle="modal" data-bs-target="#modal1">
                             Ver Línea de Tiempo
-                        </button>
+                        </button> -->
                 </div>
+
             </div>
             
+        </div>
+
+
+
+        <div class="container-fluid px-100">
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                <?php
+                    $image = get_field('imagen_numero_metodologia');
+                    if (!empty($image)): ?>
+                        <img class="mx-auto " src="<?php echo esc_url($image['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-10 col-sm-8">
+                    <h2 class="color-azul font-solway font-size-5">
+                        <?php the_field('titulo_paso'); ?><?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
+                    </h2>
+                </div>
+            </div>
         </div>
     <?php endwhile; ?>	
     <?php else : ?>  
