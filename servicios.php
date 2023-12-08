@@ -680,7 +680,7 @@ Template Name: Servicios
                 
                 <div class="modal" tabindex="-1" id="modal2">
                     <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                        <div class="modal-content linea-vertical-container">
+                        <div class="modal-content">
                         <div class="modal-header bg-color-beige">
                             <h2 class="color-azul font-solway font-size-5">
                                 <?php the_field('titulo_paso_3'); ?>
