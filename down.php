@@ -256,7 +256,7 @@ Template Name: Sindrome de Down
                             </p>
                         </div>
                         <div class="col-md-3"></div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="2000">
                             <?php
                             $image = get_field('imagen_referencial_1');
                             if (!empty($image)): ?>
