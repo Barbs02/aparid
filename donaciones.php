@@ -98,7 +98,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-azul font-solway font-size-5">
+                <h2 class="color-naranjo font-solway font-size-5">
                     <?php the_field('titulo_paso_1'); ?>
                 </h2>
                 <h4 class=" font-solway font-size-3">
