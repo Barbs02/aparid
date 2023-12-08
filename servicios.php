@@ -77,18 +77,23 @@ Template Name: Servicios
             </div>
             <br><br>
             <div class="row">
-                <div class="col-md-2 col-sm-4">
+            <div class="col-md-2 col-sm-4 align-self-center">
                     <?php
                     $image = get_field('imagen_numero_metodologia_2');
                     if (!empty($image)): ?>
-                        <img class="mx-auto " src="<?php echo esc_url($image['url']); ?>"
+                        <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
                         alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
                 </div>
-                <div class="col-md-8 col-sm-4">
+                <div class="col-md-8 col-sm-4 align-self-center">
                     <h2 class="color-azul font-solway font-size-5">
                         <?php the_field('titulo_paso_2'); ?><?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
                     </h2>
+                </div>
+                <div class="col-md-2 col-sm-4 align-self-center">
+                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal1">
+                        Ver Metodología
+                    </button>
                 </div>
             </div>
         </div>
