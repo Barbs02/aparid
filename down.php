@@ -424,7 +424,7 @@ Template Name: Sindrome de Down
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=links&showposts=3"); ?>
             <?php while (have_posts()) : the_post(); ?> 
-            <div class="col-md-4 p-4">
+            <div class="col-md-4 p-4 zoom-effect">
                     <div class="row border3">
                             <?php
                             $image = get_field('logo_sitio');
