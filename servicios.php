@@ -32,11 +32,7 @@ Template Name: Servicios
                     <p class="font-size-1 text-center">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
                         vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
                         para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
-
-                        <br>
-                        
-                        
-                        
+             
                 </div>
             </div>
             
