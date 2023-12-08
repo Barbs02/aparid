@@ -53,6 +53,8 @@ Template Name: Servicios
 
 
         <div class="container-fluid px-100">
+            <h5 class="modal-title font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
+            <br><br>
             <div class="row">
                 <div class="col-md-2 col-sm-4">
                 <?php
