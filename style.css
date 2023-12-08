@@ -683,8 +683,8 @@ hr {
 
 /*  ========== Media Queries ========== */
 .z-index-modal {
-  position: static;
-  z-index: 15;
+  position: relative;
+  z-index: 105;
 }
 
 /* Mobile devices */
