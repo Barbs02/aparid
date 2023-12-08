@@ -363,7 +363,7 @@ Template Name: Sindrome de Down
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=programas"); ?>
             <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-6 p-4">
+                <div class="col-md-6 p-4 zoom-effect">
                     <div class="row border3">
                         <div class="col-md-4">
                             <?php
