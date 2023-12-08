@@ -25,14 +25,17 @@ Template Name: Servicios
     <?php if (have_posts()) : ?>
             <?php query_posts("category_name=metodologia-servicios "); ?>
     <?php while (have_posts()) : the_post(); ?> 
-        <div class="container-fluid py-100 px-100 clearfix">
+        <div class="container-fluid pt-100 px-100 clearfix">
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="timeline-title font-solway font-size-6 font-bold text-center color-azul">Metodologías de trabajo</h2>
                     <p class="font-size-1 text-center">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
                         vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
                         para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
-             
+
+                        <br>
+                        
+      
                 </div>
             </div>
             
