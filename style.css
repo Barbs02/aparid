@@ -671,17 +671,22 @@ hr {
 
 .linea-vertical-container::before {
   content: "";
-  position: fixed;
-  top: 0;
-  left: 50%;
+  position: absolute;
+  top: 0px;
+  left: 11%;
   width: 1px; /* Ancho de la línea vertical */
   height: 100%;
-  z-index: 5; /* Asegura que la línea esté detrás del contenido */
+  z-index: -1; /* Asegura que la línea esté detrás del contenido */
   transform: translateX(-50%);
-  border: #212121 1px dashed;
+  border: #3683C3 3px dashed;
 }
 
 /*  ========== Media Queries ========== */
+.z-index-modal {
+  position: relative;
+  z-index: 105;
+}
+
 /* Mobile devices */
 @media screen and (max-width: 768px) {
   body {
