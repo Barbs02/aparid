@@ -101,7 +101,7 @@ Template Name: Donaciones
                 <h2 class="color-azul font-solway font-size-5">
                     <?php the_field('titulo_paso_1'); ?>
                 </h2>
-                <h4 class="color-naranjo font-solway font-size-3">
+                <h4 class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto'); ?>
                 </h4>
             </div>
