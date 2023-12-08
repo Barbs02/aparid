@@ -52,7 +52,7 @@ Template Name: Servicios
 
 
 
-        <div class="container-fluid px-100 position-relative">
+        <div class="container-fluid px-100 position-relative linea-vertical-container">
             <h5 class="font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
             <br><br>
             <div class="row">
