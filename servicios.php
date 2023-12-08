@@ -97,7 +97,7 @@ Template Name: Servicios
                     </h4>
                 </div>
                 <div class="col-md-2 col-sm-4 align-self-center">
-                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="moda2" data-bs-target="#modal2">
+                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal2">
                         Ver Metodología
                     </button>
                 </div>
@@ -649,6 +649,65 @@ Template Name: Servicios
                                 </div>
 
                                 <div class="pt-5"></div>
+                                
+                            </div>
+                            
+                            
+                            <button type="button" class="border1 p-2 bg-boton hover-boton align-self-end" data-bs-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+
+        </div>
+    </div>
+   
+</div>
+
+<div class="container-fluid mx-auto">
+    <div class="row">
+        <div class="col-md-12">
+
+        <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=metodologia-servicios"); ?>
+    <?php while (have_posts()) : the_post(); ?> 
+                
+                <div class="modal" tabindex="-1" id="modal2">
+                    <div class="modal-dialog modal-xl mx-auto overflow-auto">
+                        <div class="modal-content linea-vertical-container">
+                        <div class="modal-header bg-color-beige">
+                            <h2 class="color-azul font-solway font-size-5">
+                                <?php the_field('titulo_paso_3'); ?>
+                            </h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-footer bg-color-beige">
+                            <div class="pt-3"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    
+                                    <div class="col-md-8">
+                                        <p class="font-size-2">
+                                            <?php the_field('descripcion_metodologia_2'); ?>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <?php
+                                        $image = get_field('imagen_referencial_metodologia_2');
+                                        if (!empty($image)): ?>
+                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                        <?php endif; ?>
+                                    </div>
+                                        
+                                    
+                                </div>
                                 
                             </div>
                             
