@@ -259,7 +259,7 @@ Template Name: Servicios
                     <h2 class="font-size-6 color-azul font-solway font-bold" data-aos="fade-right" data-aos-duration="2500"><?php the_title(); ?> (<?php the_field('siglas_programas'); ?>)</h2>
                     <br>
                 </div>
-                <div class="col-md-5" data-aos="fade-right" data-aos-duration="2500">
+                <div class="col-md-5">
 
                     <p class="font-size-1" >
                         <?php the_content(); ?>
