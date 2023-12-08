@@ -71,129 +71,49 @@ Template Name: Donaciones
 
 <!-------------------------------- Trayecto de tu aporte monetario -------------------------------->
 <section>
-    <?php if (have_posts()) : ?>
-            <?php query_posts("category_name=trayecto "); ?>
-    <?php while (have_posts()) : the_post(); ?> 
-        <div class="container-fluid py-100 px-100 bg-color-beige clearfix">
-            <div class="wrap">
-                <div class="timeline-wrap">
-                    <h2 class="timeline-title font-solway font-size-6 font-bold text-center color-azul"><?php the_title(); ?></h2>
+    <?php
+    $args = array(
+        'category_name' => 'trayecto',
+    );
 
-                    <ul class="timeline">
-                        <li class="timeline-item bmw">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="1"><?php the_field('titulo_paso_1'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item mini">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_2'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2"  data-car="2"><?php the_field('titulo_pasos_2'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item mini">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_3'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="3"><?php the_field('titulo_pasos_3'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item bmw">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id__trayecto_4'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="4"><?php the_field('titulo_pasos_4'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item bmw">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_5'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="5"><?php the_field('titulo_pasos_5'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                        <li class="timeline-item bmw">
-                            <div class="p-timeline-item">
-                                <time class="p-timeline-date font-solway font-size-6"><?php the_field('id_trayecto_6'); ?></time>
-                                <span class="p-timeline-carmodel font-kulim font-size-2" data-car="5"><?php the_field('titulo_pasos_5'); ?></span>
-                                <div class="p-timeline-block"></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="timeline-content">
+    $custom_query = new WP_Query($args);
 
-                        <div class="p-timeline-content" data-car="1">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title bmw"><?php the_field('id_trayecto'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_paso_1'); ?></time>
-                                <p class="font-size-1 font-kulim"><?php the_field('descripcion_trayecto'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="2">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title mini"><?php the_field('id_trayecto_2'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_pasos_2'); ?></time>
-                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_trayecto_2'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="3">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title mini"><?php the_field('id_trayecto_3'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_pasos_3'); ?></time>
-                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_trayecto_3'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="4">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title bmw"><?php the_field('id_trayecto_4'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_pasos_4'); ?></time>
-                                <p class="font-size-1 font-kulim"> <?php the_field('descripcion_trayecto_4'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="5">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title bmw"><?php the_field('id_trayecto_5'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_pasos_5'); ?></time>
-                                <p class="font-size-1 font-kulim"><?php the_field('descripcion_trayecto_5'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                            </div>
-                        </div>
-                        <div class="p-timeline-content" data-car="6">
-                            <div class="timeline-content-card">
-                                <h3 class="timeline-content-title bmw"><?php the_field('id_trayecto_6'); ?></h3>
-                                <time class="timeline-content-date font-kulim font-size-3"><?php the_field('titulo_pasos_6'); ?></time>
-                                <p class="font-size-1 font-kulim"><?php the_field('descripcion_trayecto_6'); ?></p>
-                                <div class="close" data-type-close></div>
-                            </div>
-                            <div class="timeline-content-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    if ($custom_query->have_posts()) :
+        while ($custom_query->have_posts()) : $custom_query->the_post();
+    ?>
+
+    <div class="container-fluid px-100 pt-100">
+        <h5 class="font-solway font-size-6 color-azul align-self-center">Trayecto Monetario</h5>
+        <br><br>
+    </div>
+    <div class="container-fluid px-100">
+        <div class="row">
+            <div class="col-md-2 col-sm-4 align-self-center">
+                <?php
+                $image = get_field('imagen_trayecto_1');
+                if (!empty($image)) :
+                ?>
+                    <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                         alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+            <div class="col-md-10 col-sm-8 align-self-center">
+                <h2 class="color-azul font-solway font-size-5">
+                    <?php the_field('titulo_paso_1'); ?>
+                </h2>
+                <h4 class="color-naranjo font-solway font-size-3">
+                    <?php the_field('descripcion_trayecto'); ?>
+                </h4>
             </div>
         </div>
-    <?php endwhile; ?>	
-    <?php else : ?>  
-    <?php endif; ?>
-    <?php wp_reset_query(); ?>
+        <br><br>
+    </div>
+
+    <?php endwhile;
+        wp_reset_postdata(); // Restablecer datos de la consulta
+    endif; ?>
 </section>
+
 
 <!----------------------------------- Otras formas de Apoyarnos ----------------------------------->
 <section>
