@@ -68,7 +68,7 @@ Template Name: Servicios
                     <h2 class="color-azul font-solway font-size-5">
                         <?php the_field('titulo_paso'); ?>
                     </h2>
-                    <h4 class="color-azul font-solway font-size-3">
+                    <h4 class="color-naranjo font-solway font-size-3">
                         <?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
                     </h4>
                 </div>
@@ -92,7 +92,7 @@ Template Name: Servicios
                     <h2 class="color-azul font-solway font-size-5">
                         <?php the_field('titulo_paso_2'); ?>
                     </h2>
-                    <h4 class="color-azul font-solway font-size-3">
+                    <h4 class="color-naranjo font-solway font-size-3">
                         <?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
                     </h4>
                 </div>
