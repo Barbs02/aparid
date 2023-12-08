@@ -212,6 +212,7 @@ Template Name: Donaciones
     <?php endwhile;
         wp_reset_postdata(); // Restablecer datos de la consulta
     endif; ?>
+    <div class="container pt-100"></div>
 </section>
 
 
