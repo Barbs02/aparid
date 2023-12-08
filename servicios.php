@@ -358,7 +358,7 @@ Template Name: Servicios
         <div class="container-fluid  mx-auto px-100 pt-100">
             <div class="row">
 
-                <div class="col-md-5">
+                <div class="col-md-5 zoom-effect">
                     <div class="row">
                         <div class="col-md-6 p-0 ">
                             <?php
@@ -376,7 +376,7 @@ Template Name: Servicios
                     </div>
                 </div>
                 <div class="col-md-2"></div>
-                <div class="col-md-5 ">
+                <div class="col-md-5 zoom-effect ">
                     <div class="row">
                         <div class="col-md-6 bg-color-azul p-3">
                             <p class="font-size-1 color-blanco"><?php the_field('descripcion_actividad_2'); ?></p>
@@ -399,7 +399,7 @@ Template Name: Servicios
         <div class="container-fluid px-100 pb-100 py-3">
             <div class="row">
 
-                <div class="col-md-5">
+                <div class="col-md-5 zoom-effect">
                     <div class="row">
                         <div class="col-md-6 p-0">
                             <?php
@@ -418,7 +418,7 @@ Template Name: Servicios
                     </div>
                 </div>
                 <div class="col-md-2"></div>
-                <div class="col-md-5">
+                <div class="col-md-5 zoom-effect">
                     <div class="row">
                         <div class="col-md-6 bg-color-amarillo p-3">
                             <p class="font-size-1">
