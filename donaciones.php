@@ -119,7 +119,7 @@ Template Name: Donaciones
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
                 <h2 class="color-naranjo font-solway font-size-5">
-                    <?php the_field('titulo_paso_2'); ?>
+                    <?php the_field('titulo_pasos_2'); ?>
                 </h2>
                 <h4 class=" font-solway font-size-3">
                     <?php the_field('descripcion_trayecto_2'); ?>
@@ -127,6 +127,86 @@ Template Name: Donaciones
             </div>
         </div>
         <br><br>
+        <div class="row">
+            <div class="col-md-2 col-sm-4 align-self-center">
+                <?php
+                $image = get_field('imagen_trayecto_3');
+                if (!empty($image)) :
+                ?>
+                    <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                         alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+            <div class="col-md-10 col-sm-8 align-self-center">
+                <h2 class="color-naranjo font-solway font-size-5">
+                    <?php the_field('titulo_pasos_3'); ?>
+                </h2>
+                <h4 class=" font-solway font-size-3">
+                    <?php the_field('descripcion_trayecto_3'); ?>
+                </h4>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-2 col-sm-4 align-self-center">
+                <?php
+                $image = get_field('imagen_trayecto_4');
+                if (!empty($image)) :
+                ?>
+                    <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                         alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+            <div class="col-md-10 col-sm-8 align-self-center">
+                <h2 class="color-naranjo font-solway font-size-5">
+                    <?php the_field('titulo_pasos_4'); ?>
+                </h2>
+                <h4 class=" font-solway font-size-3">
+                    <?php the_field('descripcion_trayecto_4'); ?>
+                </h4>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-2 col-sm-4 align-self-center">
+                <?php
+                $image = get_field('imagen_trayecto_5');
+                if (!empty($image)) :
+                ?>
+                    <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                         alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+            <div class="col-md-10 col-sm-8 align-self-center">
+                <h2 class="color-naranjo font-solway font-size-5">
+                    <?php the_field('titulo_pasos_5'); ?>
+                </h2>
+                <h4 class=" font-solway font-size-3">
+                    <?php the_field('descripcion_trayecto_5'); ?>
+                </h4>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-2 col-sm-4 align-self-center">
+                <?php
+                $image = get_field('imagen_trayecto_6');
+                if (!empty($image)) :
+                ?>
+                    <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                         alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+            <div class="col-md-10 col-sm-8 align-self-center">
+                <h2 class="color-naranjo font-solway font-size-5">
+                    <?php the_field('titulo_pasos_6'); ?>
+                </h2>
+                <h4 class=" font-solway font-size-3">
+                    <?php the_field('descripcion_trayecto_6'); ?>
+                </h4>
+            </div>
+        </div>
+        
     </div>
 
     <?php endwhile;
