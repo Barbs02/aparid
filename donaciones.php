@@ -74,6 +74,42 @@ Template Name: Donaciones
     <?php if (have_posts()) : ?>
             <?php query_posts("category_name=trayecto "); ?>
     <?php while (have_posts()) : the_post(); ?> 
+
+    <div class="container-fluid px-100 pt-100">
+        <h5 class="font-solway font-size-6 color-azul align-self-center">Trayecto Monetario</h5>
+        <br><br>
+    </div>
+    <div class="container-fluid px-100">
+    <div class="row ">
+                <div class="col-md-2 col-sm-4 align-self-center">
+                    <?php
+                    $image = get_field('imagen_trayecto_1');
+                    if (!empty($image)): ?>
+                        <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-10 col-sm-8 align-self-center">
+                    <h2 class="color-azul font-solway font-size-5">
+                        <?php the_field('titulo_paso_1'); ?>
+                    </h2>
+                    <h4 class="color-naranjo font-solway font-size-3">
+                        <?php the_field('descripcion_trayecto'); ?>
+                    </h4>
+                </div>
+                <!-- <div class="col-md-2 col-sm-4 align-self-center">
+                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal1">
+                        Ver Metodología
+                    </button>
+                </div> -->
+            </div>
+            <br><br>
+    </div>
+</section>
+<section>
+    <?php if (have_posts()) : ?>
+            <?php query_posts("category_name=trayecto "); ?>
+    <?php while (have_posts()) : the_post(); ?> 
         <div class="container-fluid py-100 px-100 bg-color-beige clearfix">
             <div class="wrap">
                 <div class="timeline-wrap">
