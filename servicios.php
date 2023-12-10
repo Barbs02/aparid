@@ -396,7 +396,7 @@ Template Name: Servicios
 
         <!-------ULTIMAS 2 TARJETAS------->
 
-        <div class="container-fluid px-100 pb-100 py-3">
+        <div class="container-fluid px-100 pb-100 py-3 act-p">
             <div class="row">
 
                 <div class="col-md-5 zoom-effect">
