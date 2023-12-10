@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 150%;
 }
 
-.font-kulimpark {
+.font-kulim {
   font-family: "Kulim Park", sans-serif;
 }
 
@@ -71,6 +71,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
 }
 
 .font-bold {
@@ -735,10 +739,16 @@ hr {
     font-size: 24px;
   }
   .servicios-p-r {
-    padding-left: 8%;
+    padding-left: 0%;
+  }
+  .servicios-p-r2 {
+    padding-top: 20px;
   }
   .donaciones-p-r {
-    margin-left: 50px !important;
+    margin-left: 0% !important;
+  }
+  .logo-r {
+    display: none;
   }
 }
 @media screen and (max-width: 1020px) {

@@ -46,7 +46,7 @@ Template Name: Servicios
             <h5 class="font-solway font-size-6 color-azul align-self-center">Línea de Tiempo</h5>
             <br><br>
         </div>
-        <div class="container-fluid px-100 position-relative linea-vertical-container">
+        <div class="container-fluid px-100 position-relative"> <!-- linea-vertical-container -->
             
             <div class="row ">
                 <div class="col-md-2 col-sm-4 align-self-center">
@@ -58,14 +58,14 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
                         <?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3 " data-bs-toggle="modal" data-bs-target="#modal1">
                         Ver Metodología
                     </button>
@@ -82,14 +82,14 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_2'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
                         <?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal2">
                         Ver Metodología
                     </button>
@@ -106,14 +106,14 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center ">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_3'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
                         <?php the_field('rango_de_edad_3'); ?><?php the_field('programas_3'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal3">
                         Ver Metodología
                     </button>
@@ -130,14 +130,14 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_4'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
                         <?php the_field('rango_de_edad_4'); ?><?php the_field('programas_4'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal4">
                         Ver Metodología
                     </button>
@@ -154,14 +154,14 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_5'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
                         <?php the_field('rango_de_edad_5'); ?><?php the_field('programas_5'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal5">
                         Ver Metodología
                     </button>
