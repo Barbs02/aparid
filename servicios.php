@@ -376,7 +376,7 @@ Template Name: Servicios
                     </div>
                 </div>
                 <div class="col-md-2"></div>
-                <div class="col-md-5 zoom-effect ">
+                <div class="col-md-5 zoom-effect act-p">
                     <div class="row">
                         <div class="col-md-6 bg-color-azul p-3">
                             <p class="font-size-1 color-blanco"><?php the_field('descripcion_actividad_2'); ?></p>
@@ -418,7 +418,7 @@ Template Name: Servicios
                     </div>
                 </div>
                 <div class="col-md-2"></div>
-                <div class="col-md-5 zoom-effect">
+                <div class="col-md-5 zoom-effect act-p">
                     <div class="row">
                         <div class="col-md-6 bg-color-amarillo p-3">
                             <p class="font-size-1">
