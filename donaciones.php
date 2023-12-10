@@ -98,10 +98,10 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_paso_1'); ?>
                 </h2>
-                <p class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3 servicios-p-r">
                     <?php the_field('descripcion_trayecto'); ?>
                 </p>
             </div>
@@ -118,10 +118,10 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_2'); ?>
                 </h2>
-                <p class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3 servicios-p-r">
                     <?php the_field('descripcion_trayecto_2'); ?>
                 </p>
             </div>
@@ -138,10 +138,10 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_3'); ?>
                 </h2>
-                <p class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3 servicios-p-r">
                     <?php the_field('descripcion_trayecto_3'); ?>
                 </p>
             </div>
@@ -158,10 +158,10 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_4'); ?>
                 </h2>
-                <p class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3 servicios-p-r">
                     <?php the_field('descripcion_trayecto_4'); ?>
                 </p>
             </div>
@@ -178,10 +178,10 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_5'); ?>
                 </h2>
-                <p class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3 servicios-p-r">
                     <?php the_field('descripcion_trayecto_5'); ?>
                 </p>
             </div>
@@ -198,10 +198,10 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_6'); ?>
                 </h2>
-                <p class=" font-solway font-size-3">
+                <p class=" font-solway font-size-3 servicios-p-r">
                     <?php the_field('descripcion_trayecto_6'); ?>
                 </p>
             </div>
