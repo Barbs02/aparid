@@ -815,6 +815,16 @@ hr{
             display: none;
         }
 
+    }
+}
+
+
+@media screen and (max-width: 1020px) {
+    .inicio{
+        .cuadrado{
+            display: none;
+        }
+
         h1{
             font-size: 20px;
         }
