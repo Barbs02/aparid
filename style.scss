@@ -804,10 +804,15 @@ hr{
         margin-left: 0% !important;
         
     }
+    
+}
+
+@media screen and (max-width: 836px) {
     .logo-r{
         display: none;
     }
 }
+
 
 @media screen and (max-width: 1300px) {
     .inicio{
