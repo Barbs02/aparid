@@ -173,7 +173,7 @@ Template Name: Servicios
     <?php endif; ?>
     <?php wp_reset_query(); ?>
 
-    <div class="pt-5"></div>
+    <div class="pt-100"></div>
 </section>
 <!--------------------------------------------------- Somos APARID --------------------------------------------------->
 

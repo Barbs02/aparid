@@ -201,7 +201,7 @@ Template Name: Quienes somos
     </div>
 </div>
 
-    <div class="container-fluid px-100">
+    <div class="container-fluid px-100 pb-100">
         <div class="row justify-content-center">
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=directorio"); ?>
