@@ -12,11 +12,6 @@
                     <img class="img-fluid w-r-60" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
             </div>
-            
-            
-
-        </div>
-        <div class="row pt-3">
             <div class="col-md-3">
                 <div class="row">
                     <div class="col-3">
@@ -57,7 +52,10 @@
                 </div>
             </div>
 
+            
+
         </div>
+
         <div class="row py-3">
             <div class="col-md-2">
                 
