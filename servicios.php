@@ -58,7 +58,7 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
@@ -82,7 +82,7 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_2'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
@@ -106,7 +106,7 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center ">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_3'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
@@ -130,7 +130,7 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_4'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
@@ -154,7 +154,7 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r servicios-p-r2">
                         <?php the_field('titulo_paso_5'); ?>
                     </h2>
                     <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
