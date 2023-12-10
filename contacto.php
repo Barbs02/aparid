@@ -192,7 +192,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                 <?php 
                 $image = get_field('logo_aparid');
                 if( !empty( $image ) ): ?>
-                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <img class="img-fluid w-r-60" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
             </div>
 
