@@ -15,15 +15,13 @@
 <body>
         <!-- Barra de navegacion  -->
 <?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), '' ); ?>
-<nav class="navbar navbar-expand-md navbar-light bg-color-beige p-2 fixed-top">
-    <div class="container-fluid">
-    <a href="inicio">
-    <div class="logo">
+<div class="container-fluid d-flex align-items-center">
+    <a href="inicio" class="logo">
         <?php echo $custom_logo ?>
-    </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
         
         <div class="collapse navbar-collapse" id="main-menu">
             <?php
