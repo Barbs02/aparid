@@ -757,6 +757,9 @@ hr {
   .inicio .cuadrado {
     display: none;
   }
+  .somos .cuadrado {
+    display: none;
+  }
 }
 @media screen and (max-width: 1020px) {
   .inicio .cuadrado {
@@ -770,9 +773,6 @@ hr {
     height: auto;
     left: -50px;
   }
-  .somos .cuadrado {
-    display: none;
-  }
 }
 @media (max-width: 480px) {
   .inicio .cuadrado {
@@ -783,9 +783,6 @@ hr {
     height: auto;
     left: 20px;
     top: 50px;
-  }
-  .somos .cuadrado {
-    display: none;
   }
   .somos .somos-p {
     padding-top: 50px;

@@ -821,6 +821,11 @@ hr{
         }
 
     }
+    .somos{
+        .cuadrado{
+           display: none;
+        }
+    }
 }
 
 
@@ -840,11 +845,7 @@ hr{
         left: -50px;
         
     }
-    .somos{
-        .cuadrado{
-           display: none;
-        }
-    }
+    
 }
 
 @media (max-width: 480px){
@@ -863,9 +864,6 @@ hr{
         
     }
     .somos{
-        .cuadrado{
-            display: none;
-        }
 
         .somos-p{
             padding-top: 50px;
