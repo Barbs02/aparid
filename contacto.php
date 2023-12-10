@@ -186,7 +186,13 @@ echo do_shortcode('[smartslider3 slider="2"]');
     <?php while (have_posts()) : the_post(); ?> 
         <div class="row pt-4">
             
-           
+        <div class="col-md-2">
+            <?php 
+                $image = get_field('logo_aparid');
+                if( !empty( $image ) ): ?>
+                    <img class="img-fluid w-r-60" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
 
             
 
