@@ -58,15 +58,15 @@ Template Name: Servicios
                     <?php endif; ?>
                 </div>
                 <div class="col-md-8 col-sm-4 align-self-center">
-                    <h2 class="color-azul font-solway font-size-5">
+                    <h2 class="color-azul font-solway font-size-5 servicios-p-r">
                         <?php the_field('titulo_paso'); ?>
                     </h2>
-                    <h4 class="color-naranjo font-solway font-size-3">
+                    <h4 class="color-naranjo font-solway font-size-3 servicios-p-r">
                         <?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center">
-                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal1">
+                <div class="col-md-2 col-sm-4 align-self-center ">
+                    <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3 servicios-m-r" data-bs-toggle="modal" data-bs-target="#modal1">
                         Ver Metodología
                     </button>
                 </div>

@@ -745,6 +745,12 @@ hr {
   .font-size-9 {
     font-size: 24px;
   }
+  .servicios-p-r {
+    padding-left: 100px;
+  }
+  .servicios-m-r {
+    margin-left: 100px;
+  }
 }
 @media screen and (max-width: 1020px) {
   .inicio .cuadrado {
