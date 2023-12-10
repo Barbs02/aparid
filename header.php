@@ -17,10 +17,11 @@
 <?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), '' ); ?>
 <nav class="navbar navbar-expand-md navbar-light bg-color-beige p-2 fixed-top">
     <div class="container-fluid d-flex align-items-center">
-    <a href="inicio">
-        <div class="logo logo-r">
-            <?php echo $custom_logo ?>
-        </div>
+        <a href="inicio logo-r">
+            <div class="logo ">
+                <?php echo $custom_logo ?>
+            </div>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
