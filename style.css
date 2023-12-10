@@ -760,6 +760,18 @@ hr {
   .somos .cuadrado {
     display: none;
   }
+  .sd .cuadrado {
+    display: none;
+  }
+  .proceso .cuadrado {
+    display: none;
+  }
+  .cuenta .cuadrado {
+    padding: 160px 160px;
+    margin-top: -220px;
+    margin-left: -70px;
+    z-index: 1;
+  }
 }
 @media screen and (max-width: 1020px) {
   .inicio .cuadrado {
