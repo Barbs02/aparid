@@ -16,7 +16,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
  <div class="container-fluid px-100">
     <div class="row pt-100">
         <div class="col-md-8 mx-auto">
-            <h2 class="color-azul text-center font-solway">Comunícate con nosotros, nos encantaría escucharte.</h2>
+            <h2 class="color-azul text-center font-solway" data-aos="fade-up" data-aos-duration="1500">Comunícate con nosotros, nos encantaría escucharte.</h2>
             <div class="row">
                 
                     <div class="col-md-6 pt-5 pb-3">
@@ -288,5 +288,8 @@ echo do_shortcode('[smartslider3 slider="2"]');
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
 </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS JS -->
+<script>
+    AOS.init();
+</script>
 

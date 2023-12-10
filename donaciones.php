@@ -55,8 +55,8 @@ Template Name: Donaciones
                             </div>
                             <br>
                             <!------- Boton ------->
-                            <div class="col-md-3 ">
-                                <button class="border1 p-2 w-100 hover-boton" href="servicios-#programas">Donar</button>
+                            <div class="col-md-3 pt-3 ">
+                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
                             </div>
 
                     <?php endwhile; ?>
@@ -98,7 +98,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5">
+                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_paso_1'); ?>
                 </h2>
                 <p class=" font-solway font-size-3">
@@ -118,7 +118,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5">
+                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_2'); ?>
                 </h2>
                 <p class=" font-solway font-size-3">
@@ -138,7 +138,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5">
+                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_3'); ?>
                 </h2>
                 <p class=" font-solway font-size-3">
@@ -158,7 +158,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5">
+                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_4'); ?>
                 </h2>
                 <p class=" font-solway font-size-3">
@@ -178,7 +178,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5">
+                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_5'); ?>
                 </h2>
                 <p class=" font-solway font-size-3">
@@ -198,7 +198,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5">
+                <h2 class="color-naranjo font-solway font-size-5" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_6'); ?>
                 </h2>
                 <p class=" font-solway font-size-3">
@@ -255,8 +255,9 @@ Template Name: Donaciones
                 </div>
             </div>
         </div>
+        <!-- Transparencia------------------------------ -->
         <div class="row">
-            <div class="col-md-12 bg-color-beige border1">
+            <div class="col-md-12 bg-color-beige border1" data-aos="fade-up" data-aos-duration="2000">
                 <?php if (have_posts()): ?>
                     <?php query_posts("category_name=formas-de-apoyo"); ?>
                     <?php while (have_posts()):
@@ -375,7 +376,7 @@ Template Name: Donaciones
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=colaboradores&showposts=3"); ?>
             <?php while (have_posts()) : the_post(); ?> 
-            <div class="col-md-4 p-4">
+            <div class="col-md-4 p-4 zoom-effect">
                     <div class="row border3">
                             <?php
                             $image = get_field('icono_empresa');
@@ -409,7 +410,7 @@ Template Name: Donaciones
                             the_post(); ?>
                             <div class="col-md-5">
                                 <!-- Texto de Certificacion -->
-                                <h3 class="font-size-7 font-solway font-bold color-azul">
+                                <h3 class="font-size-7 font-solway font-bold color-azul" data-aos="fade-right" data-aos-duration="2000">
                                     <?php the_title(); ?>
                                 </h3>
                                 <br>
@@ -418,7 +419,7 @@ Template Name: Donaciones
                                 </p>
                             </div>
                             <div class="col-md-2"></div>
-                            <div class="col-md-5">
+                            <div class="col-md-5" data-aos="fade-up" data-aos-duration="2000">
                                 <!-- IMG de Certificacion -->
                                 <?php
                                 $image = get_field('imagen_certificacion');
@@ -430,7 +431,7 @@ Template Name: Donaciones
                             <br>
                             <!------- Boton ------->
                             <div class="col-md-3 mx-auto">
-                                <button class="border1 p-3 w-100 hover-boton" href="servicios-#programas">Contáctanos</button>
+                                <button class="border1 p-3 w-100 hover-boton bg-boton" href="servicios-#programas">Contáctanos</button>
                             </div>
                         <?php endwhile; ?>
                     <?php else: ?>
