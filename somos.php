@@ -40,7 +40,7 @@ Template Name: Quienes somos
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 somos-p">
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>

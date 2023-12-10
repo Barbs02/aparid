@@ -94,7 +94,7 @@ Template Name: Donaciones
                 if (!empty($image)) :
                 ?>
                     <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
-                         alt="<?php echo esc_attr($image['alt']); ?>" />
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
@@ -114,7 +114,7 @@ Template Name: Donaciones
                 if (!empty($image)) :
                 ?>
                     <img class="mx-auto img-fluid" src="<?php echo esc_url($image['url']); ?>"
-                         alt="<?php echo esc_attr($image['alt']); ?>" />
+                        alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
@@ -315,7 +315,7 @@ Template Name: Donaciones
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 somos-p">
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>
