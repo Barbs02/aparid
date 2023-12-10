@@ -186,13 +186,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
     <?php while (have_posts()) : the_post(); ?> 
         <div class="row pt-4">
             
-            <div class="col-md-2">
-                <?php 
-                $image = get_field('logo_aparid');
-                if( !empty( $image ) ): ?>
-                    <img class="img-fluid w-r-60" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                <?php endif; ?>
-            </div>
+            
 
                 
 
@@ -200,9 +194,12 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
         <div class="row py-3">
             <div class="col-md-2">
-                
+                <?php 
+                $image = get_field('logo_aparid');
+                if( !empty( $image ) ): ?>
+                    <img class="img-fluid w-r-60" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
             </div>
-
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-1">
@@ -228,6 +225,18 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <a href="#">
                             <p class="font-size-1">Foto de Pavol Štugel en Unsplash</p>
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="assets/correo-electronico 4.png" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h3 class="color-azul font-size-3">Atención/Horario</h3>
+                        <br>
+                        <p class="font-size-1"><?php the_field('contacto_horario'); ?></p>
                     </div>
                 </div>
             </div>
