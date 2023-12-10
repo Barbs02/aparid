@@ -751,7 +751,7 @@ hr {
     display: none;
   }
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1300px) {
   .inicio .cuadrado {
     display: none;
   }
