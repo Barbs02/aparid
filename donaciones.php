@@ -101,7 +101,7 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_paso_1'); ?>
                 </h2>
-                <h6 class=" font-kulim font-size-3 font-light donaciones-p-r">
+                <h6 class=" font-kulim font-size-3 font-regular donaciones-p-r">
                     <?php the_field('descripcion_trayecto'); ?>
                 </h6>
             </div>
@@ -121,7 +121,7 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_2'); ?>
                 </h2>
-                <h6 class=" font-kulim font-size-3 font-light donaciones-p-r">
+                <h6 class=" font-kulim font-size-3 font-regular donaciones-p-r">
                     <?php the_field('descripcion_trayecto_2'); ?>
                 </h6>
             </div>
@@ -141,7 +141,7 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_3'); ?>
                 </h2>
-                <h6 class=" font-kulim font-size-3 font-light donaciones-p-r">
+                <h6 class=" font-kulim font-size-3 font-regular donaciones-p-r">
                     <?php the_field('descripcion_trayecto_3'); ?>
                 </h6>
             </div>
@@ -161,7 +161,7 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_4'); ?>
                 </h2>
-                <h6 class=" font-kulim font-size-3 font-light donaciones-p-r">
+                <h6 class=" font-kulim font-size-3 font-regular donaciones-p-r">
                     <?php the_field('descripcion_trayecto_4'); ?>
                 </h6>
             </div>
@@ -181,7 +181,7 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_5'); ?>
                 </h2>
-                <h6 class=" font-kulim font-size-3 font-light donaciones-p-r">
+                <h6 class=" font-kulim font-size-3 font-regular donaciones-p-r">
                     <?php the_field('descripcion_trayecto_5'); ?>
                 </h6>
             </div>
@@ -201,7 +201,7 @@ Template Name: Donaciones
                 <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_6'); ?>
                 </h2>
-                <h6 class=" font-kulim font-size-3 font-light donaciones-p-r">
+                <h6 class=" font-kulim font-size-3 font-regular donaciones-p-r">
                     <?php the_field('descripcion_trayecto_6'); ?>
                 </h6>
             </div>
