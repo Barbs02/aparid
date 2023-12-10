@@ -213,6 +213,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                 </div>
             </div>
             
+            <div class="col-md-7"></div>
             <div class="col-md-2"></div>
             <div class="col-md-10">
                 <div class="row">
