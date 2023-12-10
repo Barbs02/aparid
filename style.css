@@ -767,10 +767,7 @@ hr {
     display: none;
   }
   .cuenta .cuadrado {
-    padding: 160px 160px;
-    margin-top: -220px;
-    margin-left: -70px;
-    z-index: 1;
+    display: none;
   }
 }
 @media screen and (max-width: 1020px) {
