@@ -54,8 +54,11 @@ Template Name: Inicio
                                 <div class="cuadrado bg-color-azul position-absolute "></div>
                             </div>
                             <div class="col-md-2"></div>
-                            <div class="col-md-5 text-center  ">
-                            <svg data-aos="fade-up" data-aos-duration="3000" data-aos-easing="linear" class="position-relative circle-css" width="698" height="417" viewBox="0 0 698 417" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="col-md-5 text-center d-flex align-items-center justify-content-center position-relative pt-5">
+                                <h1 class="font-size-4 font-solway color-azul font-bold position-absolute z-1 align-self-center pt-5">
+                                    <?php the_field('frase_motivadora'); ?>​
+                                </h1>
+                            <svg data-aos="fade-up" data-aos-duration="3000" data-aos-easing="linear" class="circle-css" width="698" height="417" viewBox="0 0 698 417" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle  cx="56.5" cy="105.5" r="27.5" fill="#FC9256"/>
                                 <path  d="M506 83.5C506 98.6878 493.912 111 479 111C464.088 111 452 98.6878 452 83.5C452 68.3122 464.088 56 479 56C493.912 56 506 68.3122 506 83.5Z" fill="#FC9256"/>
                                 <circle  cx="228.5" cy="352.5" r="24.5" fill="#FC9256"/>
@@ -78,9 +81,7 @@ Template Name: Inicio
                                 <path d="M490.51 87.2058C489.272 87.3484 488.677 86.63 488.458 85.5358C488.022 83.3728 486.763 82.2804 484.859 82.2647C482.956 82.2491 481.744 83.2962 481.22 85.4871C480.974 86.5161 480.48 87.3701 479.194 87.2101C477.836 87.0362 477.492 86.0794 477.612 84.9409C477.962 81.6394 481.125 79.0197 484.8 79.0023C488.606 78.9849 491.808 81.6985 491.992 85.0723C492.05 86.1229 491.798 87.0579 490.51 87.2058Z" fill="white"/>
                             </svg>
 
-                                <h1 class="font-size-5 font-solway color-azul font-bold position-absolute frase-motivadora">
-                                    <?php the_field('frase_motivadora'); ?>​
-                                </h1>
+                                
                             </div>
                         </div>
                     </div>
