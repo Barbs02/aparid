@@ -812,15 +812,12 @@ hr{
 @media screen and (max-width: 1020px) {
     .inicio{
         .cuadrado{
-            padding: 90px 130px;
-            margin-top: -160px;
-            margin-left: 30px;
-            z-index: -1;
+            display: none;
         }
-    }
-    .frase-motivadora{
-        top : 1070px;
-        right: 120px;
+
+        h1{
+            font-size: 20px;
+        }
     }
     .circle-css{
         max-width: 130%;
@@ -830,10 +827,7 @@ hr{
     }
     .somos{
         .cuadrado{
-            padding: 90px 130px;
-            margin-top: -160px;
-            margin-left: 30px;
-            z-index: 1;
+           display: none;
         }
     }
 }
