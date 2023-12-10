@@ -65,7 +65,7 @@ Template Name: Servicios
                         <?php the_field('rango_de_edad'); ?><?php the_field('programas_'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3 " data-bs-toggle="modal" data-bs-target="#modal1">
                         Ver Metodología
                     </button>
@@ -89,7 +89,7 @@ Template Name: Servicios
                         <?php the_field('rango_de_edad_2'); ?><?php the_field('programas_2'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal2">
                         Ver Metodología
                     </button>
@@ -113,7 +113,7 @@ Template Name: Servicios
                         <?php the_field('rango_de_edad_3'); ?><?php the_field('programas_3'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal3">
                         Ver Metodología
                     </button>
@@ -137,7 +137,7 @@ Template Name: Servicios
                         <?php the_field('rango_de_edad_4'); ?><?php the_field('programas_4'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal4">
                         Ver Metodología
                     </button>
@@ -161,7 +161,7 @@ Template Name: Servicios
                         <?php the_field('rango_de_edad_5'); ?><?php the_field('programas_5'); ?>
                     </h4>
                 </div>
-                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r">
+                <div class="col-md-2 col-sm-4 align-self-center servicios-p-r servicios-p-r2">
                     <button type="button" class="border1 p-3 mx-auto bg-boton hover-boton color-azul font-size-3" data-bs-toggle="modal" data-bs-target="#modal5">
                         Ver Metodología
                     </button>
