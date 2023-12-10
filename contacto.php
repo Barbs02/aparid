@@ -87,7 +87,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                           <!-- +++++++++++++++++++++++ contacto telefono +++++++++++++++++++++++++++++++ -->
                         <li class="pb-4">
                             <div class="row">                  
-                                <div class="col-md-3">
+                                <div class="col-md-3 p-0">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <?php 
                                     $image = get_field('contacto_telefono_icono');
@@ -106,7 +106,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <!-- +++++++++++++++++++++++ contacto correo +++++++++++++++++++++++++++++++ -->
                         <li class="pb-4">
                         <div class="row">                  
-                                <div class="col-md-3">
+                                <div class="col-md-3 p-0">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <?php 
                                     $image = get_field('contacto_correo_icono');
@@ -125,7 +125,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <!-- +++++++++++++++++++++++ contacto instagram +++++++++++++++++++++++++++++++ -->
                         <li class="pb-4">
                         <div class="row">                  
-                                <div class="col-md-3">
+                                <div class="col-md-3 p-0">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <?php 
                                     $image = get_field('contacto_instagram_icono');
@@ -144,7 +144,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <!-- +++++++++++++++++++++++ contacto facebook +++++++++++++++++++++++++++++++ -->
                         <li class="pb-4">
                         <div class="row">                  
-                                <div class="col-md-3">
+                                <div class="col-md-3 p-0">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <?php 
                                     $image = get_field('contacto_facebook_icono');
