@@ -98,7 +98,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r servicios-p-r2" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_paso_1'); ?>
                 </h2>
                 <h6 class="color-azul font-kulim font-size-3 font-regular donaciones-p-r">
@@ -118,7 +118,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r servicios-p-r2" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_2'); ?>
                 </h2>
                 <h6 class="color-azul font-kulim font-size-3 font-regular donaciones-p-r">
@@ -138,7 +138,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r servicios-p-r2" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_3'); ?>
                 </h2>
                 <h6 class="color-azul font-kulim font-size-3 font-regular donaciones-p-r">
@@ -158,7 +158,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r servicios-p-r2" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_4'); ?>
                 </h2>
                 <h6 class="color-azul font-kulim font-size-3 font-regular donaciones-p-r">
@@ -178,7 +178,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r servicios-p-r2" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_5'); ?>
                 </h2>
                 <h6 class="color-azul font-kulim font-size-3 font-regular donaciones-p-r">
@@ -198,7 +198,7 @@ Template Name: Donaciones
                 <?php endif; ?>
             </div>
             <div class="col-md-10 col-sm-8 align-self-center">
-                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r" data-aos="fade-right" data-aos-duration="2000">
+                <h2 class="color-naranjo font-solway font-size-5 servicios-p-r servicios-p-r2" data-aos="fade-right" data-aos-duration="2000">
                     <?php the_field('titulo_pasos_6'); ?>
                 </h2>
                 <h6 class="color-azul font-kulim font-size-3 font-regular donaciones-p-r">
