@@ -14,11 +14,11 @@
 </head>
 <body>
         <!-- Barra de navegacion  -->
-<?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), '' ); ?>
+        <?php $custom_logo = wp_get_attachment_image( get_theme_mod( 'custom_logo' ), '' ); ?>
 <nav class="navbar navbar-expand-md navbar-light bg-color-beige p-2 fixed-top">
     <div class="container-fluid d-flex align-items-center">
         <a href="inicio logo-r">
-            <div class="logo ">
+            <div class="logo">
                 <?php echo $custom_logo ?>
             </div>
         </a>
@@ -31,15 +31,15 @@
             wp_nav_menu(array(
                 'theme_location' => 'main-menu',
                 'container' => false,
-                'menu_class' => '',
+                'menu_class' => 'navbar-nav ms-auto mb-2 mb-md-0 font-kulimpark font-size-10',
                 'fallback_cb' => '__return_false',
-                'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 font-kulimpark font-size-10 %2$s">%3$s</ul>',
+                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 'depth' => 2,
                 'walker' => new bootstrap_5_wp_nav_menu_walker()
             ));
             ?>
         </div>
+
     </div>
-    
 </nav>
 <div class="pt-5"></div>
