@@ -396,10 +396,10 @@ Template Name: Servicios
 
         <!-------ULTIMAS 2 TARJETAS------->
 
-        <div class="container-fluid px-100 pb-100 py-3 act-p">
+        <div class="container-fluid px-100 pb-100 py-3 ">
             <div class="row">
 
-                <div class="col-md-5 zoom-effect">
+                <div class="col-md-5 zoom-effect act-p">
                     <div class="row">
                         <div class="col-md-6 p-0">
                             <?php
