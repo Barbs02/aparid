@@ -185,52 +185,8 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <?php query_posts("category_name=contacto"); ?>
     <?php while (have_posts()) : the_post(); ?> 
         <div class="row pt-4">
-            <div class="col-md-2">
-            <?php 
-                $image = get_field('logo_aparid');
-                if( !empty( $image ) ): ?>
-                    <img class="img-fluid w-r-60" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                <?php endif; ?>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="assets/correo-electronico 4.png" alt="">
-                    </div>
-                    <div class="col-9">
-                        <h3 class="color-azul font-size-3">Contacto</h3>
-                        <br>
-                        <p class="font-size-1 pb-2">Tel: <?php the_field('contacto_telefono_fijo'); ?></p>
-                        <p class="font-size-1"><?php the_field('contacto_correo'); ?></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="assets/correo-electronico 4.png" alt="">
-                    </div>
-                    <div class="col-9">
-                        <h3 class="color-azul font-size-3">Atención/Horario</h3>
-                        <br>
-                        <p class="font-size-1"><?php the_field('contacto_horario'); ?></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="assets/correo-electronico 4.png" alt="">
-                    </div>
-                    <div class="col-9">
-                        <h3 class="color-azul font-size-3"><?php the_title(); ?></h3>
-                        <br>
-                        <p class="font-size-1"><?php the_field('ubicacion_textual'); ?></p>
-                    </div>
-                </div>
-            </div>
+            
+           
 
             
 
