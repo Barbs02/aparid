@@ -748,6 +748,9 @@ hr {
   .servicios-p-r {
     padding-left: 8%;
   }
+  .donaciones-p-r {
+    padding-left: 10%;
+  }
 }
 @media screen and (max-width: 1020px) {
   .inicio .cuadrado {
