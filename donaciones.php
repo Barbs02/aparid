@@ -37,7 +37,7 @@ Template Name: Donaciones
                                 </div>
                             <div class="col-md-5 font-size-1 font-kulimpark">
                                 <!-- Texto de ¿Quieres Ayudarnos? -->
-                                <p>
+                                <p class="font-kulim font-size-1">
                                     <?php the_content(); ?> 
                                 </p>
                             </div>
