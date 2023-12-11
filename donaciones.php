@@ -20,7 +20,7 @@ Template Name: Donaciones
 </header>
 
 <!------------------------------------- ¿Quieres Ayudarnos? ------------------------------------->
-<section>
+<section class="help">
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">

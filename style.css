@@ -239,6 +239,12 @@ hr {
   color: white;
 }
 
+.help p {
+  font-family: "Kulim Park", sans-serif;
+  color: #121212;
+  line-height: 150%;
+}
+
 /* ++++++++++++++++++++++++++++++++++++Directorio+++++++++++++++++++++++++++++++++++++++++++++ */
 .directorio .img-d {
   border-radius: 200px !important;
