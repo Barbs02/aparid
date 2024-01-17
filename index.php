@@ -247,7 +247,7 @@ Template Name: Inicio
 
                 <!---PROGRAMAS-->
 
-                <div class="col-md-6 pt-3" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="col-md-6 pt-3 font-kulim" data-aos="zoom-in" data-aos-duration="3000">
                         <?php
                         $image = get_field('imagen_referencial_servicios_1');
                         if (!empty($image)): ?>
@@ -264,7 +264,7 @@ Template Name: Inicio
 
                 <!---SERVICIOS-->
 
-                <div class="col-md-6 pt-3" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="col-md-6 pt-3 font-kulim" data-aos="zoom-in" data-aos-duration="3000">
                         <?php
                         $image = get_field('imagen_referencial_servicios_2');
                         if (!empty($image)): ?>
@@ -311,7 +311,7 @@ Template Name: Inicio
 
 <section>
 <div class="container-fluid px-100">
-    <div class="row pb-100">
+    <div class="row pb-100 font-kulim">
         <?php if (have_posts()) : ?>
             <?php query_posts("category_name=resenas&showposts=2"); ?>
         <?php while (have_posts()) : the_post(); ?> 
