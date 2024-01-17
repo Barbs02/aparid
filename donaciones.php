@@ -87,7 +87,7 @@ Template Name: Donaciones
                             <li>
                                 <h2 class="font-solway color-azul text-center">Transferencia WebPay</h2>
                             </li>
-                            <li>
+                            <li class="mx-auto">
                                 <?php
                                 $image = get_field('donaciones-icono2');
                                 if (!empty($image)): ?>
