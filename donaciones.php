@@ -64,7 +64,7 @@ Template Name: Donaciones
                 </div>
                 <div class="row pt-4 ">
                     <div class="col-md-3 mx-auto">
-                        <ul>
+                        <ul class="d-flex flex-column justify-content-center align-items-center list-unstyled">
                             <li>
                                 <h2 class="font-solway color-azul text-center">Transferencia Bancaria</h2>
                             </li>
@@ -102,9 +102,9 @@ Template Name: Donaciones
                     </div>
 
                     <div class="col-md-3 mx-auto">
-                        <ul>
+                        <ul class="d-flex flex-column justify-content-center align-items-center list-unstyled">
                             <li>
-                                <h2 class="font-solway color-azul text-center">Transferencia PayPal</h2>
+                                <h2 class="font-solway color-naranjo text-center">Transferencia PayPal</h2>
                             </li>
                             <li>
                                 <?php
