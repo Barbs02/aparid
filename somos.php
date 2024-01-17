@@ -381,7 +381,7 @@ Template Name: Quienes somos
                     <?php endif; ?>
                 </div>
 
-                <div class="col-md-3 font-kulim">
+                <div class="col-md-3 ">
                     <?php
                     $image = get_field('imagen_galeria_4');
                     if (!empty($image)): ?>
@@ -390,7 +390,7 @@ Template Name: Quienes somos
                     <?php endif; ?>
                 </div>
 
-                <p class="text-center font-size-3"><?php the_field('descripcion_alianzas'); ?></p>
+                <p class="text-center font-size-3 font-kulim"><?php the_field('descripcion_alianzas'); ?></p>
             </div>
         </div>
 
@@ -470,11 +470,11 @@ Template Name: Quienes somos
         <?php if (have_posts()) : ?>
             <?php query_posts("category_name=resenas&showposts=2"); ?>
         <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-6"> 
+                <div class="col-md-6 font-kulim"> 
                 <h2 class="font-size-6 font-solway color-azul"><?php the_field('nombre_resena'); ?></h2>
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
-            <p class="font-kulim" > <?php the_field('resena'); ?></p><a href="#">Ver más</a>
+            <p> <?php the_field('resena'); ?></p><a href="#">Ver más</a>
                 </div>
         <?php endwhile; ?>
         <?php else : ?>  
