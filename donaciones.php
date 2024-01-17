@@ -62,15 +62,15 @@ Template Name: Donaciones
 
                     
                 </div>
-                <div class="row pt-4">
-                    <div class="col-md-2">
+                <div class="row pt-4 mx-auto">
+                    <div class="col-md-3">
                         <ul>
                             <li>
                                 <h2>Transferencia Bancaria</h2>
                             </li>
                             <li>
                                 <?php
-                                $image = get_field('imagen_donaciones');
+                                $image = get_field('donaciones-icono1');
                                 if (!empty($image)): ?>
                                     <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
                                         alt="<?php echo esc_attr($image['alt']); ?>" />
@@ -81,6 +81,45 @@ Template Name: Donaciones
                             </li>
                         </ul>
                     </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            <li>
+                                <h2>Transferencia WebPay</h2>
+                            </li>
+                            <li>
+                                <?php
+                                $image = get_field('donaciones-icono2');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </li>
+                            <li>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            <li>
+                                <h2>Transferencia PayPal</h2>
+                            </li>
+                            <li>
+                                <?php
+                                $image = get_field('donaciones-icono3');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </li>
+                            <li>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
                 <?php endwhile; ?>
                     <?php else: ?>
