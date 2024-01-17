@@ -24,11 +24,12 @@ Template Name: Donaciones
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-                <div class="row">
-                    <?php if (have_posts()): ?>
+                <?php if (have_posts()): ?>
                         <?php query_posts("category_name=donaciones"); ?>
                         <?php while (have_posts()):
                             the_post(); ?>
+                <div class="row">
+                    
                                 <div class="text-center font-size-7 font-solway  pb-4">
                                     <!-- Titulo de ¿Quieres Ayudarnos -->
                                     <h2 class="color-azul font-bold" >
@@ -41,7 +42,7 @@ Template Name: Donaciones
                                     <?php the_content(); ?> 
                                 </p>
                             </div>
-                            <!------- Boton ------->
+                            
                             <div class="col-md-2">
                             </div>
                             <div class="col-md-5">
@@ -56,14 +57,74 @@ Template Name: Donaciones
                             <br>
                             <!------- Boton ------->
                             <div class="col-md-3 pt-3 ">
-                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                                
                             </div>
 
-                    <?php endwhile; ?>
+                    
+                </div>
+                <div class="row pt-4 ">
+                    <div class="col-md-3 mx-auto">
+                        <ul>
+                            <li>
+                                <h2 class="font-solway color-azul text-center">Transferencia Bancaria</h2>
+                            </li>
+                            <li>
+                                <?php
+                                $image = get_field('donaciones-icono1');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </li>
+                            <li>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mx-auto">
+                        <ul>
+                            <li>
+                                <h2 class="font-solway color-azul text-center">Transferencia WebPay</h2>
+                            </li>
+                            <li>
+                                <?php
+                                $image = get_field('donaciones-icono2');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </li>
+                            <li>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mx-auto">
+                        <ul>
+                            <li>
+                                <h2 class="font-solway color-azul text-center">Transferencia PayPal</h2>
+                            </li>
+                            <li>
+                                <?php
+                                $image = get_field('donaciones-icono3');
+                                if (!empty($image)): ?>
+                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
+                                        alt="<?php echo esc_attr($image['alt']); ?>" />
+                                <?php endif; ?>
+                            </li>
+                            <li>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <?php endwhile; ?>
                     <?php else: ?>
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>
-                </div>
             </div>
         </div>
     </div>
