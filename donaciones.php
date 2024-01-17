@@ -62,8 +62,8 @@ Template Name: Donaciones
 
                     
                 </div>
-                <div class="row pt-4 mx-auto">
-                    <div class="col-md-3">
+                <div class="row pt-4 ">
+                    <div class="col-md-3 mx-auto">
                         <ul>
                             <li>
                                 <h2>Transferencia Bancaria</h2>
@@ -82,7 +82,7 @@ Template Name: Donaciones
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 mx-auto">
                         <ul>
                             <li>
                                 <h2>Transferencia WebPay</h2>
@@ -101,7 +101,7 @@ Template Name: Donaciones
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 mx-auto">
                         <ul>
                             <li>
                                 <h2>Transferencia PayPal</h2>
