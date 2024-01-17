@@ -24,7 +24,7 @@ Template Name: Donaciones
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
-                <?php if (have_posts()): ?>
+                    <?php if (have_posts()): ?>
                         <?php query_posts("category_name=donaciones"); ?>
                         <?php while (have_posts()):
                             the_post(); ?>
@@ -59,10 +59,18 @@ Template Name: Donaciones
                             <div class="col-md-3 pt-3 ">
                                 
                             </div>
-
+                            <?php endwhile; ?>
+                    <?php else: ?>
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
                     
                 </div>
                 <div class="row pt-4 ">
+
+                <?php if (have_posts()): ?>
+                        <?php query_posts("category_name=iconos-donaciones"); ?>
+                        <?php while (have_posts()):
+                            the_post(); ?>
                     <div class="col-md-3 mx-auto">
                         <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
                             <li>
@@ -119,12 +127,12 @@ Template Name: Donaciones
                             </li>
                         </ul>
                     </div>
-
-                </div>
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
                     <?php else: ?>
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>
+                </div>
+                
             </div>
         </div>
     </div>
