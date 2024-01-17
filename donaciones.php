@@ -74,7 +74,8 @@ Template Name: Donaciones
                     <div class="col-md-3 mx-auto">
                         <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
                             <li>
-                                <h2 class="font-solway color-azul text-center">Transferencia Bancaria</h2>
+                            <h2 class="font-solway color-azul text-center">Transferencia</h2>
+                                <h2 class="font-solway color-naranjo text-center">Bancaria</h2>
                             </li>
                             <li>
                                 <?php
@@ -93,7 +94,8 @@ Template Name: Donaciones
                     <div class="col-md-3 mx-auto">
                         <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
                             <li>
-                                <h2 class="font-solway color-naranjo text-center">Transferencia WebPay</h2>
+                                <h2 class="font-solway color-azul text-center">Transferencia</h2>
+                                <h2 class="font-solway color-naranjo text-center">WebPay</h2>
                             </li>
                             <li class="mx-auto">
                                 <?php
@@ -112,7 +114,8 @@ Template Name: Donaciones
                     <div class="col-md-3 mx-auto">
                         <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
                             <li>
-                                <h2 class="font-solway color-azul text-center">Transferencia PayPal</h2>
+                            <h2 class="font-solway color-azul text-center">Transferencia</h2>
+                                <h2 class="font-solway color-naranjo text-center">PayPal</h2>
                             </li>
                             <li>
                                 <?php
