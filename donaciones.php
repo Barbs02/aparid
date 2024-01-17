@@ -37,7 +37,7 @@ Template Name: Donaciones
                                 </div>
                             <div class="col-md-5 font-size-1 font-kulimpark">
                                 <!-- Texto de ¿Quieres Ayudarnos? -->
-                                <p>
+                                <p class="font-kulim">
                                     <?php the_content(); ?> 
                                 </p>
                             </div>
@@ -234,7 +234,7 @@ Template Name: Donaciones
                             </div>
                             <div class="col-md-6 font-size-1 font-kulimpark">
                                 <!-- Texto de Otras formas de Apoyarnos -->
-                                <p>
+                                <p class="font-kulim">
                                     <?php the_content(); ?>
                                 </p>
                             </div>
@@ -319,7 +319,7 @@ Template Name: Donaciones
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>
-                        <p class="font-size-1">
+                        <p class="font-size-1 font-kulim">
                             <?php the_field('descripcion_somos'); ?>
                             <a href="quienes-somos">Ver más</a>
                         </p>
@@ -414,7 +414,7 @@ Template Name: Donaciones
                                     <?php the_title(); ?>
                                 </h3>
                                 <br>
-                                <p class="font-size-1 font-kulimpark">
+                                <p class="font-size-1 font-kulim">
                                     <?php the_content(); ?>
                                 </p>
                             </div>
