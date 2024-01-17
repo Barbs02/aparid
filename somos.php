@@ -40,7 +40,7 @@ Template Name: Quienes somos
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6 somos-p">
+                    <div class="col-md-6 somos-p font-kulim">
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>
@@ -76,7 +76,7 @@ Template Name: Quienes somos
         <?php if (have_posts()) : ?>
             <?php query_posts("category_name=metodologia-somos"); ?>
         <?php while (have_posts()) : the_post(); ?> 
-            <div class="col-md-3 align-items-center justify-content-center text-center" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-md-3 align-items-center justify-content-center text-center font-kulim" data-aos="fade-right" data-aos-duration="1000">
                 <?php
                 $image = get_field('icono_referencial_metodologia');
                 if (!empty($image)): ?>
@@ -95,7 +95,7 @@ Template Name: Quienes somos
                     <?php endif; ?>
             </div>
 
-            <div class="col-md-4 align-items-center justify-content-center text-center" data-aos="fade-right" data-aos-duration="2000">
+            <div class="col-md-4 align-items-center justify-content-center text-center font-kulim" data-aos="fade-right" data-aos-duration="2000">
                 <?php
                 $image = get_field('icono_referencial_metodologia_2');
                 if (!empty($image)): ?>
@@ -114,7 +114,7 @@ Template Name: Quienes somos
                     <?php endif; ?>
             </div>
 
-            <div class="col-md-3 align-items-center justify-content-center text-center" data-aos="fade-right" data-aos-duration="3000">
+            <div class="col-md-3 align-items-center justify-content-center text-center font-kulim" data-aos="fade-right" data-aos-duration="3000">
                 <?php
                 $image = get_field('icono_referencial_metodologia_3');
                 if (!empty($image)): ?>
@@ -150,7 +150,7 @@ Template Name: Quienes somos
                             <h4 class="color-azul font-size-4 font-kulim">
                                 <?php the_title(); ?>
                             </h4>
-                            <p class="font-size-1">
+                            <p class="font-size-1 font-kulim">
                                 <?php the_field('profesion_casos'); ?>
                             </p>
                             <a href="<?php the_permalink() ?>">Ver más</a>
@@ -183,7 +183,7 @@ Template Name: Quienes somos
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=directorio"); ?>
             <?php while (have_posts()) : the_post(); ?> 
-            <div class="col-md-6 text-center"> <!-- Directora -->
+            <div class="col-md-6 text-center font-kulim"> <!-- Directora -->
                 <?php
                 $image = get_field('imagen_directora');
                 if (!empty($image)): ?>
@@ -206,7 +206,7 @@ Template Name: Quienes somos
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=directorio"); ?>
             <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-3 text-center"> <!-- Vice-Presidenta -->
+                <div class="col-md-3 text-center font-kulim"> <!-- Vice-Presidenta -->
                     <?php
                     $image = get_field('imagen_vicepresidenta');
                     if (!empty($image)): ?>
@@ -218,7 +218,7 @@ Template Name: Quienes somos
                     <p class="font-size-1"><?php the_field('descripcion_de_cargo_v'); ?></p>
                 </div>
 
-                <div class="col-md-3 text-center"> <!-- Secretaria -->
+                <div class="col-md-3 text-center font-kulim"> <!-- Secretaria -->
                     <?php
                     $image = get_field('imagen_secretaria');
                     if (!empty($image)): ?>
@@ -230,7 +230,7 @@ Template Name: Quienes somos
                     <p class="font-size-1"><?php the_field('descripcion_de_cargo_s'); ?></p>
                 </div>
 
-                <div class="col-md-3 text-center"> <!-- Tesorera -->
+                <div class="col-md-3 text-center font-kulim"> <!-- Tesorera -->
                     <?php
                     $image = get_field('imagen_tesorera');
                     if (!empty($image)): ?>
@@ -242,7 +242,7 @@ Template Name: Quienes somos
                     <p class="font-size-1"><?php the_field('descripcion_de_cargo_t'); ?></p>
                 </div>
 
-                <div class="col-md-3 text-center"> <!-- 1era Directora -->
+                <div class="col-md-3 text-center font-kulim"> <!-- 1era Directora -->
                     <?php
                     $image = get_field('imagen_1era__directora');
                     if (!empty($image)): ?>
@@ -266,7 +266,7 @@ Template Name: Quienes somos
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=directorio"); ?>
             <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-4 text-center"> <!-- Rep. profesionales -->
+                <div class="col-md-4 text-center font-kulim"> <!-- Rep. profesionales -->
                     <?php
                     $image = get_field('imagen_rep_profesionales');
                     if (!empty($image)): ?>
@@ -278,7 +278,7 @@ Template Name: Quienes somos
                     <p class="font-size-1"><?php the_field('descripcion_de_cargo_p'); ?></p>
                 </div>
 
-                <div class="col-md-4 text-center"> <!-- Secretaria -->
+                <div class="col-md-4 text-center font-kulim"> <!-- Secretaria -->
                     <?php
                     $image = get_field('imagen_secretaria_2');
                     if (!empty($image)): ?>
@@ -290,7 +290,7 @@ Template Name: Quienes somos
                     <p class="font-size-1"><?php the_field('descripcion_de_cargo_s2'); ?></p>
                 </div>
 
-                <div class="col-md-4 text-center"> <!-- Coordinadora Pedagógica -->
+                <div class="col-md-4 text-center font-kulim"> <!-- Coordinadora Pedagógica -->
                     <?php
                     $image = get_field('imagen_coordinadora_pedagogica');
                     if (!empty($image)): ?>
@@ -309,7 +309,7 @@ Template Name: Quienes somos
         </div>
     </div>
     <div class="container-fluid bg-color-beige pt-5">
-    <div class="row">
+    <div class="row font-kulim">
         <?php if (have_posts()) : ?>
             <?php query_posts("category_name=directorio"); ?>
         <?php while (have_posts()) : the_post(); ?> 
@@ -318,7 +318,7 @@ Template Name: Quienes somos
             <p class="text-center font-size-1">
                 <?php the_field('titulo_profesionales'); ?>
             </p>
-            <p class="text-center font-size-1">
+            <p class="text-center font-size-1 ">
                 <?php the_field('nombre_de_profesionales'); ?>
             </p>
         <?php endwhile; ?>	
