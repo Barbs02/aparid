@@ -381,7 +381,7 @@ Template Name: Quienes somos
                     <?php endif; ?>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 font-kulim">
                     <?php
                     $image = get_field('imagen_galeria_4');
                     if (!empty($image)): ?>
@@ -474,7 +474,7 @@ Template Name: Quienes somos
                 <h2 class="font-size-6 font-solway color-azul"><?php the_field('nombre_resena'); ?></h2>
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
-            <p> <?php the_field('resena'); ?></p><a href="#">Ver más</a>
+            <p class="font-kulim" > <?php the_field('resena'); ?></p><a href="#">Ver más</a>
                 </div>
         <?php endwhile; ?>
         <?php else : ?>  
