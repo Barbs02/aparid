@@ -33,7 +33,7 @@ Template Name: Inicio
                 <?php query_posts("category_name=inicio"); ?>
                 <?php while (have_posts()):
                     the_post(); ?>
-                    <div class="col-md-8 mx-auto text-center">
+                    <div class="col-md-8 mx-auto text-center font-kulim">
                         <p class="font-size-3">
                             <?php the_field('introduccion_aparid'); ?>
                         </p>
@@ -156,11 +156,11 @@ Template Name: Inicio
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6 somos-p">
+                    <div class="col-md-6 somos-p font-kulim">
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>
-                        <p class="font-size-1">
+                        <p class="font-size-1 font-kulim">
                             <?php the_field('descripcion_somos'); ?>
                             <a href="quienes-somos">Ver más</a>
                         </p>
@@ -219,7 +219,7 @@ Template Name: Inicio
                         <h4 class="color-azul font-size-4 font-kulim">
                             <?php the_title(); ?>
                         </h4>
-                        <p class="font-size-1">
+                        <p class="font-size-1 font-kulim">
                             <?php the_field('profesion_casos'); ?>
                         </p>
                         <a href="<?php the_permalink() ?>">Ver más</a>
@@ -257,7 +257,7 @@ Template Name: Inicio
 
                     <h4 class="text-center font-size-6 color-azul font-kulim"><?php the_field('titulo_servicio_1'); ?></h4>
                     <hr>
-                    <p><?php the_field('descripcion_del_servicio_2'); ?>
+                    <p class="font-kulim"><?php the_field('descripcion_del_servicio_2'); ?>
                         <a href="servicios-#programas">Ver más</a>
                     </p>
                 </div>
@@ -273,7 +273,7 @@ Template Name: Inicio
                         <?php endif; ?>
                     <h4 class="text-center font-size-6 color-azul font-kulim"><?php the_field('titulo_servicio_2'); ?></h4>
                     <hr>
-                    <p><?php the_field('descripcion_del_servicio_2'); ?>
+                    <p class="font-kulim" ><?php the_field('descripcion_del_servicio_2'); ?>
                         <a href="servicios-#actividades">Ver más</a>
                     </p>
                 </div>
@@ -319,7 +319,7 @@ Template Name: Inicio
                 <h2 class="font-size-6 font-solway color-azul"><?php the_field('nombre_resena'); ?></h2>
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
-            <p> <?php the_field('resena'); ?></p><a href="#">Ver más</a>
+            <p class="font-kulim"> <?php the_field('resena'); ?></p><a href="#">Ver más</a>
                 </div>
         <?php endwhile; ?>
         <?php else : ?>  
