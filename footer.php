@@ -17,10 +17,10 @@
                     <div class="col-3">
                         <img src="assets/correo-electronico 4.png" alt="">
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 font-kulim">
                         <h3 class="color-azul font-size-3">Contacto</h3>
                         <br>
-                        <p class="font-size-1 pb-2">Tel: <?php the_field('contacto_telefono_fijo'); ?></p>
+                        <p class="font-size-1 pb-2 ">Tel: <?php the_field('contacto_telefono_fijo'); ?></p>
                         <p class="font-size-1"><?php the_field('contacto_correo'); ?></p>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="col-3">
                         <img src="assets/correo-electronico 4.png" alt="">
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 font-kulim">
                         <h3 class="color-azul font-size-3">Atención/Horario</h3>
                         <br>
                         <p class="font-size-1"><?php the_field('contacto_horario'); ?></p>
@@ -44,7 +44,7 @@
                     <div class="col-3">
                         <img src="assets/correo-electronico 4.png" alt="">
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 font-kulim">
                         <h3 class="color-azul font-size-3"><?php the_title(); ?></h3>
                         <br>
                         <p class="font-size-1"><?php the_field('ubicacion_textual'); ?></p>
@@ -66,7 +66,7 @@
                     <div class="col-1">
                         <img src="assets/correo-electronico 4.png" alt="">
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 font-kulim">
                         <h3 class="color-azul font-size-3">Términos y condiciones</h3>
                         <br>
                         <a href="#">
@@ -77,7 +77,7 @@
                             <p class="font-size-1">Foto de RDNE Stock project - Pexels</p>
                         </a>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 font-kulim">
                         <h3 class="color-invicible font-size-3"> . </h3>
                         <br>
                         <a href="#">
@@ -128,7 +128,7 @@
                     </div>
                     <div class="row">
                     <div class="col-md-2 mx-auto text-center">
-                    <p class="text-white mb-0">© 2013 - APARID</p>
+                    <p class="text-white mb-0 font-kulim">© 2013 - APARID</p>
                     </div>
                     </div>
                 <?php endwhile; ?>	
