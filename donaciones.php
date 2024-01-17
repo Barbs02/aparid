@@ -77,7 +77,7 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li>
-                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
                     </div>
@@ -96,7 +96,7 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li>
-                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
                     </div>
@@ -115,7 +115,7 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li>
-                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
                     </div>
