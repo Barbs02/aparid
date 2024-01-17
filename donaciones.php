@@ -20,7 +20,7 @@ Template Name: Donaciones
 </header>
 
 <!------------------------------------- ¿Quieres Ayudarnos? ------------------------------------->
-<section>
+<section class="help">
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto my-5">
@@ -37,7 +37,7 @@ Template Name: Donaciones
                                 </div>
                             <div class="col-md-5 font-size-1 font-kulimpark">
                                 <!-- Texto de ¿Quieres Ayudarnos? -->
-                                <p class="font-kulim">
+                                <p>
                                     <?php the_content(); ?> 
                                 </p>
                             </div>

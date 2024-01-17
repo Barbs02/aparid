@@ -46,6 +46,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 150%;
 }
 
+
 .font-kulim{
 
     font-family: $kulim;
@@ -244,6 +245,14 @@ hr{
 .socios{
     p{
         color: $white;
+    }
+}
+
+.help{
+    p{
+        font-family: $kulim;
+        color: #121212;
+        line-height: 150%;
     }
 }
 
@@ -891,7 +900,7 @@ hr{
     }
 
     .act-p{
-        padding-top: 50px;
+        padding-top: 70px;
     }
 }
 
