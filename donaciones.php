@@ -66,7 +66,7 @@ Template Name: Donaciones
                     <div class="col-md-3 mx-auto">
                         <ul>
                             <li>
-                                <h2>Transferencia Bancaria</h2>
+                                <h2 class="font-solway color-azul">Transferencia Bancaria</h2>
                             </li>
                             <li>
                                 <?php
