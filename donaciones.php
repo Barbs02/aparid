@@ -64,7 +64,7 @@ Template Name: Donaciones
                 </div>
                 <div class="row pt-4 ">
                     <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-center align-items-center list-unstyled">
+                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
                             <li>
                                 <h2 class="font-solway color-azul text-center">Transferencia Bancaria</h2>
                             </li>
@@ -77,15 +77,15 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li>
-                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-center align-items-center list-unstyled">
+                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
                             <li>
-                                <h2 class="font-solway color-azul text-center">Transferencia WebPay</h2>
+                                <h2 class="font-solway color-naranjo text-center">Transferencia WebPay</h2>
                             </li>
                             <li class="mx-auto">
                                 <?php
@@ -96,15 +96,15 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li>
-                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-center align-items-center list-unstyled">
+                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
                             <li>
-                                <h2 class="font-solway color-naranjo text-center">Transferencia PayPal</h2>
+                                <h2 class="font-solway color-azul text-center">Transferencia PayPal</h2>
                             </li>
                             <li>
                                 <?php
@@ -115,7 +115,7 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li>
-                                <button class="border1 p-2 w-100 hover-boton bg-boton" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 w-100 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
                     </div>
