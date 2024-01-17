@@ -105,7 +105,7 @@ Template Name: Donaciones
                                         alt="<?php echo esc_attr($image['alt']); ?>" />
                                 <?php endif; ?>
                             </li>
-                            <li>
+                            <li class="w-100">
                                 <button class="border1 p-2 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
@@ -125,7 +125,7 @@ Template Name: Donaciones
                                         alt="<?php echo esc_attr($image['alt']); ?>" />
                                 <?php endif; ?>
                             </li>
-                            <li>
+                            <li class="w-100">
                                 <button class="border1 p-2 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
                             </li>
                         </ul>
