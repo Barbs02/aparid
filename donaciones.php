@@ -77,7 +77,7 @@ Template Name: Donaciones
                             <h2 class="font-solway color-azul text-center">Transferencia</h2>
                                 <h2 class="font-solway color-naranjo text-center">Bancaria</h2>
                             </li>
-                            <li>
+                            <li class="py-3">
                                 <?php
                                 $image = get_field('donaciones-icono1');
                                 if (!empty($image)): ?>
@@ -97,7 +97,7 @@ Template Name: Donaciones
                                 <h2 class="font-solway color-azul text-center">Transferencia</h2>
                                 <h2 class="font-solway color-naranjo text-center">WebPay</h2>
                             </li>
-                            <li class="mx-auto">
+                            <li class="py-5">
                                 <?php
                                 $image = get_field('donaciones-icono2');
                                 if (!empty($image)): ?>
@@ -117,7 +117,7 @@ Template Name: Donaciones
                             <h2 class="font-solway color-azul text-center">Transferencia</h2>
                                 <h2 class="font-solway color-naranjo text-center">PayPal</h2>
                             </li>
-                            <li>
+                            <li class="py-5">
                                 <?php
                                 $image = get_field('donaciones-icono3');
                                 if (!empty($image)): ?>
