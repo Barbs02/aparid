@@ -72,7 +72,7 @@ Template Name: Donaciones
                         <?php while (have_posts()):
                             the_post(); ?>
                     <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
+                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled" style="height: 300px;">
                             <li>
                             <h2 class="font-solway color-azul text-center">Transferencia</h2>
                                 <h2 class="font-solway color-naranjo text-center">Bancaria</h2>
@@ -92,7 +92,7 @@ Template Name: Donaciones
                     </div>
 
                     <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled">
+                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled" style="height: 300px;">
                             <li>
                                 <h2 class="font-solway color-azul text-center">Transferencia</h2>
                                 <h2 class="font-solway color-naranjo text-center">WebPay</h2>
@@ -112,7 +112,7 @@ Template Name: Donaciones
                     </div>
 
                     <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled " style="height: 500px;">
+                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled " style="height: 300px;">
                             <li>
                             <h2 class="font-solway color-azul text-center">Transferencia</h2>
                                 <h2 class="font-solway color-naranjo text-center">PayPal</h2>
