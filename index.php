@@ -33,8 +33,8 @@ Template Name: Inicio
                 <?php query_posts("category_name=inicio"); ?>
                 <?php while (have_posts()):
                     the_post(); ?>
-                    <div class="col-md-8 mx-auto text-center">
-                        <p class="font-size-3 font-kulim">
+                    <div class="col-md-8 mx-auto text-center font-kulim">
+                        <p class="font-size-3">
                             <?php the_field('introduccion_aparid'); ?>
                         </p>
                     </div>
