@@ -83,7 +83,7 @@ Template Name: Donaciones
                     </div>
 
                     <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-between">
+                        <ul class="d-flex flex-column justify-content-center align-items-between">
                             <li>
                                 <h2 class="font-solway color-azul text-center">Transferencia WebPay</h2>
                             </li>
