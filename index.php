@@ -321,7 +321,8 @@ Template Name: Inicio
             <hr>
 
                 <div class="w-100">
-                    <?php the_field('archivo-resena'); ?>
+                    <video class="w-100" src="<?php the_field('archivo-resena'); ?>"></video>
+                    
                 </div>
                 </div>
         <?php endwhile; ?>
