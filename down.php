@@ -29,7 +29,7 @@ Template Name: Sindrome de Down
                 <?php while (have_posts()):
                     the_post(); ?>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 font-kulim">
                         <p class="font-size-1">
                             <?php the_field('descripcion_sd_1'); ?>
                         </p>
@@ -59,7 +59,7 @@ Template Name: Sindrome de Down
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 font-kulim">
                         <p class="font-size-1">
                             <?php the_field('descripcion_sd_2'); ?>
                         </p>
@@ -75,7 +75,7 @@ Template Name: Sindrome de Down
                 <?php while (have_posts()):
                     the_post(); ?>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 font-kulim">
                         <p class="font-size-1">
                             <?php the_field('descripcion_sd_3'); ?>
                         </p>
@@ -117,11 +117,11 @@ Template Name: Sindrome de Down
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6 somos-p">
+                    <div class="col-md-6 somos-p font-kulim">
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>
-                        <p class="font-size-1">
+                        <p class="font-size-1 font-kulim">
                             <?php the_field('descripcion_somos'); ?>
                             <a href="quienes-somos">Ver más</a>
                         </p>
@@ -189,8 +189,8 @@ Template Name: Sindrome de Down
                         <div class="cuadrado bg-color-celeste position-absolute "></div>
                     </div>
                     <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                        <p class="font-size-1">
+                    <div class="col-md-5 font-kulim">
+                        <p class="font-size-1 font-kulim">
                             <?php the_field('descripcion_proceso_1'); ?>
                         </p>
                     </div>
@@ -204,7 +204,7 @@ Template Name: Sindrome de Down
                 <?php query_posts("category_name=down"); ?>
                 <?php while (have_posts()):
                     the_post(); ?>
-                    <div class="col-md-5">
+                    <div class="col-md-5 font-kulim">
                         <p class="font-size-1">
                             <?php the_field('descripcion_proceso_2'); ?>
                         </p>
@@ -250,7 +250,7 @@ Template Name: Sindrome de Down
                     <?php query_posts("category_name=tener-en-cuenta"); ?>
                     <?php while (have_posts()):
                         the_post(); ?>
-                                            <div class="col-md-5">
+                        <div class="col-md-5 font-kulim">
                             <p class="font-size-1">
                                 <?php the_field('descripcion_tener_en_cuenta'); ?>
                             </p>
@@ -267,7 +267,7 @@ Template Name: Sindrome de Down
                         </div>
                                 <!-- elemntos a 3 columnas -->
                         <div class="row pt-100">
-                            <div class="col-md-4 justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="col-md-4 justify-content-center font-kulim" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="row">
                                     <div class="col-md-6 mx-auto text-center">
                                     <?php
@@ -286,7 +286,7 @@ Template Name: Sindrome de Down
                                     <?php the_field('descripcion_pautas_1'); ?>
                                 </p>
                             </div>
-                            <div class="col-md-4 justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="col-md-4 justify-content-center font-kulim" data-aos="fade-up" data-aos-duration="2000">
                                 <div class="row">
                                     <div class="col-md-6 mx-auto text-center">
                                     <?php
@@ -305,7 +305,7 @@ Template Name: Sindrome de Down
                                     <?php the_field('descripcion_pautas_2'); ?>
                                 </p>
                             </div>
-                            <div class="col-md-4 justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="col-md-4 justify-content-center font-kulim" data-aos="fade-up" data-aos-duration="3000">
                                 <div class="row">
                                     <div class="col-md-6 mx-auto text-center">
                                     <?php
@@ -365,7 +365,7 @@ Template Name: Sindrome de Down
             <?php while (have_posts()) : the_post(); ?> 
                 <div class="col-md-6 p-4 zoom-effect">
                     <div class="row border3">
-                        <div class="col-md-4">
+                        <div class="col-md-4 font-kulim">
                             <?php
                             $image = get_field('imagen_referencial_programa');
                             if (!empty($image)): ?>
@@ -377,7 +377,7 @@ Template Name: Sindrome de Down
                                 <?php the_field('descripcion_extra_de_la_imagen_del_programa'); ?>
                             </p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 font-kulim">
                             <h2 class="font-size-7 font-solway color-azul"><?php the_field('siglas_programas'); ?></h2>
                             <p class="font-size-2">
                                 <?php the_excerpt(); ?><a href="servicios-#programas">Ver más</a>

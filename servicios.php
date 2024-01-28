@@ -29,7 +29,7 @@ Template Name: Servicios
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="timeline-title font-solway font-size-6 font-bold text-center color-azul">Metodologías de trabajo</h2>
-                    <p class="font-size-1 text-center">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
+                    <p class="font-size-1 text-center font-kulim">Tenemos diferentes procesos de aprendizajes para las distintas etapas en la
                         vida de las personas con síndrome de Down, para ello contamos con atenciones individuales y grupales
                         para potenciar las capacidades de sus hijos a través de los programas de atención.</p>
 
@@ -194,7 +194,7 @@ Template Name: Servicios
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6 somos-p">
+                    <div class="col-md-6 somos-p font-kulim">
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>
@@ -259,7 +259,7 @@ Template Name: Servicios
                     <h2 class="font-size-6 color-azul font-solway font-bold" data-aos="fade-right" data-aos-duration="2500"><?php the_title(); ?> (<?php the_field('siglas_programas'); ?>)</h2>
                     <br>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 font-kulim">
 
                     <p class="font-size-1" >
                         <?php the_content(); ?>
@@ -268,14 +268,14 @@ Template Name: Servicios
 
                 <div class="col-md-2"></div>
 
-                <div class="col-md-5">
+                <div class="col-md-5 font-kulim">
                     <?php
                     $image = get_field('imagen_referencial_programa');
                     if (!empty($image)): ?>
                         <img class="img-fluid " src="<?php echo esc_url($image['url']); ?>"
                             alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
-                    <p class="font-size-1"><?php the_field('descripcion_extra_del_programa'); ?></p>
+                    <p class="font-size-1 "><?php the_field('descripcion_extra_del_programa'); ?></p>
                 </div>
         </div>
     </div>
@@ -290,7 +290,7 @@ Template Name: Servicios
 
         <div class="container-fluid px-100 bg-color-beige pb-100 pt-4">
             <div class="row">
-                    <div class="col-md-4 mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-md-4 mx-auto text-center font-kulim" data-aos="fade-up" data-aos-duration="1000">
                         
                         <?php
                         $image = get_field('icono_referencial_objetivos_1');
@@ -299,10 +299,10 @@ Template Name: Servicios
                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         <?php endif; ?>
                         
-                        <p class="font-size-1"><?php the_field('descripcion_objetivo_1'); ?></p>
+                        <p class="font-size-1 "><?php the_field('descripcion_objetivo_1'); ?></p>
                     </div>
 
-                    <div class="col-md-4 mx-auto text-center" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-md-4 mx-auto text-center font-kulim" data-aos="fade-up" data-aos-duration="2000">
                         
                         <?php
                         $image = get_field('icono_referencial_objetivos_2');
@@ -314,7 +314,7 @@ Template Name: Servicios
                         <p class="font-size-1"><?php the_field('descripcion_objetivo_2'); ?></p>
                     </div>
 
-                    <div class="col-md-4 mx-auto text-center" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-md-4 mx-auto text-center font-kulim" data-aos="fade-up" data-aos-duration="3000">
                         
                         <?php
                         $image = get_field('icono_referencial_objetivos_3');
@@ -368,7 +368,7 @@ Template Name: Servicios
                                     alt="<?php echo esc_attr($image['alt']); ?>" />
                             <?php endif; ?>
                         </div>
-                        <div class="col-md-6 bg-color-naranjo p-3 ">
+                        <div class="col-md-6 bg-color-naranjo p-3 font-kulim">
                             <p class="font-size-1 color-blanco">
                                 <?php the_field('descripcion_actividad_1'); ?>
                             </p>
@@ -378,7 +378,7 @@ Template Name: Servicios
                 <div class="col-md-2"></div>
                 <div class="col-md-5 zoom-effect act-p">
                     <div class="row">
-                        <div class="col-md-6 bg-color-azul p-3">
+                        <div class="col-md-6 bg-color-azul p-3 font-kulim">
                             <p class="font-size-1 color-blanco"><?php the_field('descripcion_actividad_2'); ?></p>
                         </div>
                         <div class="col-md-6 p-0">
@@ -409,7 +409,7 @@ Template Name: Servicios
                                     alt="<?php echo esc_attr($image['alt']); ?>" />
                             <?php endif; ?>
                         </div>
-                        <div class="col-md-6 bg-color-celeste p-3">
+                        <div class="col-md-6 bg-color-celeste p-3 font-kulim">
                             <p class="font-size-1">
                                 <?php the_field('descripcion_actividad_3'); ?>
                             </p>
@@ -420,7 +420,7 @@ Template Name: Servicios
                 <div class="col-md-2"></div>
                 <div class="col-md-5 zoom-effect act-p">
                     <div class="row">
-                        <div class="col-md-6 bg-color-amarillo p-3">
+                        <div class="col-md-6 bg-color-amarillo p-3 font-kulim">
                             <p class="font-size-1">
                             <?php the_field('descripcion_actividad_4'); ?>
                             </p>
@@ -454,25 +454,25 @@ Template Name: Servicios
     <?php while (have_posts()) : the_post(); ?> 
                 
                 <div class="modal" tabindex="-1" id="modal1">
-                    <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                        <div class="modal-content">
+                    <div class="modal-dialog modal-xl mx-auto overflow-auto font-kulim">
+                        <div class="modal-content font-kulim">
                         <div class="modal-header bg-color-beige">
                             <h2 class="color-azul font-solway font-size-5">
                                 <?php the_field('titulo_paso'); ?>
                             </h2>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-footer bg-color-beige">
+                        <div class="modal-footer bg-color-beige font-kulim">
                             <div class="pt-3"></div>
                             <div class="container-fluid">
-                                <div class="row">
+                                <div class="row font-kulim ">
                                     
-                                    <div class="col-md-8">
-                                        <p class="font-size-2">
+                                    <div class="col-md-8 font-kulim">
+                                        <p class="font-size-2 font-kulim">
                                             <?php the_field('descripcion_metodologia'); ?>
                                         </p>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 font-kulim">
                                         <?php
                                         $image = get_field('imagen_referencial_metodologia');
                                         if (!empty($image)): ?>
@@ -516,7 +516,7 @@ Template Name: Servicios
                 
                 <div class="modal" tabindex="-1" id="modal2">
                     <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                        <div class="modal-content">
+                        <div class="modal-content font-kulim">
                         <div class="modal-header bg-color-beige">
                             <h2 class="color-azul font-solway font-size-5">
                                 <?php the_field('titulo_paso_2'); ?>
@@ -575,7 +575,7 @@ Template Name: Servicios
                 
                 <div class="modal" tabindex="-1" id="modal3">
                     <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                        <div class="modal-content">
+                        <div class="modal-content font-kulim">
                         <div class="modal-header bg-color-beige">
                             <h2 class="color-azul font-solway font-size-5">
                                 <?php the_field('titulo_paso_3'); ?>
@@ -634,7 +634,7 @@ Template Name: Servicios
                 
                 <div class="modal" tabindex="-1" id="modal4">
                     <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                        <div class="modal-content">
+                        <div class="modal-content font-kulim">
                         <div class="modal-header bg-color-beige">
                             <h2 class="color-azul font-solway font-size-5">
                                 <?php the_field('titulo_paso_4'); ?>
@@ -693,7 +693,7 @@ Template Name: Servicios
                 
                 <div class="modal" tabindex="-1" id="modal5">
                     <div class="modal-dialog modal-xl mx-auto overflow-auto">
-                        <div class="modal-content">
+                        <div class="modal-content font-kulim">
                         <div class="modal-header bg-color-beige">
                             <h2 class="color-azul font-solway font-size-5">
                                 <?php the_field('titulo_paso_5'); ?>

@@ -17,9 +17,9 @@
                             <div class="cuadrado bg-color-azul position-absolute "></div>
                         </div>
                         <div class="col-md-1"></div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 font-kulim">
                             <h2 class="font-solway font-size-5 font-bold color-azul"><?php the_title(); ?></h2>
-                            <p class="font-size-1">
+                            <p class="font-size-1 font-kulim">
                                 <?php the_field('historia_parte_1_casos'); ?>
                             </p>
                         </div>
@@ -33,7 +33,7 @@
                     <?php while (have_posts()):
                         the_post(); ?>
                         <div class="col-md-1"></div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 font-kulim">
                             <p class="font-size-1">
                                 <?php the_field('historia_parte_2_casos'); ?>
                             </p>
@@ -64,7 +64,7 @@
                     <?php query_posts("category_name=casos-de-exito"); ?>
                     <?php while (have_posts()):
                         the_post(); ?>
-                        <div class="col-md-4 text-center"  data-aos="zoom-in" data-aos-duration="3000">
+                        <div class="col-md-4 text-center font-kulim"  data-aos="zoom-in" data-aos-duration="3000">
                             <?php
                             $image = get_field('imagen_casos');
                             if (!empty($image)): ?>
@@ -118,7 +118,7 @@
             <?php if (have_posts()) : ?>
                 <?php query_posts("category_name=programas"); ?>
             <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-6 p-4">
+                <div class="col-md-6 p-4 font-kulim">
                     <div class="row border3">
                         <div class="col-md-4">
                             <?php
