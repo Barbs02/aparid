@@ -319,8 +319,10 @@ Template Name: Inicio
                 <h2 class="font-size-6 font-solway color-azul"><?php the_field('nombre_resena'); ?></h2>
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
-            <p class="font-kulim"> <?php the_field('resena'); ?></p><a href="#">Ver más</a>
-            <?php the_field('archivo-resena'); ?>
+
+                <div class="w-100">
+                    <?php the_field('archivo-resena'); ?>
+                </div>
                 </div>
         <?php endwhile; ?>
         <?php else : ?>  
