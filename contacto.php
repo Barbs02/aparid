@@ -21,28 +21,28 @@ echo do_shortcode('[smartslider3 slider="2"]');
                 
                     <div class="col-md-6 pt-5 pb-3">
                         <form>
-                        <label for="nombre"><p>Nombre:</p></label>
+                        <label for="nombre"><p class="font-kulim" >Nombre:</p></label>
                         <input  type="text" id="nombre" name="nombre" style="width: 100%;" class="border1 bg-color-beige p-3" required>
                     </div>
                     <div class="col-md-6 pt-5 pb-3">
-                        <label for="apellido"><p>Apellido:</p></label>
+                        <label for="apellido"><p class="font-kulim" >Apellido:</p></label>
                         <input type="text" id="apellido" name="apellido" style="width: 100%;" class="border1 bg-color-beige p-3" required>
                     </div>
 
                     <div class="col-md-6 py-3">
-                        <label for="celular"><p>Celular:</p></label>
+                        <label for="celular"><p class="font-kulim" >Celular:</p></label>
                         <input type="tel" id="celular" name="celular" style="width: 100%;" pattern="[0-9]{10}" class="border1 bg-color-beige p-3" required>
 
                     </div>
                     
                     <div class="col-md-6 py-3">
-                        <label for="email"><p>Email:</p></label>
+                        <label for="email"><p class="font-kulim" >Email:</p></label>
                         <input type="email" id="email" name="email" style="width: 100%;" class="border1 bg-color-beige p-3" required>
                     </div>
                     
 
                     <div class="col-md-12">
-                        <label for="mensaje"><p>Mensaje:</p></label>
+                        <label for="mensaje"><p class="font-kulim" >Mensaje:</p></label>
                         <textarea id="mensaje" name="mensaje" rows="4" style="width: 100%;" class="border1 bg-color-beige p-3" required></textarea>
                     </div>
                     
@@ -65,7 +65,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
     <div class="row">
         <div class="col-md-10 mx-auto">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 font-kulim">
                     <?php if (have_posts()) : ?>
                         <?php query_posts("category_name=contacto"); ?>
                     <?php while (have_posts()) : the_post(); ?> 
@@ -73,7 +73,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <br>
                         <p><?php the_field('ubicacion_textual'); ?></p>
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-8 ">
                                 <?php the_field('mapa_de_ubicacion'); ?>
                             </div>
 
@@ -96,7 +96,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php endif; ?>
                                     </a>
                                 </div>  
-                                <div class="col-md-9">
+                                <div class="col-md-9 font-kulim">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <p><?php the_field('contacto_telefono'); ?></p>
                                     </a>
@@ -115,7 +115,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php endif; ?>
                                     </a>
                                 </div>  
-                                <div class="col-md-9">
+                                <div class="col-md-9 font-kulim">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <p><?php the_field('contacto_correo'); ?></p>
                                     </a>
@@ -134,7 +134,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php endif; ?>
                                     </a>
                                 </div>  
-                                <div class="col-md-9">
+                                <div class="col-md-9 font-kulim">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <p><?php the_field('contacto_instagram'); ?></p>
                                     </a>
@@ -153,7 +153,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     <?php endif; ?>
                                     </a>
                                 </div>  
-                                <div class="col-md-9">
+                                <div class="col-md-9 font-kulim">
                                 <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
                                     <p><?php the_field('contacto_facebook'); ?></p>
                                     </a>
@@ -205,7 +205,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                     <div class="col-3">
                         <img src="assets/correo-electronico 4.png" alt="">
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 font-kulim">
                         <h3 class="color-azul font-size-3">Atención/Horario</h3>
                         <br>
                         <p class="font-size-1"><?php the_field('contacto_horario'); ?></p>
@@ -224,21 +224,21 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <h3 class="color-azul font-size-3">Términos y condiciones</h3>
                         <br>
                         <a href="#">
-                            <p class="font-size-1 pb-2">Microsoft iconos creados por Freepik - Flaticon</p>
+                            <p class="font-size-1 pb-2 font-kulim">Microsoft iconos creados por Freepik - Flaticon</p>
                         </a>
                         
                         <a href="#">
-                            <p class="font-size-1">Foto de RDNE Stock project - Pexels</p>
+                            <p class="font-size-1 font-kulim">Foto de RDNE Stock project - Pexels</p>
                         </a>
                     </div>
                     <div class="col-5">
                         <h3 class="color-invicible font-size-3"> . </h3>
                         <br>
                         <a href="#">
-                            <p class="font-size-1 pb-2">Foto de Anna Shvets - Pexels</p>
+                            <p class="font-size-1 pb-2 font-kulim">Foto de Anna Shvets - Pexels</p>
                         </a>
                         <a href="#">
-                            <p class="font-size-1">Foto de Pavol Štugel en Unsplash</p>
+                            <p class="font-size-1 font-kulim">Foto de Pavol Štugel en Unsplash</p>
                         </a>
                     </div>
                 </div>
@@ -256,7 +256,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                 
                     <div class="row">
                     <div class="col-md-2 mx-auto text-center">
-                    <p class="text-white mb-0">© 2013 - APARID</p>
+                    <p class="text-white mb-0 font-kulim">© 2013 - APARID</p>
                     </div>
                     </div>
                 <?php endwhile; ?>	

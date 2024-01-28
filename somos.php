@@ -351,7 +351,7 @@ Template Name: Quienes somos
         <?php query_posts("category_name=alianzas"); ?>
         <?php while (have_posts()) : the_post(); ?> 
             <div class="container-fluid px-100">
-            <div class="row">
+            <div class="row font-kulim">
 
                 <div class="col-md-3">
                     <?php

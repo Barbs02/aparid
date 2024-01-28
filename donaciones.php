@@ -304,7 +304,7 @@ Template Name: Donaciones
                                     <?php the_title(); ?>
                                 </h2>
                             </div>
-                            <div class="col-md-6 font-size-1 font-kulimpark">
+                            <div class="col-md-6 font-size-1 font-kulim">
                                 <!-- Texto de Otras formas de Apoyarnos -->
                                 <p class="font-kulim">
                                     <?php the_content(); ?>
@@ -348,12 +348,12 @@ Template Name: Donaciones
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 font-kulim">
                             <!-- Contenido de Transparencia -->
                             <h3 class="font-size-4 font-bold color-azul font-solway">
                                 <?php the_field('titulo_transparencia'); ?>
                             </h3>
-                            <p class="font-size-2 font-kulimpark">
+                            <p class="font-size-2 font-kulim">
                                 <?php the_field('descripcion_transparencia'); ?>
                             </p>
                         </div>
@@ -387,7 +387,7 @@ Template Name: Donaciones
                         <div class="cuadrado bg-color-azul position-absolute "></div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-6 somos-p">
+                    <div class="col-md-6 somos-p font-kulim">
                         <h2 class="font-size-7 font-solway color-azul">
                             <?php the_title(); ?>
                         </h2>
@@ -480,7 +480,7 @@ Template Name: Donaciones
                         <?php query_posts("category_name=certificacion"); ?>
                         <?php while (have_posts()):
                             the_post(); ?>
-                            <div class="col-md-5">
+                            <div class="col-md-5 font-kulim">
                                 <!-- Texto de Certificacion -->
                                 <h3 class="font-size-7 font-solway font-bold color-azul" data-aos="fade-right" data-aos-duration="2000">
                                     <?php the_title(); ?>
