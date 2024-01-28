@@ -116,7 +116,7 @@ Template Name: Inicio
                 <br>
 
                 <div class="col-md-8 pt-4">
-                    <h4 class="font-size-3 font-italic" data-aos="fade-right" data-aos-duration="3000">
+                    <h4 class="font-size-3 font-italic" data-aos="fade-right" data-aos-duration="2000">
                         <?php the_field('cita_bienvenida'); ?>
                     </h4> <!-- CITA -->
                 </div>
@@ -208,7 +208,7 @@ Template Name: Inicio
                 <?php query_posts("category_name=casos-de-exito"); ?>
                 <?php while (have_posts()):
                     the_post(); ?>
-                    <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration="1500">
                         <?php
                         $image = get_field('imagen_casos');
                         if (!empty($image)): ?>
@@ -247,7 +247,7 @@ Template Name: Inicio
 
                 <!---PROGRAMAS-->
 
-                <div class="col-md-6 pt-3 font-kulim" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="col-md-6 pt-3 font-kulim" data-aos="zoom-in" data-aos-duration="2000">
                         <?php
                         $image = get_field('imagen_referencial_servicios_1');
                         if (!empty($image)): ?>
@@ -264,7 +264,7 @@ Template Name: Inicio
 
                 <!---SERVICIOS-->
 
-                <div class="col-md-6 pt-3 font-kulim" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="col-md-6 pt-3 font-kulim" data-aos="zoom-in" data-aos-duration="2000">
                         <?php
                         $image = get_field('imagen_referencial_servicios_2');
                         if (!empty($image)): ?>
