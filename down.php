@@ -35,7 +35,7 @@ Template Name: Sindrome de Down
                         </p>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-4" data-aos="fade-left"  data-aos-duration="2000">
+                    <div class="col-md-4" data-aos="fade-left"  data-aos-duration="1500">
                         <h2 class="font-bold"><?php the_field('cita_sd'); ?></h2>
                     </div>
                 <?php endwhile; ?>

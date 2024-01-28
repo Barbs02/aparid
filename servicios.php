@@ -256,7 +256,7 @@ Template Name: Servicios
     <div class="container-fluid mx-auto">
         <div class="row px-100 py-50">
                 <div class="col-md-12 mx-auto">
-                    <h2 class="font-size-6 color-azul font-solway font-bold" data-aos="fade-right" data-aos-duration="2500"><?php the_title(); ?> (<?php the_field('siglas_programas'); ?>)</h2>
+                    <h2 class="font-size-6 color-azul font-solway font-bold" data-aos="fade-right" data-aos-duration="2000"><?php the_title(); ?> (<?php the_field('siglas_programas'); ?>)</h2>
                     <br>
                 </div>
                 <div class="col-md-5 font-kulim">
