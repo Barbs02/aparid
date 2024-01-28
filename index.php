@@ -320,10 +320,17 @@ Template Name: Inicio
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
 
-                <div class="w-100">
+                <!-- <div class="w-100">
                     <video class="w-100" src=""> <?php the_field('archivo-resena'); ?></video>
                     
-                </div>
+                </div> -->
+
+                <?php
+                        $video = get_field('archivo-resena');
+                        if (!empty($video)): ?>
+                            <video class="w-100 pb-3" src="<?php echo esc_url($video['url']); ?>"
+                                alt="<?php echo esc_attr($video['alt']); ?>" />
+                        <?php endif; ?>
                 </div>
         <?php endwhile; ?>
         <?php else : ?>  
