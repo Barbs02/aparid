@@ -321,7 +321,7 @@ Template Name: Inicio
             <hr>
 
                 <div class="w-100">
-                    <video class="w-100" src="<?php the_field('archivo-resena'); ?>"></video>
+                    <video class="w-100" src=""> <?php the_field('archivo-resena'); ?></video>
                     
                 </div>
                 </div>
