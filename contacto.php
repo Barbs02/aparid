@@ -20,7 +20,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
             <div class="row">
                 
                     <div class="col-md-6 pt-5 pb-3">
-                        <form>
+                        <form method='POST' action='../enviar.php'>
                         <label for="nombre"><p class="font-kulim" >Nombre:</p></label>
                         <input  type="text" id="nombre" name="nombre" style="width: 100%;" class="border1 bg-color-beige p-3" required>
                     </div>
@@ -31,7 +31,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
                     <div class="col-md-6 py-3">
                         <label for="celular"><p class="font-kulim" >Celular:</p></label>
-                        <input type="tel" id="celular" name="celular" style="width: 100%;" pattern="[0-9]{10}" class="border1 bg-color-beige p-3" required>
+                        <input type="number" id="celular" name="celular" style="width: 100%;" pattern="[0-9]{10}" class="border1 bg-color-beige p-3" required>
 
                     </div>
                     
