@@ -169,7 +169,7 @@ Template Name: Donaciones
                                         </p>
                                     </div>
                                     <div class="col-md-4 font-kulim">
-                                        <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                                        
                                     </div>
                                         
                                     
