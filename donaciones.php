@@ -165,16 +165,11 @@ Template Name: Donaciones
                                     
                                     <div class="col-md-8 font-kulim">
                                         <p class="font-size-2 font-kulim">
-                                            <?php the_field('descripcion_metodologia'); ?>
+                                            <?php the_field('datos-transferencia-texto'); ?>
                                         </p>
                                     </div>
                                     <div class="col-md-4 font-kulim">
-                                        <?php
-                                        $image = get_field('imagen_referencial_metodologia');
-                                        if (!empty($image)): ?>
-                                        <img class="img-fluid mx-auto" src="<?php echo esc_url($image['url']); ?>"
-                                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                                        <?php endif; ?>
+                                       
                                     </div>
                                         
                                     
