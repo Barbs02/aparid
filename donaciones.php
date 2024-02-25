@@ -146,7 +146,7 @@ Template Name: Donaciones
         <div class="col-md-12">
 
         <?php if (have_posts()) : ?>
-        <?php query_posts("category_name=metodologia-servicios"); ?>
+        <?php query_posts("category_name=datos-transferencia"); ?>
     <?php while (have_posts()) : the_post(); ?> 
                 
                 <div class="modal" tabindex="-1" id="modal1">
@@ -154,7 +154,7 @@ Template Name: Donaciones
                         <div class="modal-content font-kulim">
                         <div class="modal-header bg-color-beige">
                             <h2 class="color-azul font-solway font-size-5">
-                                <?php the_field('titulo_paso'); ?>
+                                <?php the_title(); ?>
                             </h2>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
