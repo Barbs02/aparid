@@ -165,7 +165,7 @@ Template Name: Donaciones
                                     
                                     <div class="col-md-8 font-kulim">
                                         <p class="font-size-2 font-kulim">
-                                            <?php the_field('datos-transferencia-texto'); ?>
+                                            <?php the_content(); ?>
                                         </p>
                                     </div>
                                     <div class="col-md-4 font-kulim">
