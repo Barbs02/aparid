@@ -107,7 +107,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <li class="pb-4">
                         <div class="row">                  
                                 <div class="col-md-3 p-0">
-                                <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
+                                <a class="m-0 p-0" href="mailto:aparid@gmail.com" target="_blank">
                                     <?php 
                                     $image = get_field('contacto_correo_icono');
                                     if( !empty( $image ) ): ?>
@@ -116,7 +116,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     </a>
                                 </div>  
                                 <div class="col-md-9 font-kulim">
-                                <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
+                                <a class="m-0 p-0" href="mailto:aparid@gmail.com" target="_blank">
                                     <p><?php the_field('contacto_correo'); ?></p>
                                     </a>
                                 </div>
@@ -126,7 +126,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <li class="pb-4">
                         <div class="row">                  
                                 <div class="col-md-3 p-0">
-                                <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
+                                <a class="m-0 p-0" href="https://www.instagram.com/aparidvina/" target="_blank">
                                     <?php 
                                     $image = get_field('contacto_instagram_icono');
                                     if( !empty( $image ) ): ?>
@@ -135,7 +135,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     </a>
                                 </div>  
                                 <div class="col-md-9 font-kulim">
-                                <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
+                                <a class="m-0 p-0" href="https://www.instagram.com/aparidvina/" target="_blank">
                                     <p><?php the_field('contacto_instagram'); ?></p>
                                     </a>
                                 </div>
@@ -145,7 +145,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                         <li class="pb-4">
                         <div class="row">                  
                                 <div class="col-md-3 p-0">
-                                <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
+                                <a class="m-0 p-0" href="https://www.facebook.com/aparid" target="_blank">
                                     <?php 
                                     $image = get_field('contacto_facebook_icono');
                                     if( !empty( $image ) ): ?>
@@ -154,7 +154,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                                     </a>
                                 </div>  
                                 <div class="col-md-9 font-kulim">
-                                <a class="m-0 p-0" href="https://wa.me/+56978402893" target="_blank">
+                                <a class="m-0 p-0" href="https://www.facebook.com/aparid" target="_blank">
                                     <p><?php the_field('contacto_facebook'); ?></p>
                                     </a>
                                 </div>
