@@ -320,12 +320,12 @@ Template Name: Inicio
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
 
-            <div style="width: 100% !important;">
-                <?php $video_resena = get_field('video-resena'); ?>
-                <?php if ($video_resena): ?>
-                    <iframe src="<?php echo esc_url($video_resena); ?>" style="width: 100%; height: auto;" frameborder="0" allowfullscreen></iframe>
-                <?php endif; ?>
-            </div>
+            <?php $video_resena = get_field('video-resena'); ?>
+            <?php if ($video_resena): ?>
+                <div style="width: 100% !important; overflow: hidden;">
+                    <?php echo $video_resena; ?>
+                </div>
+            <?php endif; ?>
 
 
               
