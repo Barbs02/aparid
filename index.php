@@ -320,7 +320,7 @@ Template Name: Inicio
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
 
-                <div style="width = 100%;">
+                <div>
                     <?php the_field('video-resena'); ?>
                     
                 </div>
