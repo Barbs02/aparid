@@ -321,7 +321,7 @@ Template Name: Inicio
             <hr>
 
                 <div style="width = 350px;">
-                    <?php the_field('archivo-resena'); ?>
+                    <?php the_field('video-resena'); ?>
                     
                 </div>
 
