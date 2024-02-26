@@ -323,9 +323,10 @@ Template Name: Inicio
             <div style="width: 100% !important;">
                 <?php $video_resena = get_field('video-resena'); ?>
                 <?php if ($video_resena): ?>
-                    <iframe src="<?php echo $video_resena; ?>" width="100%" height="auto" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="<?php echo esc_url($video_resena); ?>" style="width: 100%; height: auto;" frameborder="0" allowfullscreen></iframe>
                 <?php endif; ?>
             </div>
+
 
               
                         
