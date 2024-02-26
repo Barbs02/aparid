@@ -322,10 +322,8 @@ Template Name: Inicio
 
             <?php $video_resena = get_field('video-resena'); ?>
             <?php if ($video_resena): ?>
-                <div style="width: 100%; text-align: center;">
-                    <div style="max-width: 100%; display: inline-block;">
-                        <?php echo $video_resena; ?>
-                    </div>
+                <div style="width: 100% !important; overflow: scroll;">
+                    <?php echo $video_resena; ?>
                 </div>
             <?php endif; ?>
 
