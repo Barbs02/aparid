@@ -125,7 +125,7 @@ Template Name: Donaciones
                                         alt="<?php echo esc_attr($image['alt']); ?>" />
                                 <?php endif; ?>
                             </li>
-                            <li class="w-100">
+                            <li class="w-100 text-center">
                             <?php
                             echo do_shortcode('[paypal-donation]');
                             ?>
