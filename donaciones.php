@@ -86,7 +86,7 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li class="w-100">
-                                <button class="border1 p-2 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 hover-boton bg-boton w-100" type="button" data-bs-toggle="modal" data-bs-target="#modal1">Donar</button>
                             </li>
                         </ul>
                     </div>
@@ -106,7 +106,7 @@ Template Name: Donaciones
                                 <?php endif; ?>
                             </li>
                             <li class="w-100">
-                                <button class="border1 p-2 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
+                                <button class="border1 p-2 hover-boton bg-boton w-100" href="servicios-#programas">Inhabilitado</button>
                             </li>
                         </ul>
                     </div>
@@ -125,8 +125,10 @@ Template Name: Donaciones
                                         alt="<?php echo esc_attr($image['alt']); ?>" />
                                 <?php endif; ?>
                             </li>
-                            <li class="w-100">
-                                <button class="border1 p-2 hover-boton bg-boton w-100" href="servicios-#programas">Donar</button>
+                            <li class="w-100 text-center">
+                            <?php
+                            echo do_shortcode('[paypal-donation]');
+                            ?>
                             </li>
                         </ul>
                     </div>
@@ -140,6 +142,60 @@ Template Name: Donaciones
         </div>
     </div>
 </section>
+<!----------------------------------Modal--------------------------------------------->
+<div class="container-fluid mx-auto">
+    <div class="row">
+        <div class="col-md-12">
+
+        <?php if (have_posts()) : ?>
+        <?php query_posts("category_name=datos-transferencia"); ?>
+    <?php while (have_posts()) : the_post(); ?> 
+                
+                <div class="modal" tabindex="-1" id="modal1">
+                    <div class="modal-dialog modal-xl mx-auto overflow-auto font-kulim">
+                        <div class="modal-content font-kulim">
+                        <div class="modal-header bg-color-beige">
+                            <h2 class="color-azul font-solway font-size-5">
+                                <?php the_title(); ?>
+                            </h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-footer bg-color-beige font-kulim">
+                            <div class="pt-3"></div>
+                            <div class="container-fluid">
+                                <div class="row font-kulim ">
+                                    
+                                    <div class="col-md-8 font-kulim">
+                                        <p class="font-size-2 font-kulim">
+                                            <?php the_content(); ?>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 font-kulim">
+                                        
+                                    </div>
+                                        
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <button type="button" class="border1 p-2 bg-boton hover-boton align-self-end" data-bs-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <?php endwhile; ?>	
+    <?php else : ?>  
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
+
+        </div>
+    </div>
+   
+</div>
 
 <!-------------------------------- Trayecto de tu aporte monetario -------------------------------->
 <section>
