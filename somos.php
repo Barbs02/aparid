@@ -452,7 +452,8 @@ Template Name: Quienes somos
 </section>
 
 <!-------------------------------RESEÑAS------------------------------------------>
-<section>
+    <!-- SLIDER PARA RESEÑAS -->
+    <section>
 <div class="container-fluid px-100">
     <div class="row pb-100 font-kulim">
         <?php if (have_posts()) : ?>
@@ -481,3 +482,4 @@ Template Name: Quienes somos
     </div>
 </div>
 </section>
+<?php get_footer(); ?> 
