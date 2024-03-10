@@ -91,26 +91,7 @@ Template Name: Donaciones
                         </ul>
                     </div>
 
-                    <div class="col-md-3 mx-auto">
-                        <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled" style="height: 400px;">
-                            <li>
-                                <h2 class="font-solway color-azul text-center">Transferencia</h2>
-                                <h2 class="font-solway color-naranjo text-center">WebPay</h2>
-                            </li>
-                            <li class="">
-                                <?php
-                                $image = get_field('donaciones-icono2');
-                                if (!empty($image)): ?>
-                                    <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>"
-                                        alt="<?php echo esc_attr($image['alt']); ?>" />
-                                <?php endif; ?>
-                            </li>
-                            <li class="w-100">
-                                <button class="border1 p-2 hover-boton bg-boton w-100" href="servicios-#programas">Inhabilitado</button>
-                            </li>
-                        </ul>
-                    </div>
-
+                    
                     <div class="col-md-3 mx-auto">
                         <ul class="d-flex flex-column justify-content-between align-items-center list-unstyled " style="height: 400px;">
                             <li>
