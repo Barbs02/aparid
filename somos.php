@@ -453,28 +453,27 @@ Template Name: Quienes somos
 
 <!-------------------------------RESEÑAS------------------------------------------>
     <!-- SLIDER PARA RESEÑAS -->
-<section>
-    <?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?> 
-        <?php
-        echo do_shortcode('[smartslider3 slider="6"]');
-        ?>
-    <?php endwhile; ?>	
-    <?php else : ?>  
-    <?php endif; ?>
-    <?php wp_reset_query(); ?>
-</section>
-<section>
+    <section>
 <div class="container-fluid px-100">
-    <div class="row py-100">
+    <div class="row pb-100 font-kulim">
         <?php if (have_posts()) : ?>
             <?php query_posts("category_name=resenas&showposts=2"); ?>
         <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-md-6 font-kulim"> 
+                <div class="col-md-6"> 
                 <h2 class="font-size-6 font-solway color-azul"><?php the_field('nombre_resena'); ?></h2>
                 <p class="font-kulim font-size-2 font-bold"><?php the_field('nombre_del_hijo'); ?></p>
             <hr>
-            <p> <?php the_field('resena'); ?></p><a href="#">Ver más</a>
+
+            <?php $video_resena = get_field('video-resena'); ?>
+            <?php if ($video_resena): ?>
+                <div style="width: 100% !important; overflow: scroll;">
+                    <?php echo $video_resena; ?>
+                </div>
+            <?php endif; ?>
+
+
+              
+                        
                 </div>
         <?php endwhile; ?>
         <?php else : ?>  
