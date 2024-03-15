@@ -154,6 +154,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 100px;
 }
 
+.pt-50 {
+  padding-top: 50px;
+}
+
 .hover-boton:hover {
   background-color: #FC9256;
   border-color: #FC9256;
