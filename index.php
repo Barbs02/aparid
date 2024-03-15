@@ -23,6 +23,9 @@ Template Name: Inicio
     <?php wp_reset_query(); ?>
 </header>
 
+<header class="d-none py-50 text-center">
+ <h2>A.P.A.R.I.D.</h2>
+</header>
 
 <!-------------------------------primera sección------------------------------------------>
 
