@@ -391,7 +391,7 @@ Template Name: Sindrome de Down
             <?php endif; ?>
             <?php wp_reset_query(); ?>
             <div class="col-md-2 mx-auto py-100">
-                    <button class="border1 p-2 w-100 hover-boton bg-boton" href="<?php echo get_permalink( '15' ); ?>">Programas</button>
+                    <a class="border1 p-2 w-100 hover-boton bg-boton" href="<?php echo get_permalink( '15' ); ?>">Programas</a>
             </div>
         </div>
     </div>
