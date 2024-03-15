@@ -443,27 +443,8 @@ Template Name: Donaciones
 
 <!-------------------------------QUIERES SER SOCIO------------------------------------------>
 
+<!-- no tenia sentido que estuviera aquí, si que lo borré -.- -->
 
-<section class="socios">
-    <div class="container-fluid px-100 qss">
-        <div class="row">
-            <!-----todo esto va dentro de un background image(?----->
-            <?php if (have_posts()): ?>
-            <?php query_posts("category_name=socio"); ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-                <div class="container-fluid p-0 position-relative">
-                    <?php
-                    echo do_shortcode('[smartslider3 slider="3"]');
-                    ?>
-                </div>
-            <?php endwhile; ?>
-            <?php else: ?>
-            <?php endif; ?>
-            <?php wp_reset_query(); ?>
-        </div>
-    </div>
-</section>
 
 <!-------------------------------------- Slider Colaboradores -------------------------------------->
 <section class="pb-100">
