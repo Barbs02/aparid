@@ -150,6 +150,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 50px;
 }
 
+.pt-100-r {
+  padding-top: 100px;
+}
+
 .hover-boton:hover {
   background-color: #FC9256;
   border-color: #FC9256;
@@ -763,6 +767,9 @@ hr {
   }
   .bg-color-azul {
     background: none;
+  }
+  .pt-100-r {
+    padding-top: 0px;
   }
 }
 @media screen and (max-width: 836px) {

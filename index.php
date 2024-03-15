@@ -27,14 +27,14 @@ Template Name: Inicio
 <!-------------------------------primera sección------------------------------------------>
 
 <section class="inicio">
-    <div class="conteiner-fluid d-none py-50 text-center">
+    <div class="conteiner-fluid d-none py-50 pt-50 text-center">
         <h2 class=" font-solway color-azul">A.P.A.R.I.D.</h2>
     </div>
 
 
 
     <div class="container-fluid px-100">
-        <div class="row pt-100 ">
+        <div class="row pt-100-r ">
             <?php if (have_posts()): ?>
                 <?php query_posts("category_name=inicio"); ?>
                 <?php while (have_posts()):
