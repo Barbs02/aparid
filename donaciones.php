@@ -521,7 +521,7 @@ Template Name: Donaciones
                             <br>
                             <!------- Boton ------->
                             <div class="col-md-3 mx-auto">
-                                <a class="border1 p-3 w-100 hover-boton bg-boton" href="<?php echo get_permalink( '21' ); ?>">Contáctanos</a>
+                                <a class="border1 p-3 w-100 hover-boton bg-boton py-3 px-5 text-decoration-none color-azul" href="<?php echo get_permalink( '21' ); ?>">Contáctanos</a>
                             </div>
                         <?php endwhile; ?>
                     <?php else: ?>
