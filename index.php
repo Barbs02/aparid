@@ -11,7 +11,7 @@ Template Name: Inicio
 <!-------------------------------INICIO------------------------------------------>
 
 <!-- SLIDER -->
-<header>
+<header class="d-r-none">
     <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?> 
     <?php
