@@ -286,7 +286,7 @@ Template Name: Quienes somos
                             alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
                     <h3 class="font-size-3 color-azul"><?php the_field('nombre_secretaria_directorio_2'); ?></h3>
-                    <h4 class="font-size-1 color-naranjo"><?php the_field('descripcion_de_cargo_s2'); ?></h4>
+                    <h4 class="font-size-1 color-naranjo"><?php the_field('cargo-secretaria_2'); ?></h4>
                     <p class="font-size-1"><?php the_field('descripcion_de_cargo_s2'); ?></p>
                 </div>
 
