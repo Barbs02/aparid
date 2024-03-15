@@ -27,8 +27,8 @@ Template Name: Inicio
 <!-------------------------------primera sección------------------------------------------>
 
 <section class="inicio">
-    <div class="conteiner-fluid d-none py-50 pt-50 text-center">
-        <h2 class=" font-solway color-azul">A.P.A.R.I.D.</h2>
+    <div class="conteiner-fluid d-none py-50  text-center">
+        <h2 class=" font-solway color-azul pt-50">A.P.A.R.I.D.</h2>
     </div>
 
 
