@@ -23,9 +23,9 @@ Template Name: Inicio
     <?php wp_reset_query(); ?>
 </header>
 
-<header class="d-none py-50 text-center">
+<div class="d-none py-50 text-center">
     <h2 class=" font-solway color-azul">A.P.A.R.I.D.</h2>
-</header>
+    </div>
 
 <!-------------------------------primera sección------------------------------------------>
 
