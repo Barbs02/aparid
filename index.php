@@ -23,13 +23,16 @@ Template Name: Inicio
     <?php wp_reset_query(); ?>
 </header>
 
-<div class="d-none py-50 text-center">
-    <h2 class=" font-solway color-azul">A.P.A.R.I.D.</h2>
-    </div>
 
 <!-------------------------------primera sección------------------------------------------>
 
 <section class="inicio">
+    <div class="conteiner-fluid d-none py-50 text-center">
+        <h2 class=" font-solway color-azul">A.P.A.R.I.D.</h2>
+    </div>
+
+
+
     <div class="container-fluid px-100">
         <div class="row pt-100 ">
             <?php if (have_posts()): ?>

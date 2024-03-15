@@ -695,10 +695,11 @@ hr {
   z-index: 105;
 }
 
-.d-none {
-  display: none;
+@media only screen and (min-width: 769px) {
+  .d-none {
+    display: none;
+  }
 }
-
 /* Mobile devices */
 @media screen and (max-width: 768px) {
   body {
@@ -708,7 +709,7 @@ hr {
     display: none;
   }
   .d-none {
-    display: block;
+    display: block !important;
   }
   .qss-texto {
     font-size: 24px;
