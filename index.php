@@ -25,14 +25,14 @@ Template Name: Inicio
 
 
 <!-------------------------------primera sección------------------------------------------>
-
+<!-- 
 <section class="inicio">
     <div class="conteiner-fluid d-none py-50  text-center">
         <div class=" pt-50">
             <h2 class="font-size-9 font-solway color-azul">A.P.A.R.I.D.</h2>
         </div>
         
-    </div>
+    </div> -->
 
 
 
