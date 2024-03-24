@@ -279,33 +279,3 @@ echo do_shortcode('[smartslider3 slider="2"]');
 </body>
 </html>
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recoger los datos del formulario
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $celular = $_POST['celular'];
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
-
-    // Construir el mensaje
-    $mensaje_completo = "Nombre: $nombre\n";
-    $mensaje_completo .= "Apellido: $apellido\n";
-    $mensaje_completo .= "Celular: $celular\n";
-    $mensaje_completo .= "Email: $email\n";
-    $mensaje_completo .= "Mensaje: $mensaje\n";
-
-    // Dirección de correo a la que se enviará el mensaje
-    $correo_destino = 'suberobarbara14@gmail.com';
-
-    // Asunto del correo
-    $asunto = 'Mensaje desde el formulario de contacto';
-
-    // Envío del correo
-    if (mail($correo_destino, $asunto, $mensaje_completo)) {
-        echo 'El correo se ha enviado correctamente.';
-    } else {
-        echo 'Hubo un error al enviar el correo. Detalles del error: ' . error_get_last()['message'];
-    }
-}
-?>
