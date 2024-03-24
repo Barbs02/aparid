@@ -273,7 +273,6 @@ echo do_shortcode('[smartslider3 slider="2"]');
     AOS.init();
 </script>
 
-<<<<<<< HEAD
  
 </script>
 
@@ -298,7 +297,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje_completo .= "Mensaje: $mensaje\n";
 
     // Dirección de correo a la que se enviará el mensaje
-    $correo_destino = 'suberobarbara14@gmail.com';
+    $correo_destino = 'aparid@gmail.com';
 
     // Asunto del correo
     $asunto = 'Mensaje desde el formulario de contacto';
@@ -311,31 +310,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-=======
-
-</body>
-</html>
-
-<script>
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Recoger los datos del formulario
-        $nombre = $_POST['nombre'];
-        $apellido = $_POST['apellido'];
-        $celular = $_POST ['celular']
-        $email = $_POST['email'];
-        $mensaje = $_POST['mensaje'];
-    
-        $correo = 'suberobarbara14@gmail.com';
-        $asunto = 'Asunto del correo';
-        $mensaje = $nombre + $apellido + $celular + $email + $mensaje ;
-    
-        // Envío del correo
-        if (mail($correo, $asunto, $mensaje)) {
-            echo 'El correo se ha enviado correctamente.';
-        } else {
-            echo 'Hubo un error al enviar el correo. Detalles del error: ' . error_get_last()['message'];
-    
-        }
-    }
-</script>
->>>>>>> a1737ab4c497a4d1b67ba6ae3b55f4353c2cc6a2
