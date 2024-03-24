@@ -443,27 +443,8 @@ Template Name: Donaciones
 
 <!-------------------------------QUIERES SER SOCIO------------------------------------------>
 
+<!-- no tenia sentido que estuviera aquí, si que lo borré -.- -->
 
-<section class="socios">
-    <div class="container-fluid px-100 qss">
-        <div class="row">
-            <!-----todo esto va dentro de un background image(?----->
-            <?php if (have_posts()): ?>
-            <?php query_posts("category_name=socio"); ?>
-            <?php while (have_posts()):
-                the_post(); ?>
-                <div class="container-fluid p-0 position-relative">
-                    <?php
-                    echo do_shortcode('[smartslider3 slider="3"]');
-                    ?>
-                </div>
-            <?php endwhile; ?>
-            <?php else: ?>
-            <?php endif; ?>
-            <?php wp_reset_query(); ?>
-        </div>
-    </div>
-</section>
 
 <!-------------------------------------- Slider Colaboradores -------------------------------------->
 <section class="pb-100">
@@ -540,7 +521,7 @@ Template Name: Donaciones
                             <br>
                             <!------- Boton ------->
                             <div class="col-md-3 mx-auto">
-                                <button class="border1 p-3 w-100 hover-boton bg-boton" href="servicios-#programas">Contáctanos</button>
+                                <a class="border1 p-3 w-100 hover-boton bg-boton py-3 px-5 text-decoration-none color-azul" href="<?php echo get_permalink( '21' ); ?>">Contáctanos</a>
                             </div>
                         <?php endwhile; ?>
                     <?php else: ?>

@@ -11,7 +11,7 @@ Template Name: Inicio
 <!-------------------------------INICIO------------------------------------------>
 
 <!-- SLIDER -->
-<header>
+<header class="">
     <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?> 
     <?php
@@ -25,10 +25,19 @@ Template Name: Inicio
 
 
 <!-------------------------------primera sección------------------------------------------>
-
+<!-- 
 <section class="inicio">
+    <div class="conteiner-fluid d-none py-50  text-center">
+        <div class=" pt-50">
+            <h2 class="font-size-9 font-solway color-azul">A.P.A.R.I.D.</h2>
+        </div>
+        
+    </div> -->
+
+
+
     <div class="container-fluid px-100">
-        <div class="row pt-100 ">
+        <div class="row pt-100-r ">
             <?php if (have_posts()): ?>
                 <?php query_posts("category_name=inicio"); ?>
                 <?php while (have_posts()):

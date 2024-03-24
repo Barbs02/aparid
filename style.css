@@ -150,6 +150,14 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 50px;
 }
 
+.pt-100-r {
+  padding-top: 100px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
 .hover-boton:hover {
   background-color: #FC9256;
   border-color: #FC9256;
@@ -695,6 +703,11 @@ hr {
   z-index: 105;
 }
 
+@media only screen and (min-width: 769px) {
+  .d-none {
+    display: none;
+  }
+}
 /* Mobile devices */
 @media screen and (max-width: 768px) {
   body {
@@ -702,6 +715,9 @@ hr {
   }
   .d-r-none {
     display: none;
+  }
+  .d-none {
+    display: block !important;
   }
   .qss-texto {
     font-size: 24px;
@@ -755,6 +771,9 @@ hr {
   }
   .bg-color-azul {
     background: none;
+  }
+  .pt-100-r {
+    padding-top: 0px;
   }
 }
 @media screen and (max-width: 836px) {
