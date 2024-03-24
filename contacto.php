@@ -282,7 +282,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
     
         $correo = 'suberobarbara14@gmail.com';
         $asunto = 'Asunto del correo';
-        $mensaje = $nombre . $apellido . $celular . $email . $mensaje ;
+        $mensaje = $nombre + $apellido + $celular + $email + $mensaje ;
     
         // Envío del correo
         if (@mail($correo, $asunto, $mensaje)) {
@@ -292,8 +292,6 @@ echo do_shortcode('[smartslider3 slider="2"]');
     
         }
     }
-</script>
-
 </script>
 </body>
 </html>
