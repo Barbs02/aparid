@@ -272,13 +272,6 @@ echo do_shortcode('[smartslider3 slider="2"]');
 <script>
     AOS.init();
 
-</script>
-
-
-</body>
-</html>
-
-<?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Recoger los datos del formulario
         $nombre = $_POST['nombre'];
@@ -299,4 +292,10 @@ echo do_shortcode('[smartslider3 slider="2"]');
     
         }
     }
-    ?>  
+
+</script>
+
+
+</body>
+</html>
+
