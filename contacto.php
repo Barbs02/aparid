@@ -271,7 +271,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS JS -->
 <script>
     AOS.init();
-
+<?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Recoger los datos del formulario
         $nombre = $_POST['nombre'];
@@ -292,6 +292,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
     
         }
     }
+    ?>
 </script>
 
 
