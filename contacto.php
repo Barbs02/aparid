@@ -20,7 +20,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
             <div class="row">
                 
                     <div class="col-md-6 pt-5 pb-3">
-                        <form method='POST'>
+                        <form method='POST' action = 'prueba.php'>
                         <label for="nombre"><p class="font-kulim" >Nombre:</p></label>
                         <input  type="text" id="nombre" name="nombre" style="width: 100%;" class="border1 bg-color-beige p-3" required>
                     </div>
@@ -272,27 +272,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
 <script>
     AOS.init();
 </script>
-<script>
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recoger los datos del formulario
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $celular = $_POST ['celular']
-    $email = $_POST['email'];
-    $mensaje = $_POST['mensaje'];
 
-    $correo = 'suberobarbara14@gmail.com';
-    $asunto = 'Asunto del correo';
-    $mensaje = $nombre + $apellido + $celular +$email + $mensaje ;
-
-    // Envío del correo
-    if (@mail($correo, $asunto, $mensaje)) {
-        echo 'El correo se ha enviado correctamente.';
-    } else {
-        echo 'Hubo un error al enviar el correo. Detalles del error: ' . error_get_last()['message'];
-
-    }
-}
 </script>
 </body>
 </html>
