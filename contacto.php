@@ -285,7 +285,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         $mensaje = $nombre + $apellido + $celular + $email + $mensaje ;
     
         // Envío del correo
-        if (@mail($correo, $asunto, $mensaje)) {
+        if (mail($correo, $asunto, $mensaje)) {
             echo 'El correo se ha enviado correctamente.';
         } else {
             echo 'Hubo un error al enviar el correo. Detalles del error: ' . error_get_last()['message'];
