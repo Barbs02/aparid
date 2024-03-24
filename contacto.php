@@ -281,12 +281,12 @@ echo do_shortcode('[smartslider3 slider="2"]');
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
 
-    $para = 'suberobarbara14@gmail.com';
+    $correo = 'suberobarbara14@gmail.com';
     $asunto = 'Asunto del correo';
     $mensaje = $nombre + $apellido + $celular +$email + $mensaje ;
 
     // Envío del correo
-    if (@mail($para, $asunto, $mensaje)) {
+    if (@mail($correo, $asunto, $mensaje)) {
         echo 'El correo se ha enviado correctamente.';
     } else {
         echo 'Hubo un error al enviar el correo. Detalles del error: ' . error_get_last()['message'];
